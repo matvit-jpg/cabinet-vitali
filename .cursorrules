@@ -1,0 +1,8 @@
+# Cabinet Expert Judiciaire — règles de génération
+
+- Respecter le fichier **BRIEF.md** à la racine : stack Next.js 14 App Router, Tailwind, Framer Motion, React Hook Form + Zod + Resend, Lucide, fonts Cormorant Garamond + DM Sans.
+- **Design system** : couleurs CSS (`--color-navy`, `--color-gold`, `--color-ivory`, etc.) dans `app/globals.css` ; composants réutilisables dans `components/ui/` (`Button`, `Badge`, `SectionWrapper`, `Divider`, `AnimatedText`, `AccordionFAQ`, `ExpertiseCard`).
+- **Typographie** : titres en `font-display` (Cormorant), corps en `font-sans` (DM Sans) ; accents / labels en italique doré si pertinent.
+- **Accessibilité** : `aria-label` sur boutons icônes, contrastes AA, `:focus-visible` doré.
+- **Données** : expertises dans `lib/expertises.ts`, publications dans `lib/publications.ts`, identité site dans `lib/site.ts`.
+- Ne pas introduire de dépendances non listées dans le brief sans nécessité. Préférer les patterns existants (sections dans `components/sections/`, metadata via `lib/metadata.ts`).

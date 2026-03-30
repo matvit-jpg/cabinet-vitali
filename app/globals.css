@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #0d1b2a;
+  --color-navy-light: #1a2e42;
+  --color-gold: #c9a84c;
+  --color-gold-light: #e2c97e;
+  --color-ivory: #f8f6f1;
+  --color-grey-light: #e8e6e1;
+  --color-grey-mid: #9a9590;
+  --color-text: #1c1c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-ivory);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Focus visible — WCAG */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-gold;
+}
+
+/* Sepia filter for map iframe wrapper */
+.map-sepia iframe {
+  filter: sepia(0.35) contrast(0.95) brightness(1.05);
+}
