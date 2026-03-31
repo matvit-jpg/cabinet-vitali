@@ -50,11 +50,12 @@ export default function ContactPage() {
                 <li className="flex gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
                   <span>
-                    {SITE.addressLines.map((l) => (
-                      <span key={l} className="block">
-                        {l}
-                      </span>
-                    ))}
+                    <span className="block font-medium text-navy">Bureau Marseille</span>
+                    <span className="block">46b Boulevard Sicard</span>
+                    <span className="block">13008 Marseille</span>
+                    <span className="mt-3 block font-medium text-navy">Bureau Aubagne</span>
+                    <span className="block">22 avenue de Verdun</span>
+                    <span className="block">13400 Aubagne</span>
                   </span>
                 </li>
                 <li className="flex items-center gap-3">

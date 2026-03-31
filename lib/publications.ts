@@ -1,85 +1,37 @@
-export type PublicationCategory =
-  | "Presse"
-  | "Conférences"
-  | "Articles"
-  | "Interviews";
-
-export type Publication = {
-  id: number;
+export type FeaturedArticle = {
   title: string;
+  subtitle: string;
+  excerpt: string;
   source: string;
   date: string;
-  category: PublicationCategory;
-  url: string;
-  excerpt: string;
+  photo: string;
+  logo: string;
 };
 
-export const publications: Publication[] = [
-  {
-    id: 1,
-    title: "L'expert immobilier face aux exigences de la Cour d'appel",
-    source: "Décideurs Magazine",
-    date: "2024-03",
-    category: "Presse",
-    url: "https://example.com/article-1",
-    excerpt:
-      "Retour sur les attentes des juridictions en matière de motivation des rapports et de méthodologie d'évaluation.",
-  },
-  {
-    id: 2,
-    title: "Valeur vénale et marché post-crise : méthodes et prudence",
-    source: "Colloque IFEI",
-    date: "2023-11",
-    category: "Conférences",
-    url: "https://example.com/conference-1",
-    excerpt:
-      "Intervention sur l'ajustement des comparables et la documentation des hypothèses dans un contexte incertain.",
-  },
-  {
-    id: 3,
-    title: "Normes REV et recevabilité des expertises",
-    source: "Revue de droit immobilier",
-    date: "2023-06",
-    category: "Articles",
-    url: "https://example.com/article-2",
-    excerpt:
-      "Analyse des points d'alignement entre les standards européens et la pratique judiciaire française.",
-  },
-  {
-    id: 4,
-    title: "Les loyers commerciaux à l'épreuve du contentieux",
-    source: "Radio Patrimoine",
-    date: "2024-01",
-    category: "Interviews",
-    url: "https://example.com/interview-1",
-    excerpt:
-      "Entretien sur la fixation des valeurs locatives et le rôle de l'expert dans la phase pré-procédurale.",
-  },
-  {
-    id: 5,
-    title: "Rapport d'expertise : forme, fond et contradictions",
-    source: "Journée nationale des experts",
-    date: "2022-09",
-    category: "Conférences",
-    url: "https://example.com/conference-2",
-    excerpt:
-      "Synthèse des bonnes pratiques pour la rédaction et la présentation des observations des parties.",
-  },
-  {
-    id: 6,
-    title: "Portrait — rigueur et indépendance",
-    source: "Les Échos",
-    date: "2021-05",
-    category: "Presse",
-    url: "https://example.com/article-3",
-    excerpt:
-      "Présentation du métier d'expert judiciaire immobilier et de son cadre déontologique.",
-  },
-];
+export const featuredArticle: FeaturedArticle = {
+  title: "Article sur le nouveau rôle de l'expert",
+  subtitle: "L'expert, nouvelle clé de voûte du procès civil",
+  excerpt:
+    "Tribune libre parue dans l'Argus de l'enseigne. Serge VITALI y analyse l'évolution du rôle de l'expert judiciaire immobilier : d'auxiliaire technique, il devient un acteur central du règlement des litiges, dont les conclusions structurent de plus en plus la décision du juge.",
+  source: "Argus de l'enseigne",
+  date: "Novembre 2025",
+  photo:
+    "https://static.wixstatic.com/media/a80145_0cb9745259ea4013af4a62c08c937fff~mv2.jpg",
+  logo: "https://static.wixstatic.com/media/a80145_45e00eca20a34031add9fff45335768d~mv2.png",
+};
 
-export const publicationCategories: PublicationCategory[] = [
-  "Presse",
-  "Conférences",
-  "Articles",
-  "Interviews",
+// AJDI en premier, puis les autres publications
+export const galleryImages: string[] = [
+  // AJDI
+  "https://static.wixstatic.com/media/a80145_84c46ce6896548c2bb2b1c643af9efd1~mv2.png",
+  "https://static.wixstatic.com/media/a80145_c052542463b3436b801163f897b819b6~mv2.jpg",
+  "https://static.wixstatic.com/media/a80145_4b6fb27f090a44d6a6503d844e8c28f3~mv2.jpg",
+  "/article-rnbc-2022.jpeg",
+  "https://static.wixstatic.com/media/a80145_223e48ee5ffa43e6a3d68ff447426936~mv2.jpg",
+  // Autres publications
+  "https://static.wixstatic.com/media/a80145_63a6101bbea643ac8af6f4df269ecd8e~mv2.jpg",
+  "https://static.wixstatic.com/media/a80145_80684e6494844ab198b6212225e5a5b9~mv2.jpg",
+  "https://static.wixstatic.com/media/a80145_0a2e27fc02aa4b4f8a7ce40b49fa0477~mv2.png",
+  "https://static.wixstatic.com/media/a80145_7e3eada4ceb445f182e7c66fa32becb8~mv2.jpg",
+  "https://static.wixstatic.com/media/a80145_956086ba37db4f40b8edaa28afa68684~mv2.png",
 ];

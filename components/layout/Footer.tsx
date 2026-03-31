@@ -92,6 +92,9 @@ export function Footer() {
             <Link href="/politique-confidentialite" className="hover:text-gold">
               Politique de confidentialité
             </Link>
+            <a href="/CGV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+              CGV
+            </a>
           </div>
           <p>
             © {new Date().getFullYear()} {SITE.cabinetFull}. Réalisé par{" "}

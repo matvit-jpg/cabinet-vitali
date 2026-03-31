@@ -47,8 +47,8 @@ export default function ExpertiseDetailPage({
   if (!expertise) notFound();
 
   const parts = expertise.fullDescription.split("\n\n").filter(Boolean);
-  const col1 = parts[0] ?? expertise.fullDescription;
-  const col2 = parts[1] ?? "";
+  const intro = parts[0] ?? expertise.fullDescription;
+  const rest = parts.slice(1);
 
   return (
     <>
@@ -67,43 +67,50 @@ export default function ExpertiseDetailPage({
               {expertise.title}
             </h1>
           </div>
+          <p className="mt-6 max-w-3xl font-sans text-lg font-light leading-relaxed text-ivory/70">
+            {expertise.shortDescription}
+          </p>
         </div>
       </section>
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-[1fr_280px] lg:px-8">
           <div>
-            <div className="grid gap-10 md:grid-cols-2">
-              <div className="font-sans text-base font-light leading-relaxed text-text">
-                {col1}
+            {/* Paragraphe d'intro pleine largeur */}
+            <p className="font-sans text-base leading-relaxed text-text border-l-2 border-gold pl-5">
+              {intro}
+            </p>
+
+            {/* Paragraphes suivants en 2 colonnes si plusieurs, sinon pleine largeur */}
+            {rest.length > 0 && (
+              <div className={`mt-8 gap-8 font-sans text-sm font-light leading-relaxed text-text ${rest.length >= 2 ? "grid md:grid-cols-2" : ""}`}>
+                {rest.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
               </div>
-              <div className="font-sans text-base font-light leading-relaxed text-text">
-                {col2 || (
-                  <span className="text-grey-mid">
-                    Pour toute précision sur cette thématique, le cabinet peut
-                    étudier votre dossier et proposer une méthodologie adaptée.
-                  </span>
-                )}
-              </div>
+            )}
+
+            <div className="mt-14 border-t border-grey-light pt-10">
+              <h2 className="font-display text-2xl font-semibold text-navy">
+                Cas d&apos;usage
+              </h2>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {expertise.useCases.map((u) => (
+                  <li key={u} className="flex items-start gap-3 font-sans text-sm">
+                    <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
+                    <span>{u}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            <h2 className="mt-14 font-display text-2xl font-semibold text-navy">
-              Cas d&apos;usage
-            </h2>
-            <ul className="mt-6 space-y-3">
-              {expertise.useCases.map((u) => (
-                <li key={u} className="flex items-start gap-3 font-sans text-sm">
-                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
-                  <span>{u}</span>
-                </li>
-              ))}
-            </ul>
-
-            <h2 className="mt-14 font-display text-2xl font-semibold text-navy">
-              Questions fréquentes
-            </h2>
-            <div className="mt-6">
-              <AccordionFAQ items={expertise.faq ?? defaultFaq} />
+            <div className="mt-14 border-t border-grey-light pt-10">
+              <h2 className="font-display text-2xl font-semibold text-navy">
+                Questions fréquentes
+              </h2>
+              <div className="mt-6">
+                <AccordionFAQ items={expertise.faq ?? defaultFaq} />
+              </div>
             </div>
           </div>
 

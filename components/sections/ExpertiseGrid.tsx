@@ -20,7 +20,7 @@ export function ExpertiseGrid() {
         </FadeInSection>
         <Divider />
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {expertises.map((e) => (
+          {expertises.slice(0, 3).map((e) => (
             <FadeInSection key={e.slug}>
               <ExpertiseCard expertise={e} href={`/expertises/${e.slug}`} />
             </FadeInSection>

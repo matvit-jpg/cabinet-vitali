@@ -13,7 +13,7 @@ export function ExpertiseCard({
   href: string;
 }) {
   return (
-    <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
+    <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }} className="h-full">
       <Link
         href={href}
         className="group flex h-full flex-col rounded-sm border border-grey-light bg-white p-8 shadow-card transition-colors hover:border-gold hover:bg-navy hover:text-ivory hover:shadow-elevated"

@@ -3,9 +3,9 @@ import { PublicationsGrid } from "@/components/sections/PublicationsGrid";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 
 export const metadata = createMetadata({
-  title: "Publications",
+  title: "Publications & interventions",
   description:
-    "Articles, interviews, conférences et interventions médiatiques du cabinet.",
+    "Articles, presse et interventions du cabinet Vitali.",
   path: "/publications",
 });
 
@@ -17,11 +17,11 @@ export default function PublicationsPage() {
           <Breadcrumb
             items={[
               { label: "Accueil", href: "/" },
-              { label: "Publications" },
+              { label: "Publications & interventions" },
             ]}
           />
           <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
-            Publications
+            Publications & interventions
           </h1>
           <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">
             Presse, conférences et analyses — veille professionnelle et
@@ -29,7 +29,7 @@ export default function PublicationsPage() {
           </p>
         </div>
       </section>
-      <PublicationsGrid showFilters hideHeading />
+      <PublicationsGrid />
     </>
   );
 }

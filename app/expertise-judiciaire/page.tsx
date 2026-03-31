@@ -2,97 +2,108 @@ import { createMetadata } from "@/lib/metadata";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
-import { AccordionFAQ } from "@/components/ui/AccordionFAQ";
+import { ExpertiseChat } from "@/components/sections/ExpertiseChat";
 
 export const metadata = createMetadata({
-  title: "Expertise judiciaire",
+  title: "Expertises judiciaires",
   description:
-    "Cadre légal (NCPC), processus d'expertise, expert désigné vs expert amiable — missions devant les tribunaux.",
+    "Expert inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille — estimations immobilières, valeurs locatives, préjudices.",
   path: "/expertise-judiciaire",
 });
 
 const processSteps = [
-  { title: "Saisine", description: "Désignation par le juge ou les parties." },
-  { title: "Acceptation mission", description: "Cadre, délais et moyens." },
   {
-    title: "Réunion d'expertise",
-    description: "Organisation du contradictoire.",
+    title: "Désignation",
+    description:
+      "Le juge désigne l'expert par ordonnance, en fixant la mission et le délai de dépôt du rapport.",
   },
-  { title: "Pré-rapport", description: "Premières conclusions partagées." },
   {
-    title: "Observations des parties",
-    description: "Réponses et compléments éventuels.",
+    title: "Acceptation de la mission",
+    description:
+      "L'expert accepte la mission, prête serment et convoque les parties dans le respect du contradictoire.",
   },
-  { title: "Rapport définitif", description: "Remise au juge et au dossier." },
+  {
+    title: "Réunions d'expertise",
+    description:
+      "Visites sur site, investigations techniques, recueil des observations de chaque partie.",
+  },
+  {
+    title: "Pré-rapport",
+    description:
+      "Premières conclusions soumises aux parties pour observations écrites avant la version définitive.",
+  },
+  {
+    title: "Réponse aux observations",
+    description:
+      "L'expert répond aux dires des parties et intègre les éléments pertinents au rapport.",
+  },
+  {
+    title: "Rapport définitif",
+    description:
+      "Le rapport motivé est déposé au greffe et versé au dossier de la juridiction.",
+  },
 ];
 
-const faqItems = [
-  {
-    q: "Quelle est la valeur juridique du rapport ?",
-    a: "Le rapport d'expertise est une pièce du dossier qui éclaire le juge. Le tribunal demeure libre d'adopter ou d'écarter les conclusions techniques, en les motivant.",
-  },
-  {
-    q: "Puis-je choisir mon expert judiciaire ?",
-    a: "La désignation relève en principe du juge. Les parties peuvent proposer des noms ou formuler des observations dans les formes prévues par la procédure.",
-  },
-  {
-    q: "Combien de temps dure une expertise ?",
-    a: "La durée varie selon la complexité, les investigations nécessaires et le calendrier judiciaire. Un échéancier est communiqué à l'acceptation de la mission.",
-  },
-  {
-    q: "Quels sont les honoraires ?",
-    a: "Les honoraires sont fixés selon la nature de la mission, le temps passé et les diligences. Une proposition détaillée est adressée avant acceptation.",
-  },
-  {
-    q: "Comment contester un rapport d'expertise ?",
-    a: "Les parties peuvent formuler des observations, demander des compléments ou, selon les cas, la nomination d'un contre-expert. C'est au juge d'apprécier la suite à donner.",
-  },
-];
+
 
 export default function ExpertiseJudiciairePage() {
   return (
     <>
+      {/* Hero */}
       <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <Breadcrumb
             items={[
               { label: "Accueil", href: "/" },
-              { label: "Expertise judiciaire" },
+              { label: "Expertises judiciaires" },
             ]}
           />
           <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
-            L&apos;expertise judiciaire
+            Expertises judiciaires
           </h1>
           <p className="mt-4 max-w-3xl font-sans text-lg font-light text-grey-mid">
-            Un cadre procédural strict pour éclairer le juge sur des questions
-            techniques d&apos;évaluation immobilière.
+            Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et
+            la Cour administrative d&apos;appel de Marseille — une fonction au
+            service de la justice, fondée sur la rigueur et l&apos;indépendance.
           </p>
         </div>
       </section>
 
+      {/* Serment */}
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            Fondement légal
-          </h2>
-          <div className="mt-6 space-y-4 font-sans text-base font-light leading-relaxed text-text">
+          <blockquote className="border-l-2 border-gold pl-6">
+            <p className="font-display text-xl font-light italic leading-relaxed text-navy md:text-2xl">
+              &ldquo;Je jure d&apos;apporter mon concours à la justice,
+              d&apos;accomplir ma mission, de faire mon rapport et de donner mon
+              avis en mon honneur et en ma conscience.&rdquo;
+            </p>
+            <footer className="mt-4 font-sans text-sm text-grey-mid">
+              Serment de l&apos;expert — Décret n°2004-1463 du 23 décembre 2004
+            </footer>
+          </blockquote>
+          <div className="mt-10 space-y-4 font-sans text-base font-light leading-relaxed text-text">
             <p>
-              Le Nouveau Code de Procédure Civile encadre l&apos;expertise aux
-              articles 232 et suivants : mission confiée à un technicien pour
-              l&apos;éclairer sur des faits qui requièrent les lumières d&apos;un
-              spécialiste. L&apos;expert agit sous le contrôle du juge et dans le
-              respect du contradictoire.
+              Les experts judiciaires sont des professionnels habilités chargés
+              de donner aux juges un avis technique sur des faits, afin
+              d&apos;apporter des éclaircissements sur une affaire. Leurs avis
+              ne s&apos;imposent pas aux magistrats, qui ne sont pas liés par
+              leurs appréciations.
             </p>
             <p>
-              En matière immobilière, l&apos;expert peut être chargé
-              d&apos;apprécier une valeur, un état des lieux technique, ou toute
-              question nécessitant une analyse de marché documentée et
-              vérifiable.
+              L&apos;expert judiciaire est assermenté. Il ne s&apos;agit pas
+              d&apos;une profession mais d&apos;une fonction confiée à des
+              professionnels en activité au sommet de leur compétence, inscrits
+              sur une liste établie par la cour d&apos;appel dans le ressort de
+              laquelle ils exercent leur activité principale. Compétence
+              professionnelle de haut niveau, rigueur intellectuelle et morale
+              sont indispensables à cette fonction.
             </p>
           </div>
         </div>
       </SectionWrapper>
 
+      {/* Processus */}
       <SectionWrapper className="bg-ivory">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <ProcessSteps
@@ -102,33 +113,101 @@ export default function ExpertiseJudiciairePage() {
         </div>
       </SectionWrapper>
 
+      {/* Domaines d'inscription */}
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">
           <h2 className="font-display text-2xl font-semibold text-navy md:text-3xl">
-            Expert désigné par le juge vs expert amiable
+            Domaines d&apos;inscription
+          </h2>
+
+          <div className="mt-8 space-y-8">
+            {/* Cour d'appel d'Aix-en-Provence */}
+            <div>
+              <p className="font-sans text-base text-text">
+                <strong>Serge VITALI est inscrit sur la liste des Experts près la cour d&apos;appel d&apos;Aix-en-Provence</strong> dans les rubriques suivantes&nbsp;:
+              </p>
+              <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.1.</strong> Estimations immobilières matérielles&nbsp;: valeurs vénales de murs, terrains non agricoles, indemnité d&apos;expropriation, droits réels immobiliers.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.2.</strong> Estimations immobilières immatérielles&nbsp;: valeurs locatives, indemnités d&apos;éviction ou d&apos;expropriation, de fonds de commerce et d&apos;entreprises.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.3.</strong> Droits sociaux à prépondérance immobilière.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.4.</strong> Préjudices immobiliers.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Cour Administrative d'Appel de Marseille */}
+            <div>
+              <p className="font-sans text-base text-text">
+                <strong>Serge VITALI est inscrit sur la liste des Experts prés la Cour Administrative d&apos;Appel de Marseille</strong> dans les rubriques suivantes&nbsp;:
+              </p>
+              <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.1.</strong> Estimations immobilières matérielles&nbsp;: valeurs vénales de murs, terrains non agricoles, indemnité d&apos;expropriation, droits réels immobiliers.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.2.</strong> Estimations immobilières immatérielles&nbsp;: valeurs locatives, indemnités d&apos;éviction ou d&apos;expropriation, de fonds de commerce et d&apos;entreprises.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.3.</strong> Droits sociaux à prépondérance immobilière.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.18.4.</strong> Préjudices immobiliers.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-0.5 text-gold">•</span>
+                  <span><strong>C.19.1.</strong> Administration d&apos;immeuble et de copropriété, baux d&apos;habitation, commerciaux, professionnels.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* Expert judiciaire vs expert amiable */}
+      <SectionWrapper className="bg-ivory">
+        <div className="mx-auto max-w-5xl px-4 lg:px-8">
+          <h2 className="font-display text-2xl font-semibold text-navy md:text-3xl">
+            Expert judiciaire vs expertise amiable
           </h2>
           <div className="mt-10 overflow-hidden rounded-sm border border-grey-light">
             <div className="grid md:grid-cols-2">
-              <div className="bg-ivory p-6 md:p-8">
+              <div className="bg-white p-6 md:p-8">
                 <h3 className="font-display text-xl font-semibold text-navy">
                   Expert judiciaire
                 </h3>
                 <ul className="mt-4 list-disc space-y-2 pl-5 font-sans text-sm font-light text-text">
-                  <li>Désignation par la juridiction</li>
-                  <li>Mission encadrée par ordonnance</li>
+                  <li>Désignation par la juridiction (juge civil ou administratif)</li>
+                  <li>Mission encadrée par ordonnance, délais fixés</li>
+                  <li>Principe du contradictoire obligatoire</li>
                   <li>Rapport versé au dossier de justice</li>
-                  <li>Contradictoire et débats formalisés</li>
+                  <li>Assermentation devant la cour d&apos;appel</li>
                 </ul>
               </div>
-              <div className="bg-white p-6 md:p-8">
+              <div className="bg-ivory p-6 md:p-8">
                 <h3 className="font-display text-xl font-semibold text-navy">
                   Expertise amiable
                 </h3>
                 <ul className="mt-4 list-disc space-y-2 pl-5 font-sans text-sm font-light text-text">
-                  <li>Choix commun des parties</li>
-                  <li>Cadre contractuel et confidentialité</li>
-                  <li>Rapport utilisé hors procédure ou en amont</li>
-                  <li>Flexibilité sur le calendrier</li>
+                  <li>Choix commun ou unilatéral des parties</li>
+                  <li>Cadre contractuel, calendrier flexible</li>
+                  <li>Confidentialité des échanges et du rapport</li>
+                  <li>Utilisable en amont d&apos;une procédure ou à l&apos;amiable</li>
+                  <li>Pièce versable au débat judiciaire si nécessaire</li>
                 </ul>
               </div>
             </div>
@@ -136,14 +215,10 @@ export default function ExpertiseJudiciairePage() {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper className="bg-ivory">
-        <div className="mx-auto max-w-3xl px-4 lg:px-8">
-          <h2 className="font-display text-2xl font-semibold text-navy">
-            Questions fréquentes
-          </h2>
-          <div className="mt-8">
-            <AccordionFAQ items={faqItems} />
-          </div>
+      {/* FAQ */}
+      <SectionWrapper className="bg-white">
+        <div className="mx-auto max-w-5xl px-4 lg:px-8">
+          <ExpertiseChat />
         </div>
       </SectionWrapper>
     </>

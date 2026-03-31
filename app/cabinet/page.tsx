@@ -5,6 +5,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Badge } from "@/components/ui/Badge";
 import { FadeInSection } from "@/components/motion/FadeInSection";
+import { LogoCarousel } from "@/components/sections/LogoCarousel";
 
 export const metadata = createMetadata({
   title: "Le Cabinet",
@@ -26,6 +27,7 @@ const portrait = "/images/serge.jpg";
 export default function CabinetPage() {
   return (
     <>
+      {/* Hero */}
       <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Le Cabinet" }]} />
@@ -67,8 +69,26 @@ export default function CabinetPage() {
         </div>
       </SectionWrapper>
 
-      {/* Membres */}
-      <SectionWrapper className="bg-ivory">
+      {/* Affiliations & labels */}
+      <SectionWrapper className="border-t border-grey-light bg-ivory">
+        <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
+          <FadeInSection>
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">Affiliations & labels</p>
+            <div className="mt-8 grid grid-cols-3 gap-6 sm:grid-cols-6">
+              {affiliations.map((a) => (
+                <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
+                  <div className="relative h-14 w-full">
+                    <Image src={a.logo} alt={a.name} fill className="object-contain" />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </FadeInSection>
+        </div>
+      </SectionWrapper>
+
+      {/* Membre de + Inscriptions */}
+      <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <FadeInSection>
             <h2 className="font-display text-2xl font-semibold text-navy">Membre de</h2>
@@ -81,49 +101,38 @@ export default function CabinetPage() {
           </FadeInSection>
 
           <FadeInSection>
-            <h2 className="mt-12 font-display text-2xl font-semibold text-navy">Inscriptions sur les listes</h2>
-            <div className="mt-6 grid gap-8 lg:grid-cols-2">
-              <div>
-                <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Cour d&apos;appel d&apos;Aix-en-Provence</p>
-                <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
-                  <li>C.18.1 — Valeurs vénales de murs, terrains, indemnités d&apos;expropriation</li>
-                  <li>C.18.2 — Valeurs locatives, indemnités d&apos;éviction, fonds de commerce</li>
-                  <li>C.18.3 — Droits sociaux à prépondérance immobilière</li>
-                  <li>C.18.4 — Préjudices immobiliers</li>
-                </ul>
+            <div className="mt-12 border-t border-grey-light pt-10">
+              <h2 className="font-display text-2xl font-semibold text-navy">Inscriptions sur les listes</h2>
+              <div className="mt-6 grid gap-8 lg:grid-cols-2">
+                <div>
+                  <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Cour d&apos;appel d&apos;Aix-en-Provence</p>
+                  <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
+                    <li>C.18.1 — Valeurs vénales de murs, terrains, indemnités d&apos;expropriation</li>
+                    <li>C.18.2 — Valeurs locatives, indemnités d&apos;éviction, fonds de commerce</li>
+                    <li>C.18.3 — Droits sociaux à prépondérance immobilière</li>
+                    <li>C.18.4 — Préjudices immobiliers</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Cour Administrative d&apos;Appel de Marseille</p>
+                  <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
+                    <li>C02-02 — Estimations immobilières</li>
+                    <li>C02-03 — Gestion immobilière</li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Cour Administrative d&apos;Appel de Marseille</p>
-                <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
-                  <li>C02-02 — Estimations immobilières</li>
-                  <li>C02-03 — Gestion immobilière</li>
-                </ul>
-              </div>
+              <p className="mt-8 font-sans text-sm font-light italic text-grey-mid">Serge Vitali est formateur au Centre de Formation à l&apos;Expertise Immobilière (CFEI).</p>
             </div>
-            <p className="mt-8 font-sans text-base font-light text-text">Serge Vitali est formateur au Centre de Formation à l&apos;Expertise Immobilière (CFEI).</p>
           </FadeInSection>
         </div>
       </SectionWrapper>
 
-      {/* Affiliations */}
-      <SectionWrapper className="border-t border-grey-light bg-white">
-        <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
-          <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">Affiliations & labels</p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-10">
-            {affiliations.map((a) => (
-              <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name}>
-                <Image src={a.logo} alt={a.name} width={a.small ? 60 : 100} height={a.small ? 60 : 100} className="object-contain opacity-80 hover:opacity-100 transition-opacity" style={{height: '80px', width: 'auto'}} />
-              </a>
-            ))}
-          </div>
-        </div>
-      </SectionWrapper>
       {/* Ils nous ont fait confiance */}
-      <SectionWrapper className="bg-ivory border-t border-grey-light">
-        <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
-          <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">Ils nous ont fait confiance</p>
-          <p className="mt-4 font-sans text-sm font-light text-grey-mid">Magistrats, avocats, notaires, entreprises et institutionnels nous confient leurs missions d&apos;expertise.</p>
+      <SectionWrapper className="border-t border-grey-light bg-ivory">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <LogoCarousel />
         </div>
       </SectionWrapper>
     </>
-  );}
+  );
+}
