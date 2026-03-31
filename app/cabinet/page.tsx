@@ -27,7 +27,6 @@ const portrait = "/images/serge.jpg";
 export default function CabinetPage() {
   return (
     <>
-      {/* Hero */}
       <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Le Cabinet" }]} />
@@ -36,11 +35,10 @@ export default function CabinetPage() {
         </div>
       </section>
 
-      {/* Présentation */}
       <SectionWrapper className="bg-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-2 lg:items-start lg:px-8 max-w-sm mx-auto lg:max-w-7xl">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-2 lg:items-start lg:px-8">
           <FadeInSection>
-          className="relative aspect-[3/4] max-w-xs mx-auto overflow-hidden rounded-lg shadow-elevated md:mx-0"
+            <div className="relative aspect-[3/4] max-w-xs mx-auto overflow-hidden rounded-lg shadow-elevated">
               <Image src={portrait} alt="Portrait de Serge Vitali" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
             <div className="mt-4 flex justify-center">
@@ -69,7 +67,6 @@ export default function CabinetPage() {
         </div>
       </SectionWrapper>
 
-      {/* Affiliations & labels */}
       <SectionWrapper className="border-t border-grey-light bg-ivory">
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
@@ -87,7 +84,6 @@ export default function CabinetPage() {
         </div>
       </SectionWrapper>
 
-      {/* Membre de + Inscriptions */}
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <FadeInSection>
@@ -99,7 +95,6 @@ export default function CabinetPage() {
               <li className="flex items-start gap-2"><span className="mt-1 text-gold">✦</span>La Compagnie des experts près la Cour Administrative d&apos;Appel de Marseille</li>
             </ul>
           </FadeInSection>
-
           <FadeInSection>
             <div className="mt-12 border-t border-grey-light pt-10">
               <h2 className="font-display text-2xl font-semibold text-navy">Inscriptions sur les listes</h2>
@@ -127,7 +122,6 @@ export default function CabinetPage() {
         </div>
       </SectionWrapper>
 
-      {/* Ils nous ont fait confiance */}
       <SectionWrapper className="border-t border-grey-light bg-ivory">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <LogoCarousel />
