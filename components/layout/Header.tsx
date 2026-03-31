@@ -13,6 +13,8 @@ const links = [
   { href: "/cabinet", label: "Le Cabinet" },
   { href: "/expertises", label: "Nos missions" },
   { href: "/expertise-judiciaire", label: "Savoir-faire" },
+  { href: "/arbitrage", label: "Arbitrage" },
+  { href: "/ingenierie", label: "Ingénierie immobilière" },
   { href: "/publications", label: "Publications" },
 ];
 
