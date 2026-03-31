@@ -51,19 +51,21 @@ export function ProcessSteps({
                   delay: rowIndex * 0.1,
                 }}
               />
-              <motion.svg
-                width="8"
-                height="12"
-                viewBox="0 0 8 12"
-                fill="none"
-                className="shrink-0"
-                initial={{ opacity: 0, x: -6 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.2, delay: rowIndex * 0.1 + 1.0 }}
-              >
-                <path d="M0 0 L8 6 L0 12 Z" fill="#0D1B2A" />
-              </motion.svg>
+              {rowIndex === rows.length - 1 && (
+                <motion.svg
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                  className="shrink-0"
+                  initial={{ opacity: 0, x: -6 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.2, delay: rowIndex * 0.1 + 1.0 }}
+                >
+                  <path d="M0 0 L8 6 L0 12 Z" fill="#0D1B2A" />
+                </motion.svg>
+              )}
             </div>
 
             <ol

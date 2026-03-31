@@ -11,7 +11,7 @@ import { MobileMenu } from "./MobileMenu";
 const links = [
   { href: "/", label: "Accueil" },
   { href: "/cabinet", label: "Le Cabinet" },
-  { href: "/expertises", label: "Expertises" },
+  { href: "/expertises", label: "Domaines d'intervention" },
   { href: "/expertise-judiciaire", label: "Expertise judiciaire" },
   { href: "/publications", label: "Publications" },
 ];

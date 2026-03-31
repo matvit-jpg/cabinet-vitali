@@ -15,19 +15,7 @@ const itemVariant = {
   }),
 };
 
-function buildColumns(images: string[], count: number): string[][] {
-  const cols: string[][] = Array.from({ length: count }, () => []);
-  const evenTotal = Math.floor(images.length / count) * count;
-  images.forEach((src, i) => {
-    // Les images "en trop" vont dans la colonne du milieu (col 1)
-    cols[i >= evenTotal ? 1 : i % count].push(src);
-  });
-  return cols;
-}
-
 export function PublicationsGrid() {
-  const cols3 = buildColumns(galleryImages, 3);
-  const cols2 = buildColumns(galleryImages, 2);
 
   return (
     <>
@@ -73,67 +61,56 @@ export function PublicationsGrid() {
         </div>
       </SectionWrapper>
 
-      {/* Galerie masonry */}
-      <SectionWrapper className="bg-ivory">
+      {/* Revue de presse */}
+      <SectionWrapper className="bg-[#F2F0EB]">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
 
-          {/* Desktop : 3 colonnes */}
-          <div className="hidden gap-5 lg:flex lg:items-start">
-            {cols3.map((col, ci) => (
-              <div key={ci} className="flex flex-1 flex-col gap-5">
-                {col.map((src, ri) => {
-                  const delay = ci * 0.1 + ri * 0.15;
-                  return (
-                    <motion.div
-                      key={ri}
-                      custom={delay}
-                      variants={itemVariant}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: true, margin: "-60px" }}
-                      className="group overflow-hidden rounded-sm bg-grey-light shadow-card"
-                    >
-                      <Image
-                        src={src}
-                        alt={`Publication ${ci + ri * 3 + 1}`}
-                        width={600}
-                        height={800}
-                        className="w-full object-contain transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-                      />
-                    </motion.div>
-                  );
-                })}
-              </div>
-            ))}
+          {/* Titre de section */}
+          <div className="mb-10 flex items-center gap-4">
+            <div className="h-px flex-1 bg-navy/15" />
+            <span className="font-sans text-xs font-semibold uppercase tracking-widest text-navy/50">
+              Revue de presse &amp; publications
+            </span>
+            <div className="h-px flex-1 bg-navy/15" />
           </div>
 
-          {/* Mobile / tablette : 2 colonnes */}
-          <div className="flex gap-4 lg:hidden">
-            {cols2.map((col, ci) => (
-              <div key={ci} className="flex flex-1 flex-col gap-4">
-                {col.map((src, ri) => {
-                  const delay = ci * 0.08 + ri * 0.12;
-                  return (
-                    <motion.div
-                      key={ri}
-                      custom={delay}
-                      variants={itemVariant}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: true, margin: "-40px" }}
-                      className="group overflow-hidden rounded-sm bg-grey-light shadow-card"
-                    >
-                      <Image
-                        src={src}
-                        alt={`Publication ${ci + ri * 2 + 1}`}
-                        width={400}
-                        height={600}
-                        className="w-full object-contain transition-transform duration-500 ease-out group-hover:scale-[1.02]"
-                      />
-                    </motion.div>
-                  );
-                })}
-              </div>
+          <div className="grid grid-cols-2 gap-6 lg:grid-cols-5">
+            {galleryImages.map((src, i) => (
+              <motion.div
+                key={src}
+                custom={i * 0.07}
+                variants={itemVariant}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, margin: "-50px" }}
+                className="group relative bg-white shadow-[0_2px_12px_rgba(13,27,42,0.08)] transition-shadow duration-300 hover:shadow-[0_6px_24px_rgba(13,27,42,0.14)]"
+              >
+                {/* Ruban doré en haut */}
+                <div className="h-1 w-full bg-gold/60" />
+
+                {/* Ornements d'angle */}
+                {/* Haut-gauche */}
+                <span className="pointer-events-none absolute left-2 top-3 h-4 w-4 border-l border-t border-gold/40" />
+                {/* Haut-droit */}
+                <span className="pointer-events-none absolute right-2 top-3 h-4 w-4 border-r border-t border-gold/40" />
+                {/* Bas-gauche */}
+                <span className="pointer-events-none absolute bottom-2 left-2 h-4 w-4 border-b border-l border-gold/40" />
+                {/* Bas-droit */}
+                <span className="pointer-events-none absolute bottom-2 right-2 h-4 w-4 border-b border-r border-gold/40" />
+
+                <div className="relative h-64 w-full overflow-hidden p-2">
+                  <Image
+                    src={src}
+                    alt={`Publication ${i + 1}`}
+                    fill
+                    className="object-contain transition-transform duration-500 ease-out group-hover:scale-[1.015]"
+                  />
+                </div>
+                {/* Numéro discret */}
+                <div className="absolute bottom-3 right-3 flex h-6 w-6 items-center justify-center rounded-full bg-navy/8 font-sans text-[10px] font-medium text-navy/40">
+                  {i + 1}
+                </div>
+              </motion.div>
             ))}
           </div>
 

@@ -21,6 +21,13 @@ export default function HomePage() {
       <HomeIntro />
       <DecideursLogo />
       <ExpertiseGrid />
+      <div className="bg-white">
+        <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 lg:px-8">
+          <div className="h-px flex-1 bg-gold/30" />
+          <span className="text-gold text-lg" aria-hidden>✦</span>
+          <div className="h-px flex-1 bg-gold/30" />
+        </div>
+      </div>
       <HomeProcess />
       <Testimonials />
       <FinalCta />
