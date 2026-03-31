@@ -1,6 +1,5 @@
 import { createMetadata } from "@/lib/metadata";
 import { Hero } from "@/components/sections/Hero";
-import { TrustBar } from "@/components/sections/TrustBar";
 import { HomeIntro } from "@/components/sections/HomeIntro";
 import { DecideursLogo } from "@/components/sections/DecideursLogo";
 import { ExpertiseGrid } from "@/components/sections/ExpertiseGrid";
@@ -19,7 +18,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TrustBar />
       <HomeIntro />
       <DecideursLogo />
       <ExpertiseGrid />

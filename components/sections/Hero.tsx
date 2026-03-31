@@ -2,32 +2,47 @@
 
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { Button } from "@/components/ui/Button";
 import { AnimatedLine, AnimatedText } from "@/components/ui/AnimatedText";
 
 const heroImage = "/images/ndg.jpeg";
 
 export function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  // L'image grossit légèrement au scroll : 1.0 → 1.12
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.12]);
+  // Elle monte légèrement pour accentuer l'effet
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
+
   return (
-    <section className="relative min-h-[90vh] overflow-hidden">
-      <Image
-        src={heroImage}
-        alt=""
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
-      />
-      <div
-        className="absolute inset-0 bg-navy/70"
-        aria-hidden
-      />
+    <section ref={sectionRef} className="relative min-h-[90vh] overflow-hidden">
+      <motion.div
+        className="absolute inset-0"
+        style={{ scale, y }}
+      >
+        <Image
+          src={heroImage}
+          alt=""
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+      </motion.div>
+      <div className="absolute inset-0 bg-navy/70" aria-hidden />
       <div className="relative z-10 flex min-h-[90vh] flex-col items-center justify-center px-4 pb-24 pt-32 text-center">
         <AnimatedText>
           <AnimatedLine>
-          <h1 className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance">
-            Comprendre, analyser, conclure… pour vous faire gagner en clarté.
+            <h1 className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance">
+              Comprendre, analyser, conclure… pour vous faire gagner en clarté.
             </h1>
           </AnimatedLine>
           <AnimatedLine>
@@ -37,14 +52,14 @@ export function Hero() {
             </p>
           </AnimatedLine>
           <AnimatedLine>
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-  <Button href="/cabinet" variant="primary" className="w-64 text-center">
-    Découvrir le cabinet
-  </Button>
-  <Button href="/contact" variant="primary" className="w-64 text-center">
-    Prendre contact
-  </Button>
-</div>
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Button href="/cabinet" variant="primary" className="w-64 text-center">
+                Découvrir le cabinet
+              </Button>
+              <Button href="/contact" variant="primary" className="w-64 text-center">
+                Prendre contact
+              </Button>
+            </div>
           </AnimatedLine>
         </AnimatedText>
         <motion.a
