@@ -37,8 +37,8 @@ export default function CabinetPage() {
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-2 lg:items-start lg:px-8">
-          <FadeInSection>
-            <div className="relative aspect-[3/4] max-w-xs mx-auto overflow-hidden rounded-lg shadow-elevated">
+        <FadeInSection>
+            <div className="relative aspect-[3/4] w-48 mx-auto overflow-hidden rounded-lg shadow-elevated">
               <Image src={portrait} alt="Portrait de Serge Vitali" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
             </div>
             <div className="mt-4 flex justify-center">
