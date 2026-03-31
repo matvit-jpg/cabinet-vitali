@@ -3,16 +3,16 @@ import { FadeInSection } from "@/components/motion/FadeInSection";
 
 const quotes = [
   {
-    text: "Un rapport d'une clarté rare, parfaitement exploitable en audience. La méthodologie est limpide.",
-    author: "Avocat au barreau de Paris",
+    text: "Inscrit sur les listes d'experts de la Cour d'appel d'Aix-en-Provence et de la Cour administrative d'appel de Marseille. Assermenté, avec compétence professionnelle de haut niveau, rigueur intellectuelle et morale.",
+    author: "Expert judiciaire agréé",
   },
   {
-    text: "Réactivité et rigueur dans une procédure sensible : l'expertise a permis de débloquer le dossier.",
-    author: "Magistrat, tribunal judiciaire",
+    text: "Conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise — titulaire du label REV (Recognised European Valuer).",
+    author: "Normes européennes d'expertise — label REV",
   },
   {
-    text: "Documentation exhaustive et chiffrages défendables devant notre comité de direction.",
-    author: "Direction juridique, groupe coté",
+    text: "Inscrit sur la liste des arbitres du CMAP, leader en France en résolution des conflits pour les entreprises, offrant un mode alternatif rapide, confidentiel et maîtrisé en coûts.",
+    author: "Arbitre — CMAP, Paris",
   },
 ];
 
@@ -22,10 +22,10 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <FadeInSection>
           <h2 className="font-display text-4xl font-semibold tracking-tight text-navy">
-            Références
+            Accréditations & engagements
           </h2>
           <p className="mt-3 font-sans text-gold italic">
-            La confiance des professionnels du droit et des entreprises
+            Des garanties officielles au service de vos dossiers
           </p>
         </FadeInSection>
         <div className="mt-14 grid gap-12 md:grid-cols-3">
