@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/Button";
 const links = [
   { href: "/", label: "Accueil" },
   { href: "/cabinet", label: "Le Cabinet" },
-  { href: "/expertises", label: "Expertises" },
-  { href: "/expertise-judiciaire", label: "Expertise judiciaire" },
+  { href: "/expertises", label: "Nos missions" },
+  { href: "/expertise-judiciaire", label: "Savoir-faire" },
   { href: "/publications", label: "Publications" },
   { href: "/contact", label: "Contact" },
 ];
