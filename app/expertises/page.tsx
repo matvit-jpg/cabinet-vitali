@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ExpertiseListCard } from "@/components/sections/ExpertiseListCard";
 
 export const metadata = createMetadata({
-  title: "Expertises",
+  title: "Nos missions",
   description:
     "Domaines d'intervention : expertise judiciaire, évaluation immobilière, valeurs locatives, expropriation, préjudices et conseil.",
   path: "/expertises",
@@ -19,11 +19,11 @@ export default function ExpertisesPage() {
           <Breadcrumb
             items={[
               { label: "Accueil", href: "/" },
-              { label: "Expertises" },
+              { label: "Nos missions" },
             ]}
           />
           <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
-            Expertises
+            Nos missions
           </h1>
           <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">
             Des missions adaptées aux enjeux patrimoniaux, amiables ou
