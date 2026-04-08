@@ -20,15 +20,17 @@ export function HomeIntro() {
             </h2>
             <div className="mt-6 space-y-4 font-sans text-base font-light leading-relaxed text-text">
               <p>
-                Le cabinet accompagne les juridictions et les parties dans les
-                procédures où la valeur des biens immobiliers est déterminante.
-                Chaque mission est conduite avec exigence : méthodes documentées,
-                investigations sur le terrain et rapport motivé.
+                Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence
+                et la Cour administrative d&apos;appel de Marseille, Serge VITALI
+                intervient dans tous les domaines de l&apos;expertise immobilière :
+                évaluation de biens, fixation de valeurs locatives, détermination
+                d&apos;indemnités, analyse de préjudices et accompagnement
+                stratégique en contentieux ou en prévention des litiges.
               </p>
               <p>
-                L&apos;indépendance, la transparence des hypothèses et la
-                cohérence avec les normes professionnelles constituent les
-                piliers de notre engagement.
+                Rigueur juridique, connaissance approfondie du marché, rapports
+                motivés et exploitables : nous vous apportons des conclusions
+                fiables pour éclairer vos décisions.
               </p>
             </div>
           </FadeInSection>
