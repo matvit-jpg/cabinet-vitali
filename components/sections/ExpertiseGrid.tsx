@@ -20,11 +20,14 @@ export function ExpertiseGrid() {
         </FadeInSection>
         <Divider />
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {expertises.slice(0, 3).map((e) => (
-            <FadeInSection key={e.slug}>
-              <ExpertiseCard expertise={e} href={`/expertises/${e.slug}`} />
-            </FadeInSection>
-          ))}
+          {["valeurs-locatives", "evaluation-immobiliere", "prejudices-immobiliers"].map((slug) => {
+            const e = expertises.find((x) => x.slug === slug)!;
+            return (
+              <FadeInSection key={e.slug}>
+                <ExpertiseCard expertise={e} href={`/expertises/${e.slug}`} />
+              </FadeInSection>
+            );
+          })}
         </div>
         <div className="mt-14 flex justify-center">
           <Button href="/expertises" variant="secondary">

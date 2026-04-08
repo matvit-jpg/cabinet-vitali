@@ -3,7 +3,6 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
-import { Badge } from "@/components/ui/Badge";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 import { LogoCarousel } from "@/components/sections/LogoCarousel";
 
@@ -14,12 +13,10 @@ export const metadata = createMetadata({
 });
 
 const affiliations = [
-  { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "https://static.wixstatic.com/media/a80145_e4e3177667df41429487d916dcb617f2~mv2.jpg/v1/fill/w_89,h_121,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a80145_e4e3177667df41429487d916dcb617f2~mv2.jpg", small: true },
+  { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "https://static.wixstatic.com/media/a80145_e4e3177667df41429487d916dcb617f2~mv2.jpg/v1/fill/w_89,h_121,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a80145_e4e3177667df41429487d916dcb617f2~mv2.jpg" },
   { name: "Fédération Nationale des Experts Évaluateurs Fonciers", url: "https://eefic.eu/accueil.html", logo: "https://static.wixstatic.com/media/a80145_1f7b0e6bb51947fe88d2e446e4bb9920~mv2.png/v1/fill/w_101,h_101,al_c,q_85,enc_avif,quality_auto/EEFIC.png" },
   { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "https://static.wixstatic.com/media/a80145_7cb8c363d96b41f3b4e93d3d1effa9ba~mv2_d_4252_2186_s_2.jpg/v1/crop/x_298,y_153,w_3702,h_1903/fill/w_195,h_101,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20CEF%20expert.jpg" },
   { name: "Compagnie des experts près la CAA de Marseille", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "https://static.wixstatic.com/media/a80145_4c0e85080d744f6aa8289b6dc5279f48~mv2.png/v1/fill/w_204,h_109,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20cecaam.png" },
-  { name: "Recognised European Valuer (REV)", url: "https://www.tegova.org", logo: "https://static.wixstatic.com/media/2c5f6e_bd6fe5d4751649b89f15650a0d7c9d72~mv2.png/v1/fill/w_91,h_91,al_c,q_85,enc_avif,quality_auto/rev.png" },
-  { name: "Centre de Formation à l'Expertise Immobilière", url: "https://www.cfei.fr", logo: "https://static.wixstatic.com/media/a80145_8b30c24bb61e4240b38010c6f48fb73f~mv2.jpeg/v1/fill/w_101,h_78,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Unknown.jpeg" },
 ];
 
 const portrait = "/images/serge.jpg";
@@ -31,7 +28,7 @@ export default function CabinetPage() {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Le Cabinet" }]} />
           <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">Le Cabinet</h1>
-          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">Rigueur méthodologique, indépendance et respect du contradictoire.</p>
+          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">Rigueur méthodologique et indépendance.</p>
         </div>
       </section>
 
@@ -57,13 +54,9 @@ export default function CabinetPage() {
               <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;Appel d&apos;Aix-en-Provence et la Cour Administrative d&apos;Appel de Marseille.</p>
               <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels.</p>
               <p>Notre cabinet est également spécialisé dans les problématiques liées aux baux commerciaux (déplafonnement, valeur locative, indemnité d&apos;éviction).</p>
-              <p>Nous réalisons également des études d&apos;urbanisme afin d&apos;évaluer les terrains à bâtir. Nous pouvons intervenir sur le plan national.</p>
+              <p>Nous réalisons également des études d&apos;urbanisme afin d&apos;évaluer les terrains à bâtir.</p>
+              <p>Nous pouvons intervenir sur le plan national.</p>
               <p>Nous nous conformons à la charte de l&apos;expertise en évaluation immobilière, établie par les principales compagnies nationales d&apos;experts immobiliers et consacrée par la jurisprudence ainsi qu&apos;aux normes européennes d&apos;expertise.</p>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-2">
-              <Badge>Agréé Cour d&apos;appel d&apos;Aix-en-Provence</Badge>
-              <Badge>Normes REV</Badge>
-              <Badge>Formateur CFEI</Badge>
             </div>
           </FadeInSection>
         </div>
@@ -72,11 +65,11 @@ export default function CabinetPage() {
       <SectionWrapper className="border-t border-grey-light bg-ivory">
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">Affiliations & labels</p>
-            <div className="mt-8 grid grid-cols-3 gap-6 sm:grid-cols-6">
+            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Le cabinet Vitali est membre des compagnies suivantes</p>
+            <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {affiliations.map((a) => (
-                <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
-                  <div className="relative h-14 w-full">
+                <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-6 opacity-70 transition-opacity hover:opacity-100">
+                  <div className="relative h-24 w-full">
                     <Image src={a.logo} alt={a.name} fill className="object-contain" />
                   </div>
                 </a>
@@ -89,36 +82,49 @@ export default function CabinetPage() {
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <FadeInSection>
-            <h2 className="font-display text-2xl font-semibold text-navy">Membre de</h2>
-            <ul className="mt-6 space-y-3 font-sans text-base font-light text-text">
-              <li className="flex items-start gap-2"><span className="mt-1 text-gold">✦</span>La Compagnie Nationale des Experts de Justice immobiliers</li>
-              <li className="flex items-start gap-2"><span className="mt-1 text-gold">✦</span>Fédération Nationale des Experts Évaluateurs Fonciers Immobiliers et Commerciaux</li>
-              <li className="flex items-start gap-2"><span className="mt-1 text-gold">✦</span>La Confédération des Experts Fonciers et membre du conseil national (CNEFAF)</li>
-              <li className="flex items-start gap-2"><span className="mt-1 text-gold">✦</span>La Compagnie des experts près la Cour Administrative d&apos;Appel de Marseille</li>
-            </ul>
-          </FadeInSection>
-          <FadeInSection>
-            <div className="mt-12 border-t border-grey-light pt-10">
-              <h2 className="font-display text-2xl font-semibold text-navy">Inscriptions sur les listes</h2>
-              <div className="mt-6 grid gap-8 lg:grid-cols-2">
-                <div>
-                  <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Cour d&apos;appel d&apos;Aix-en-Provence</p>
-                  <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
-                    <li>C.18.1 — Valeurs vénales de murs, terrains, indemnités d&apos;expropriation</li>
-                    <li>C.18.2 — Valeurs locatives, indemnités d&apos;éviction, fonds de commerce</li>
-                    <li>C.18.3 — Droits sociaux à prépondérance immobilière</li>
-                    <li>C.18.4 — Préjudices immobiliers</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Cour Administrative d&apos;Appel de Marseille</p>
-                  <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
-                    <li>C02-02 — Estimations immobilières</li>
-                    <li>C02-03 — Gestion immobilière</li>
-                  </ul>
+            <div className="grid lg:grid-cols-2 lg:divide-x lg:divide-grey-light">
+              {/* Colonne gauche — REV */}
+              <div className="pr-0 lg:pr-12">
+                <h2 className="font-display text-2xl font-semibold text-navy">Certifié par</h2>
+                <a href="https://www.tegova.org" target="_blank" rel="noopener noreferrer" title="Recognised European Valuer (REV)" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
+                  <div className="relative h-20 w-20">
+                    <Image src="https://static.wixstatic.com/media/2c5f6e_bd6fe5d4751649b89f15650a0d7c9d72~mv2.png/v1/fill/w_91,h_91,al_c,q_85,enc_avif,quality_auto/rev.png" alt="REV" fill className="object-contain" />
+                  </div>
+                </a>
+                <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
+                  <p>Le cabinet Vitali est certifié <strong>REV</strong> par TEGOVA.</p>
+                  <p>Le statut <strong>REV</strong> est symbole d&apos;excellence en matière d&apos;évaluation immobilière.</p>
+                  <p>L&apos;évaluateur est qualifié conformément aux standards Européens d&apos;évaluation immobilière les plus stricts.</p>
+                  <p>Depuis sa création, le statut REV a été décerné par les principales associations d&apos;experts en évaluation immobilière à travers l&apos;Europe.</p>
                 </div>
               </div>
-              <p className="mt-8 font-sans text-sm font-light italic text-grey-mid">Serge Vitali est formateur au Centre de Formation à l&apos;Expertise Immobilière (CFEI).</p>
+              {/* Colonne droite — CFEI */}
+              <div className="mt-12 lg:mt-0 lg:pl-12">
+                <h2 className="font-display text-2xl font-semibold text-navy">Formateur</h2>
+                <a href="https://www.cfei.fr" target="_blank" rel="noopener noreferrer" title="Centre de Formation à l'Expertise Immobilière" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
+                  <div className="relative h-20 w-20">
+                    <Image src="https://static.wixstatic.com/media/a80145_8b30c24bb61e4240b38010c6f48fb73f~mv2.jpeg/v1/fill/w_101,h_78,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Unknown.jpeg" alt="CFEI" fill className="object-contain" />
+                  </div>
+                </a>
+                <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
+                  <p>Serge Vitali est formateur au Centre de Formation et de perfectionnement à l&apos;Expertise Immobilière (CFEI).</p>
+                  <p>Leader de la formation aux méthodes d&apos;évaluation immobilière, foncière et commerciale.</p>
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
+          <FadeInSection>
+            <div className="mt-12 border-t border-grey-light pt-10 text-center">
+              <h2 className="font-display text-2xl font-semibold text-navy">Inscription sur les listes dans les rubriques suivantes :</h2>
+              <p className="mt-2 font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+                Cour d&apos;appel d&apos;Aix-en-Provence &amp; Cour administrative d&apos;appel de Marseille
+              </p>
+              <ul className="mt-6 space-y-2 font-sans text-sm font-light text-text">
+                <li>C.18.1 — Valeurs vénales de murs, terrains, indemnités d&apos;expropriation</li>
+                <li>C.18.2 — Valeurs locatives, indemnités d&apos;éviction, fonds de commerce</li>
+                <li>C.18.3 — Droits sociaux à prépondérance immobilière</li>
+                <li>C.18.4 — Préjudices immobiliers</li>
+              </ul>
             </div>
           </FadeInSection>
         </div>

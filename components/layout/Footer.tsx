@@ -18,8 +18,7 @@ export function Footer() {
         <div>
           <p className="font-display text-2xl tracking-tight">{SITE.cabinetFull}</p>
           <p className="mt-2 font-sans text-sm font-light text-ivory/80">
-            Expert judiciaire agréé — évaluations immobilières et rapports motivés
-            pour les juridictions et les professionnels.
+            Expert judiciaire — évaluation immobilière et stratégie immobilière.
           </p>
         </div>
         <div>
@@ -44,11 +43,13 @@ export function Footer() {
             Contact
           </p>
           <address className="mt-4 not-italic font-sans text-sm leading-relaxed text-ivory/85">
-            {SITE.addressLines.map((line) => (
-              <span key={line} className="block">
-                {line}
-              </span>
-            ))}
+            <span className="block text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">Adresse postale</span>
+            <span className="block">46b Boulevard Sicard</span>
+            <span className="block">13008 Marseille</span>
+            <span className="block mt-3 text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">Siège</span>
+            <span className="block">22 avenue de Verdun</span>
+            <span className="block">13400 Aubagne</span>
+            <span className="block">France</span>
             <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="mt-2 block hover:text-gold">
               {SITE.phone}
             </a>

@@ -45,7 +45,7 @@ export function Header() {
   return (
     <>
       <header className={`sticky top-0 z-40 border-b transition-colors duration-300 ${scrolled ? "border-grey-light/60 bg-ivory/85 backdrop-blur-md" : "border-transparent bg-ivory/70 backdrop-blur-sm"}`}>
-        <div className="grid grid-cols-3 items-center px-8 py-6 lg:px-20">
+        <div className="grid grid-cols-3 items-center px-4 py-5 lg:px-6">
 
           {/* Gauche — Logo + tagline */}
           <div className="flex items-center gap-4 justify-self-start">
@@ -53,15 +53,12 @@ export function Header() {
               <Image
                 src="/images/logo.jpg"
                 alt={SITE.cabinetFull}
-                width={160}
-                height={80}
+                width={220}
+                height={110}
                 className="object-contain"
                 priority
               />
             </Link>
-            <span className="hidden lg:block font-sans text-sm font-semibold uppercase tracking-widest text-gold whitespace-nowrap">
-              Expertise et Stratégie Immobilière
-            </span>
           </div>
 
           {/* Centre — Navigation */}
@@ -71,7 +68,7 @@ export function Header() {
                 const isActive = l.dropdown.some(d => pathname.startsWith(d.href));
                 return (
                   <div key="expertises" className="relative" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-                    <button className={`group relative flex items-center gap-1.5 font-sans text-lg font-medium transition hover:text-gold ${isActive ? "text-gold" : "text-navy"}`}>
+                    <button className={`group relative flex items-center gap-1.5 font-sans text-xl font-medium transition hover:text-gold ${isActive ? "text-gold" : "text-navy"}`}>
                       {l.label}
                       <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
                       <span className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-gold transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} aria-hidden />
@@ -98,7 +95,7 @@ export function Header() {
               }
               const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
               return (
-                <Link key={l.href} href={l.href} className={`group relative font-sans text-lg font-medium transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
+                <Link key={l.href} href={l.href} className={`group relative font-sans text-xl font-medium transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
                   {l.label}
                   <span className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-gold transition-transform duration-300 ${active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} aria-hidden />
                 </Link>
