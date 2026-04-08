@@ -75,7 +75,7 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Clock className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
-                  <span>Réponse sous 48h ouvrées.</span>
+                  <span>Uniquement sur RDV.</span>
                 </li>
               </ul>
             </div>

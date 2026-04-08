@@ -37,3 +37,15 @@ body {
 .map-sepia iframe {
   filter: sepia(0.35) contrast(0.95) brightness(1.05);
 }
+
+/* Expertise cards mosaic — grille 2×3 */
+.expertise-card:nth-child(1) { --card-bg-pos: 0% 0%; }
+.expertise-card:nth-child(2) { --card-bg-pos: 100% 0%; }
+.expertise-card:nth-child(3) { --card-bg-pos: 0% 50%; }
+.expertise-card:nth-child(4) { --card-bg-pos: 100% 50%; }
+.expertise-card:nth-child(5) { --card-bg-pos: 0% 100%; }
+.expertise-card:nth-child(6) { --card-bg-pos: 100% 100%; }
+
+/* Mosaïque 2×3 exacte — identique mobile et desktop */
+.expertise-card { --card-bg-size: 200% 300%; }
+

@@ -7,7 +7,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/Button";
 import { AnimatedLine, AnimatedText } from "@/components/ui/AnimatedText";
 
-const heroImage = "/images/ndg.jpeg";
+const heroImage = "/images/hero.jpg";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -33,7 +33,7 @@ export function Hero() {
           alt=""
           fill
           priority
-          className="object-cover object-[75%_30%] md:object-center"
+          className="object-cover object-center"
           sizes="100vw"
         />
       </motion.div>
@@ -46,17 +46,17 @@ export function Hero() {
             </h1>
           </AnimatedLine>
           <AnimatedLine>
-            <p className="mx-auto mt-6 max-w-2xl font-sans text-lg font-light leading-relaxed text-ivory/90 md:text-xl">
-              Expert judiciaire agréé près la Cour d&apos;appel — évaluations
-              immobilières opposables devant les tribunaux.
-            </p>
+            <div className="mx-auto mt-6 text-center font-sans text-lg font-light text-ivory/90 md:text-xl">
+              <p>Cabinet d&apos;expertise immobilière dirigé par Serge Vitali,</p>
+              <p>expert judiciaire près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
+            </div>
           </AnimatedLine>
           <AnimatedLine>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button href="/cabinet" variant="primary" className="w-64 text-center">
+              <Button href="/cabinet" variant="ghost" className="w-64 text-center border border-white/60 text-white hover:bg-white/10 hover:border-white">
                 Découvrir le cabinet
               </Button>
-              <Button href="/contact" variant="primary" className="w-64 text-center">
+              <Button href="/contact" variant="ghost" className="w-64 text-center border border-white/60 text-white hover:bg-white/10 hover:border-white">
                 Prendre contact
               </Button>
             </div>

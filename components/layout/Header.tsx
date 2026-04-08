@@ -44,13 +44,13 @@ export function Header() {
   return (
     <>
       <header className={`sticky top-0 z-40 border-b transition-colors duration-300 ${scrolled ? "border-grey-light/60 bg-ivory/85 backdrop-blur-md" : "border-transparent bg-ivory/70 backdrop-blur-sm"}`}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 lg:px-8">
-          <Link href="/" className="group flex flex-col" aria-label={`${SITE.cabinetFull} — Accueil`}>
+        <div className="mx-auto grid max-w-7xl grid-cols-3 items-center px-4 py-4 lg:px-8">
+          <Link href="/" className="group flex flex-col text-center justify-self-start" aria-label={`${SITE.cabinetFull} — Accueil`}>
             <span className="font-display text-2xl tracking-tight text-navy">{SITE.cabinetFull}</span>
             <span className="font-sans text-xs font-medium uppercase tracking-widest text-gold">{SITE.tagline}</span>
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Navigation principale">
+          <nav className="hidden items-center justify-center gap-8 lg:flex" aria-label="Navigation principale">
             {links.map((l) => {
               if (l.dropdown) {
                 const isActive = l.dropdown.some(d => pathname.startsWith(d.href));
@@ -92,7 +92,7 @@ export function Header() {
             })}
           </nav>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-end gap-3">
             <Button href="/contact" variant="primary" className="hidden sm:inline-flex" aria-label="Aller à la page contact">Contact</Button>
             <button type="button" className="rounded-sm p-2 text-navy hover:bg-grey-light lg:hidden" onClick={() => setMenuOpen(true)} aria-label="Ouvrir le menu de navigation" aria-expanded={menuOpen}>
               <Menu className="h-6 w-6" />
