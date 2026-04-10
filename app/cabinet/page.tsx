@@ -27,8 +27,8 @@ export default function CabinetPage() {
       <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Le Cabinet" }]} />
-          <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">Le Cabinet</h1>
-          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">Rigueur méthodologique et indépendance.</p>
+          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">Le Cabinet</h1>
+          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">Rigueur méthodologique et indépendance.</p>
         </div>
       </section>
 
@@ -50,7 +50,7 @@ export default function CabinetPage() {
             </div>
           </FadeInSection>
           <FadeInSection>
-            <div className="space-y-4 font-sans text-lg font-light leading-relaxed text-text text-justify">
+            <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text text-justify md:text-base">
               <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;Appel d&apos;Aix-en-Provence et la Cour Administrative d&apos;Appel de Marseille.</p>
               <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels.</p>
               <p>Notre cabinet est également spécialisé dans les problématiques liées aux baux commerciaux (déplafonnement, valeur locative, indemnité d&apos;éviction).</p>

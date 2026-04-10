@@ -16,10 +16,10 @@ export function DecideursLogo() {
       <div className="relative z-10 grid grid-cols-1 gap-16 px-6 lg:grid-cols-2 lg:px-0 lg:items-center">
         {/* Colonne gauche — texte */}
         <div className="lg:pl-16 xl:pl-24">
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-ivory md:text-4xl">
+          <h2 className="font-display text-xl font-semibold tracking-tight text-ivory md:text-4xl">
             Expertise et Stratégie Immobilière
           </h2>
-          <div className="mt-6 space-y-4 font-sans text-base font-light leading-relaxed text-ivory/80 text-justify">
+          <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-ivory/80 text-justify md:text-base">
             <p>
               Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence
               et la Cour administrative d&apos;appel de Marseille, Serge VITALI
@@ -39,12 +39,12 @@ export function DecideursLogo() {
         {/* Colonne droite — badge Décideurs */}
         <div className="flex flex-col items-center lg:pr-16 xl:pr-24">
           {/* Ligne décorative dorée */}
-          <div className="flex items-center gap-4 mb-8 w-full justify-center">
-            <div className="h-px w-16 bg-gold/60" />
+          <div className="flex items-center gap-4 mb-8 w-full">
+            <div className="h-px flex-1 bg-gold/60" />
             <span className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
               Reconnaissance professionnelle
             </span>
-            <div className="h-px w-16 bg-gold/60" />
+            <div className="h-px flex-1 bg-gold/60" />
           </div>
 
           <a

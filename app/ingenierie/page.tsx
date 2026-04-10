@@ -15,15 +15,15 @@ export default function IngenieriePage() {
       <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Ingénierie immobilière" }]} />
-          <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">Ingénierie immobilière</h1>
-          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">Services stratégiques complets pour les bailleurs et preneurs en immobilier commercial.</p>
+          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">Ingénierie immobilière</h1>
+          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">Services stratégiques complets pour les bailleurs et preneurs en immobilier commercial.</p>
         </div>
       </section>
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">
           <FadeInSection>
-            <p className="font-sans text-lg font-light leading-relaxed text-text">Notre cabinet propose des services stratégiques complets pour les bailleurs et preneurs en immobilier commercial. Notre expertise se concentre sur l&apos;analyse juridique et technique afin de maximiser la valeur des biens immobiliers et d&apos;optimiser les décisions prises.</p>
+            <p className="font-sans text-sm font-light leading-relaxed text-text md:text-base">Notre cabinet propose des services stratégiques complets pour les bailleurs et preneurs en immobilier commercial. Notre expertise se concentre sur l&apos;analyse juridique et technique afin de maximiser la valeur des biens immobiliers et d&apos;optimiser les décisions prises.</p>
           </FadeInSection>
 
           {/* Bailleurs */}

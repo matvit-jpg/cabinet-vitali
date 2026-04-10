@@ -47,9 +47,12 @@ export function Header() {
       <header className={`sticky top-0 z-40 border-b transition-colors duration-300 ${scrolled ? "border-grey-light/60 bg-ivory/85 backdrop-blur-md" : "border-transparent bg-ivory/70 backdrop-blur-sm"}`}>
         <div className="grid grid-cols-3 items-center px-4 py-5 lg:px-6">
 
-          {/* Gauche — Logo + tagline */}
-          <div className="flex items-center gap-4 justify-self-start">
-            <Link href="/" aria-label={`${SITE.cabinetFull} — Accueil`}>
+          {/* Gauche — Hamburger sur mobile, logo sur desktop */}
+          <div className="justify-self-start">
+            <button type="button" className="rounded-sm p-2 text-navy hover:bg-grey-light lg:hidden" onClick={() => setMenuOpen(true)} aria-label="Ouvrir le menu de navigation" aria-expanded={menuOpen}>
+              <Menu className="h-6 w-6" />
+            </button>
+            <Link href="/" aria-label={`${SITE.cabinetFull} — Accueil`} className="hidden lg:block">
               <Image
                 src="/images/logo.jpg"
                 alt={SITE.cabinetFull}
@@ -61,7 +64,19 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Centre — Navigation */}
+          {/* Centre — Logo mobile + Navigation desktop */}
+          <div className="flex justify-center lg:hidden">
+            <Link href="/" aria-label={`${SITE.cabinetFull} — Accueil`}>
+              <Image
+                src="/images/logo.jpg"
+                alt={SITE.cabinetFull}
+                width={220}
+                height={110}
+                className="object-contain w-28"
+                priority
+              />
+            </Link>
+          </div>
           <nav className="hidden items-center justify-center gap-10 lg:flex" aria-label="Navigation principale">
             {links.map((l) => {
               if (l.dropdown) {
@@ -105,12 +120,12 @@ export function Header() {
 
           {/* Droite — bouton Contact */}
           <div className="flex items-center justify-end gap-3">
-            <Button href="/contact" variant="primary" className="hidden sm:inline-flex" aria-label="Aller à la page contact">
+            <Button href="/contact" variant="primary" className="lg:hidden !text-[10px] !px-2.5 !py-1.5" aria-label="Aller à la page contact">
               Contact
             </Button>
-            <button type="button" className="rounded-sm p-2 text-navy hover:bg-grey-light lg:hidden" onClick={() => setMenuOpen(true)} aria-label="Ouvrir le menu de navigation" aria-expanded={menuOpen}>
-              <Menu className="h-6 w-6" />
-            </button>
+            <Button href="/contact" variant="primary" className="hidden lg:inline-flex" aria-label="Aller à la page contact">
+              Contact
+            </Button>
           </div>
 
         </div>

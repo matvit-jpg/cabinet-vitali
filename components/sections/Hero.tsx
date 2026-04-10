@@ -46,7 +46,7 @@ export function Hero() {
             </h1>
           </AnimatedLine>
           <AnimatedLine>
-            <div className="mx-auto mt-6 text-center font-sans text-lg font-light text-ivory/90 md:text-xl">
+            <div className="mx-auto mt-6 text-center font-sans text-sm font-light text-ivory/90 md:text-xl">
               <p>Cabinet d&apos;expertise immobilière dirigé par Serge Vitali,</p>
               <p>expert judiciaire près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
             </div>

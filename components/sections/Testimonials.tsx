@@ -21,7 +21,7 @@ export function Testimonials() {
     <SectionWrapper className="bg-ivory">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <FadeInSection>
-          <h2 className="font-display text-4xl font-semibold tracking-tight text-navy">
+          <h2 className="font-display text-xl font-semibold tracking-tight text-navy md:text-4xl">
             Accréditations & engagements
           </h2>
           <p className="mt-3 font-sans text-gold italic">
@@ -38,7 +38,7 @@ export function Testimonials() {
                 >
                   &ldquo;
                 </span>
-                <p className="-mt-6 font-display text-lg font-normal italic leading-relaxed text-navy">
+                <p className="-mt-6 font-display text-sm font-normal italic leading-relaxed text-navy md:text-lg">
                   {q.text}
                 </p>
                 <footer className="mt-4 font-sans text-xs font-medium uppercase tracking-wider text-grey-mid">

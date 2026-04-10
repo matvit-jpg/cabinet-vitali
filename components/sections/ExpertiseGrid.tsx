@@ -10,10 +10,10 @@ export function ExpertiseGrid() {
     <SectionWrapper id="expertises" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <FadeInSection>
-          <h2 className="font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
+          <h2 className="font-display text-xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
             Domaines d&apos;expertise
           </h2>
-          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">
+          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">
             Une pratique structurée autour de l&apos;évaluation immobilière et
             du cadre judiciaire.
           </p>

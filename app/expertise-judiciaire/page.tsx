@@ -58,10 +58,10 @@ export default function ExpertiseJudiciairePage() {
               { label: "Savoir-faire" },
             ]}
           />
-          <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
+          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
             Savoir-faire
           </h1>
-          <p className="mt-4 max-w-3xl font-sans text-lg font-light text-grey-mid">
+          <p className="mt-4 max-w-3xl font-sans text-sm font-light text-grey-mid md:text-lg">
             Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et
             la Cour administrative d&apos;appel de Marseille — une fonction au
             service de la justice, fondée sur la rigueur et l&apos;indépendance.

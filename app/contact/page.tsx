@@ -23,10 +23,10 @@ export default function ContactPage() {
               { label: "Contact" },
             ]}
           />
-          <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
+          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
             Contact
           </h1>
-          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">
+          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">
             Expliquez votre contexte : nous vous répondons dans les meilleurs
             délais.
           </p>

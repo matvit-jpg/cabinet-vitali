@@ -32,17 +32,15 @@ export default function ExpertisesPage() {
         </div>
       </section>
 
-      <div className="bg-ivory py-6">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8 flex flex-col items-center gap-3">
-          <div className="h-px w-full bg-gold/80" />
-          <div className="h-1.5 w-16 rounded-full bg-gold" />
-          <div className="h-px w-full bg-gold/80" />
+      <div className="bg-ivory">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="h-px w-full bg-gold/40" />
         </div>
       </div>
 
       <SectionWrapper className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <ul className="grid grid-cols-2 gap-4 md:gap-8">
+        <div className="mx-auto max-w-7xl px-1 lg:px-8">
+          <ul className="grid grid-cols-3 gap-1 md:gap-2">
             {expertises.map((e) => (
               <ExpertiseListCard key={e.slug} {...e} />
             ))}

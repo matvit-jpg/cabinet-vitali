@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body className="min-h-screen font-sans antialiased">
+        <script dangerouslySetInnerHTML={{ __html: "history.scrollRestoration='manual';window.scrollTo(0,0);" }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

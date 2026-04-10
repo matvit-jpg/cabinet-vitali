@@ -20,10 +20,10 @@ export default function PublicationsPage() {
               { label: "Publications & interventions" },
             ]}
           />
-          <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
+          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
             Publications & interventions
           </h1>
-          <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">
+          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">
             Presse, conférences et analyses — veille professionnelle et
             transmission.
           </p>

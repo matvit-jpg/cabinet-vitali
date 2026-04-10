@@ -23,7 +23,7 @@ export function ProcessSteps({
   return (
     <div className={className}>
       {title && (
-        <h2 className="font-display text-3xl font-semibold tracking-tight text-navy md:text-4xl text-center">
+        <h2 className="font-display text-xl font-semibold tracking-tight text-navy md:text-4xl text-center">
           {title}
         </h2>
       )}
@@ -93,7 +93,7 @@ export function ProcessSteps({
                         {globalIndex + 1}
                       </motion.span>
                       <motion.span
-                        className="font-display text-xl font-semibold text-navy"
+                        className="font-display text-sm font-semibold text-navy md:text-xl"
                         initial={{ opacity: 0, y: 6 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}

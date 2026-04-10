@@ -4,10 +4,10 @@ export function FinalCta() {
   return (
     <section className="bg-navy py-20 lg:py-28">
       <div className="mx-auto max-w-4xl px-4 text-center lg:px-8">
-        <h2 className="font-display text-3xl font-semibold tracking-tight text-ivory md:text-4xl">
+        <h2 className="font-display text-xl font-semibold tracking-tight text-ivory md:text-4xl">
           Prêt à sécuriser votre dossier ?
         </h2>
-        <p className="mt-4 font-sans text-lg font-light text-ivory/85">
+        <p className="mt-4 font-sans text-sm font-light text-ivory/85 md:text-lg">
           Prendre contact — réponse sous 48h ouvrées.
         </p>
         <div className="mt-10">

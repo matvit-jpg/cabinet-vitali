@@ -62,12 +62,12 @@ export default function ExpertiseDetailPage({
             ]}
           />
           <div className="mt-8 flex items-start gap-4">
-            <ExpertiseIcon name={expertise.icon} className="h-12 w-12 text-gold" />
-            <h1 className="font-display text-4xl font-semibold tracking-tight md:text-5xl">
+            <ExpertiseIcon name={expertise.icon} className="h-8 w-8 text-gold md:h-12 md:w-12" />
+            <h1 className="font-display text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
               {expertise.title}
             </h1>
           </div>
-          <p className="mt-6 max-w-3xl font-sans text-lg font-light leading-relaxed text-ivory/70">
+          <p className="mt-6 max-w-3xl font-sans text-sm font-light leading-relaxed text-ivory/70 md:text-lg">
             {expertise.shortDescription}
           </p>
         </div>
