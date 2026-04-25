@@ -5,7 +5,7 @@ import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ExpertiseChat } from "@/components/sections/ExpertiseChat";
 
 export const metadata = createMetadata({
-  title: "Savoir-faire",
+  title: "Expertise judiciaire",
   description:
     "Expert inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille — estimations immobilières, valeurs locatives, préjudices.",
   path: "/expertise-judiciaire",
@@ -55,11 +55,11 @@ export default function ExpertiseJudiciairePage() {
           <Breadcrumb
             items={[
               { label: "Accueil", href: "/" },
-              { label: "Savoir-faire" },
+              { label: "Expertise judiciaire" },
             ]}
           />
           <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
-            Savoir-faire
+            Expertise judiciaire
           </h1>
           <p className="mt-4 max-w-3xl font-sans text-sm font-light text-grey-mid md:text-lg">
             Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et

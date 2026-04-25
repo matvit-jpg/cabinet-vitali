@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 
 const expertises = [
   { href: "/expertises", label: "Nos missions" },
-  { href: "/expertise-judiciaire", label: "Savoir-faire" },
+  { href: "/expertise-judiciaire", label: "Expertise judiciaire" },
   { href: "/ingenierie", label: "Ingénierie immobilière" },
   { href: "/arbitrage", label: "Arbitrage" },
 ];
