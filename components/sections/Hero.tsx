@@ -38,19 +38,22 @@ export function Hero() {
         />
       </motion.div>
       <div className="absolute inset-0 bg-navy/70" aria-hidden />
-      <div className="relative z-10 flex min-h-[90vh] flex-col items-center justify-center px-4 pb-24 pt-32 text-center">
-        {/* Logo sur hero — mobile uniquement */}
-        <div className="md:hidden mb-8">
-          <Image
-            src="/images/logo.jpg"
-            alt="Cabinet Vitali Expertises"
-            width={180}
-            height={72}
-            className="mx-auto"
-            style={{ filter: "invert(1)", mixBlendMode: "screen" }}
-            priority
-          />
-        </div>
+      {/* Logo sur hero — mobile uniquement, hors du stacking context z-10 pour que le blend fonctionne */}
+      <div
+        className="md:hidden absolute top-28 left-1/2 -translate-x-1/2 z-20"
+        style={{ mixBlendMode: "screen" }}
+      >
+        <Image
+          src="/images/logo.jpg"
+          alt="Cabinet Vitali Expertises"
+          width={190}
+          height={76}
+          style={{ filter: "invert(1)" }}
+          priority
+        />
+      </div>
+
+      <div className="relative z-10 flex min-h-[90vh] flex-col items-center justify-center px-4 pb-24 pt-52 text-center">
         <AnimatedText>
           <AnimatedLine>
             <h1 className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance">
