@@ -10,7 +10,7 @@ export function ExpertiseListCard(e: Expertise) {
     <motion.li
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.2 }}
-      className="expertise-card group relative aspect-square overflow-hidden rounded-sm border border-grey-light shadow-card"
+      className="expertise-card group relative aspect-[4/3] overflow-hidden rounded-sm border border-grey-light shadow-card"
       style={{
         backgroundImage: "url('/images/justice.png')",
         backgroundSize: "var(--card-bg-size)",
