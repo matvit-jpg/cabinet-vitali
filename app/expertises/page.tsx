@@ -39,11 +39,13 @@ export default function ExpertisesPage() {
       </div>
 
       <SectionWrapper className="bg-white">
-        <div className="mx-auto max-w-7xl px-1 lg:px-8">
-          <ul className="grid grid-cols-3 gap-1 md:gap-2">
-            {expertises.map((e) => (
-              <ExpertiseListCard key={e.slug} {...e} />
-            ))}
+        <div className="mx-auto max-w-5xl px-1 lg:px-8">
+          <ul className="grid grid-cols-2 gap-1 md:gap-2">
+            {expertises
+              .filter((e) => !["expertises-judiciaires", "ingenierie-immobiliere"].includes(e.slug))
+              .map((e) => (
+                <ExpertiseListCard key={e.slug} {...e} />
+              ))}
           </ul>
         </div>
       </SectionWrapper>
