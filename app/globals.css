@@ -38,14 +38,12 @@ body {
   filter: sepia(0.35) contrast(0.95) brightness(1.05);
 }
 
-/* Mosaïque 3×2 — image 3:2, tuiles carrées, mobile et desktop */
+/* Mosaïque 2×2 — image découpée en 4 tuiles cohérentes */
 .expertise-card:nth-child(1) { --card-bg-pos: 0% 0%; }
-.expertise-card:nth-child(2) { --card-bg-pos: 50% 0%; }
-.expertise-card:nth-child(3) { --card-bg-pos: 100% 0%; }
-.expertise-card:nth-child(4) { --card-bg-pos: 0% 100%; }
-.expertise-card:nth-child(5) { --card-bg-pos: 50% 100%; }
-.expertise-card:nth-child(6) { --card-bg-pos: 100% 100%; }
-.expertise-card { --card-bg-size: 300% 200%; }
+.expertise-card:nth-child(2) { --card-bg-pos: 100% 0%; }
+.expertise-card:nth-child(3) { --card-bg-pos: 0% 100%; }
+.expertise-card:nth-child(4) { --card-bg-pos: 100% 100%; }
+.expertise-card { --card-bg-size: 200% 200%; }
 
 /* Carousel logos */
 .carousel-logo {
