@@ -64,19 +64,7 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Centre — Logo mobile + Navigation desktop */}
-          <div className="flex justify-center lg:hidden">
-            <Link href="/" aria-label={`${SITE.cabinetFull} — Accueil`}>
-              <Image
-                src="/images/logo.jpg"
-                alt={SITE.cabinetFull}
-                width={220}
-                height={110}
-                className="object-contain w-28"
-                priority
-              />
-            </Link>
-          </div>
+          {/* Centre — Navigation desktop uniquement */}
           <nav className="hidden items-center justify-center gap-10 lg:flex" aria-label="Navigation principale">
             {links.map((l) => {
               if (l.dropdown) {

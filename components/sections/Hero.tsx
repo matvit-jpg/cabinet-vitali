@@ -40,7 +40,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-navy/70" aria-hidden />
       {/* Logo sur hero — mobile uniquement, hors du stacking context z-10 pour que le blend fonctionne */}
       <div
-        className="md:hidden absolute top-28 left-1/2 -translate-x-1/2 z-20"
+        className="md:hidden absolute top-16 left-1/2 -translate-x-1/2 z-20"
         style={{ mixBlendMode: "screen" }}
       >
         <Image
