@@ -178,43 +178,6 @@ export default function ExpertiseJudiciairePage() {
         </div>
       </SectionWrapper>
 
-      {/* Expert judiciaire vs expert amiable */}
-      <SectionWrapper className="bg-ivory">
-        <div className="mx-auto max-w-5xl px-4 lg:px-8">
-          <h2 className="font-display text-2xl font-semibold text-navy md:text-3xl">
-            Expert judiciaire vs expertise amiable
-          </h2>
-          <div className="mt-10 overflow-hidden rounded-sm border border-grey-light">
-            <div className="grid md:grid-cols-2">
-              <div className="bg-white p-6 md:p-8">
-                <h3 className="font-display text-xl font-semibold text-navy">
-                  Expert judiciaire
-                </h3>
-                <ul className="mt-4 list-disc space-y-2 pl-5 font-sans text-sm font-light text-text">
-                  <li>Désignation par la juridiction (juge civil ou administratif)</li>
-                  <li>Mission encadrée par ordonnance, délais fixés</li>
-                  <li>Principe du contradictoire obligatoire</li>
-                  <li>Rapport versé au dossier de justice</li>
-                  <li>Assermentation devant la cour d&apos;appel</li>
-                </ul>
-              </div>
-              <div className="bg-ivory p-6 md:p-8">
-                <h3 className="font-display text-xl font-semibold text-navy">
-                  Expertise amiable
-                </h3>
-                <ul className="mt-4 list-disc space-y-2 pl-5 font-sans text-sm font-light text-text">
-                  <li>Choix commun ou unilatéral des parties</li>
-                  <li>Cadre contractuel, calendrier flexible</li>
-                  <li>Confidentialité des échanges et du rapport</li>
-                  <li>Utilisable en amont d&apos;une procédure ou à l&apos;amiable</li>
-                  <li>Pièce versable au débat judiciaire si nécessaire</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SectionWrapper>
-
       {/* FAQ */}
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">

@@ -24,11 +24,6 @@ const FAQ = [
     answer:
       "La durée varie selon la complexité de la mission, les investigations nécessaires et le calendrier judiciaire. Un échéancier est communiqué dès l'acceptation de la mission.",
   },
-  {
-    question: "Comment contester les conclusions d'un rapport d'expertise ?",
-    answer:
-      "Les parties peuvent déposer des dires — observations écrites — auxquels l'expert est tenu de répondre. Elles peuvent également demander une extension de mission ou la nomination d'un contre-expert.",
-  },
 ];
 
 export function ExpertiseChat() {
