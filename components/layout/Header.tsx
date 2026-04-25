@@ -107,7 +107,7 @@ export function Header() {
           </nav>
 
           {/* Droite — bouton Contact */}
-          <div className="flex items-center justify-end gap-3">
+          <div className="flex items-center justify-end gap-3 col-start-3">
             <Button href="/contact" variant="primary" className="lg:hidden !text-[10px] !px-2.5 !py-1.5" aria-label="Aller à la page contact">
               Contact
             </Button>
