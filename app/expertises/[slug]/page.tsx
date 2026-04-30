@@ -5,24 +5,8 @@ import { createMetadata } from "@/lib/metadata";
 import { expertises, getExpertiseBySlug } from "@/lib/expertises";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
-import { AccordionFAQ } from "@/components/ui/AccordionFAQ";
 import { Button } from "@/components/ui/Button";
 import { ExpertiseIcon } from "@/lib/icons-expertise";
-
-const defaultFaq = [
-  {
-    q: "Quels délais pour une mission ?",
-    a: "Les délais dépendent de la complexité du dossier et du calendrier judiciaire. Un échéancier est communiqué à la saisine.",
-  },
-  {
-    q: "Quelle documentation fournir ?",
-    a: "Titres, baux, diagnostics, PV d'assemblée, correspondances utiles : une liste est transmise après analyse préalable.",
-  },
-  {
-    q: "Intervention hors procédure ?",
-    a: "Des missions amiables ou consultatives peuvent être proposées selon les besoins et la disponibilité du cabinet.",
-  },
-];
 
 export function generateStaticParams() {
   return expertises.map((e) => ({ slug: e.slug }));
@@ -104,14 +88,6 @@ export default function ExpertiseDetailPage({
               </ul>
             </div>
 
-            <div className="mt-14 border-t border-grey-light pt-10">
-              <h2 className="font-display text-2xl font-semibold text-navy">
-                Questions fréquentes
-              </h2>
-              <div className="mt-6">
-                <AccordionFAQ items={expertise.faq ?? defaultFaq} />
-              </div>
-            </div>
           </div>
 
           <aside className="lg:block">

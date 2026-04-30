@@ -13,7 +13,6 @@ export type Expertise = {
   shortDescription: string;
   fullDescription: string;
   useCases: string[];
-  faq?: { q: string; a: string }[];
 };
 
 export const expertises: Expertise[] = [
@@ -31,16 +30,6 @@ export const expertises: Expertise[] = [
       "Droits sociaux à prépondérance immobilière",
       "Préjudices immobiliers",
     ],
-    faq: [
-      {
-        q: "Quelle est la valeur juridique du rapport ?",
-        a: "Le rapport d'expertise judiciaire est versé au dossier et sert de base technique à la décision du juge, sous son libre appréciation.",
-      },
-      {
-        q: "Puis-je choisir mon expert judiciaire ?",
-        a: "En principe, la désignation relève du juge. Les parties peuvent formuler des observations sur la mission et proposer des candidatures selon les règles de procédure.",
-      },
-    ],
   },
   {
     slug: "evaluation-immobiliere",
@@ -49,7 +38,7 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Estimation de la valeur vénale ou locative de tous types de biens immobiliers, selon les normes européennes d'expertise.",
     fullDescription:
-      "Le cabinet VITALI évalue l'ensemble des biens immobiliers urbains, ruraux, commerciaux et industriels.\n\nL'immobilier urbain : terrains et droits à construire, logements, immeubles de rapport, ensembles immobiliers. Les biens ruraux : terres, domaines agricoles, bois, étangs, propriétés de loisirs, châteaux. Les immeubles industriels et commerciaux : terrains industriels, boutiques, centres commerciaux, locaux d'activité, ateliers, entrepôts ou usines.\n\nLe cabinet se conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise (label REV).",
+      "Le cabinet VITALI évalue l'ensemble des biens immobiliers résidentiels, commerciaux et industriels.\n\nL'immobilier urbain : terrains et droits à construire, logements, immeubles de rapport, ensembles immobiliers. Les immeubles industriels et commerciaux : terrains industriels, boutiques, centres commerciaux, locaux d'activité, ateliers, entrepôts ou usines.\n\nLe cabinet se conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise (label REV).",
     useCases: [
       "Successions et donations",
       "Séparation et divorce",
@@ -66,7 +55,7 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Spécialisation dans les problématiques liées aux baux commerciaux : déplafonnement, valeur locative, indemnité d'éviction.",
     fullDescription:
-      "Le cabinet est spécialisé dans l'expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels.\n\nAnalyse des loyers d'habitation et commerciaux, valeur vénale des fonds de commerce et d'industrie, droit au bail, entreprises, valeurs locatives d'hôtels et de restaurants.\n\nPrise en compte des clauses contractuelles, des comparables de marché et du contexte économique local pour fixer ou contester une valeur locative.",
+      "Le cabinet est spécialisé dans l'expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels.\n\nAnalyse des valeurs locatives, valeur vénale des fonds de commerce et d'industrie, droit au bail, valeurs locatives d'hôtels et de restaurants.\n\nPrise en compte des litiges liés aux baux commerciaux : renouvellement, indemnités d'éviction.",
     useCases: [
       "Renouvellement de bail commercial",
       "Déplafonnement du loyer",
@@ -80,9 +69,9 @@ export const expertises: Expertise[] = [
     title: "Indemnités d'expropriation",
     icon: "Gavel",
     shortDescription:
-      "Évaluation des biens et droits pour procédures d'utilité publique et chiffrage des indemnités d'expropriation.",
+      "Évaluation des biens et droits, chiffrage des indemnités d'expropriation.",
     fullDescription:
-      "Accompagnement dans les phases de DUP, enquêtes parcellaires et négociations avec l'expropriant.\n\nChiffrage des terrains, droits attachés et préjudices éventuels, dans le respect du code de l'expropriation pour cause d'utilité publique. Le cabinet intervient également sur les indemnités d'éviction commerciale et les plus-values immobilières.",
+      "Accompagnement dans les phases de DUP, enquêtes parcellaires et négociations avec l'expropriant.\n\nChiffrage des terrains, droits attachés et préjudices éventuels, dans le respect du code de l'expropriation pour cause d'utilité publique.",
     useCases: [
       "Projet d'aménagement",
       "Contestation d'offre d'indemnité",
@@ -96,14 +85,13 @@ export const expertises: Expertise[] = [
     title: "Préjudices immobiliers",
     icon: "AlertCircle",
     shortDescription:
-      "Quantification des atteintes immobilières dans un cadre contentieux ou amiable.",
+      "Évaluation des indemnités dans un cadre contentieux ou amiable.",
     fullDescription:
-      "Évaluation des préjudices liés à des troubles de jouissance, vices cachés, désordres ou défauts de conformité.\n\nLe cabinet traite également les préjudices de travaux publics, les troubles de voisinage (perte de vue, ensoleillement), la rescision pour lésion et les droits d'enregistrement.\n\nRapports adaptés aux échanges entre parties ou à la procédure devant le juge.",
+      "Évaluation des préjudices liés à des troubles de jouissance, vices cachés, désordres ou défauts de conformité.\n\nLe cabinet traite également les préjudices de travaux publics ou privés, les troubles de voisinage (perte de vue, ensoleillement).\n\nRapports adaptés aux échanges entre parties ou à la procédure devant le juge.",
     useCases: [
       "Perte de vue et/ou d'ensoleillement",
       "Troubles de voisinage",
       "Préjudices de travaux publics",
-      "Rescision pour lésion",
       "Pertes de valeur",
     ],
   },
