@@ -20,6 +20,9 @@ html {
 body {
   color: var(--color-text);
   background: var(--color-ivory);
+}
+
+p, li, blockquote {
   text-align: justify;
 }
 
