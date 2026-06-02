@@ -23,7 +23,7 @@ export default function ExpertisesPage() {
             ]}
           />
           <h1 className="mt-6 font-display text-4xl font-semibold tracking-tight text-navy md:text-5xl">
-            Domaines d'expertises
+            Domaines d&apos;expertises
           </h1>
           <p className="mt-4 max-w-2xl font-sans text-lg font-light text-grey-mid">
             Des missions adaptées aux enjeux patrimoniaux, amiables ou
