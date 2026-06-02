@@ -20,6 +20,7 @@ html {
 body {
   color: var(--color-text);
   background: var(--color-ivory);
+  text-align: justify;
 }
 
 @layer utilities {
