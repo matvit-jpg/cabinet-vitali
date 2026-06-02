@@ -22,7 +22,7 @@ body {
   background: var(--color-ivory);
 }
 
-p, li, blockquote {
+p, blockquote {
   text-align: justify;
 }
 
