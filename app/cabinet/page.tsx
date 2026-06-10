@@ -52,7 +52,7 @@ export default function CabinetPage() {
           <FadeInSection>
             <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text text-justify md:text-base">
               <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;Appel d&apos;Aix-en-Provence et la Cour Administrative d&apos;Appel de Marseille.</p>
-              <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels.</p>
+              <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels, ainsi que tous types de biens immobiliers résidentiels.</p>
               <p>Notre cabinet est également spécialisé dans les problématiques liées aux baux commerciaux (déplafonnement, valeur locative, indemnité d&apos;éviction).</p>
               <p>Nous réalisons également des études d&apos;urbanisme afin d&apos;évaluer les terrains à bâtir.</p>
               <p>Nous pouvons intervenir sur le plan national.</p>
@@ -116,7 +116,7 @@ export default function CabinetPage() {
           <FadeInSection>
             <div className="mt-12 border-t border-grey-light pt-10 text-center">
               <h2 className="font-display text-2xl font-semibold text-navy">Inscription sur les listes dans les rubriques suivantes :</h2>
-              <p className="mt-2 font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+              <p className="mt-2 font-sans text-sm font-semibold uppercase tracking-widest text-gold text-center">
                 Cour d&apos;appel d&apos;Aix-en-Provence &amp; Cour administrative d&apos;appel de Marseille
               </p>
               <ul className="mt-6 space-y-2 font-sans text-sm font-light text-text">

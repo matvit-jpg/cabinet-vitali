@@ -4,7 +4,6 @@ import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ContactForm } from "@/components/sections/ContactForm";
-import MapEmbed from "@/components/sections/MapEmbed";
 
 export const metadata = createMetadata({
   title: "Contact",
@@ -79,7 +78,7 @@ export default function ContactPage() {
                 </li>
               </ul>
             </div>
-            <MapEmbed />
+
           </div>
         </div>
       </SectionWrapper>
