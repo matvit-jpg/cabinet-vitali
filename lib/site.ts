@@ -8,7 +8,7 @@ export const SITE = {
   phone: "+33 6 14 19 94 38",
   addressLines: ["46b Boulevard Sicard", "13008 Marseille", "22 avenue de Verdun", "13400 Aubagne", "France"],
   linkedInUrl: "https://www.linkedin.com/in/sergevitali/",
-  studioCredit: "Studio Digital",
+  studioCredit: "",
 } as const;
 
 

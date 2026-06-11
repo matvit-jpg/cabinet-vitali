@@ -10,7 +10,7 @@ export function createMetadata(opts: {
 }): Metadata {
   const urlBase =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://cabinet-expert.example.com";
+    "https://www.cabinetvitali.fr";
   const pageUrl = opts.path ? `${urlBase}${opts.path}` : urlBase;
 
   return {
@@ -44,7 +44,7 @@ export function createMetadata(opts: {
 export function defaultLayoutMetadata(): Metadata {
   const urlBase =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://cabinet-expert.example.com";
+    "https://www.cabinetvitali.fr";
   return {
     metadataBase: new URL(urlBase),
     title: {
@@ -58,7 +58,7 @@ export function defaultLayoutMetadata(): Metadata {
 export function jsonLdProfessionalService() {
   const url =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://cabinet-expert.example.com";
+    "https://www.cabinetvitali.fr";
   return {
     "@context": "https://schema.org",
     "@graph": [
