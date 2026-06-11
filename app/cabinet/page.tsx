@@ -13,10 +13,10 @@ export const metadata = createMetadata({
 });
 
 const affiliations = [
-  { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "https://static.wixstatic.com/media/a80145_e4e3177667df41429487d916dcb617f2~mv2.jpg/v1/fill/w_89,h_121,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a80145_e4e3177667df41429487d916dcb617f2~mv2.jpg" },
-  { name: "Fédération Nationale des Experts Évaluateurs Fonciers", url: "https://eefic.eu/accueil.html", logo: "https://static.wixstatic.com/media/a80145_1f7b0e6bb51947fe88d2e446e4bb9920~mv2.png/v1/fill/w_101,h_101,al_c,q_85,enc_avif,quality_auto/EEFIC.png" },
-  { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "https://static.wixstatic.com/media/a80145_7cb8c363d96b41f3b4e93d3d1effa9ba~mv2_d_4252_2186_s_2.jpg/v1/crop/x_298,y_153,w_3702,h_1903/fill/w_195,h_101,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20CEF%20expert.jpg" },
-  { name: "Compagnie des experts près la CAA de Marseille", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "https://static.wixstatic.com/media/a80145_4c0e85080d744f6aa8289b6dc5279f48~mv2.png/v1/fill/w_204,h_109,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo%20cecaam.png" },
+  { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
+  { name: "Fédération Nationale des Experts Évaluateurs Fonciers", url: "https://eefic.eu/accueil.html", logo: "/images/eefic.png", maxH: "h-24" },
+  { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
+  { name: "Compagnie des experts près la CAA de Marseille", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
 ];
 
 const portrait = "/images/serge.jpg";
@@ -69,7 +69,7 @@ export default function CabinetPage() {
             <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {affiliations.map((a) => (
                 <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-6 opacity-70 transition-opacity hover:opacity-100">
-                  <div className="relative h-24 w-full">
+                  <div className={`relative ${a.maxH} w-full`}>
                     <Image src={a.logo} alt={a.name} fill className="object-contain" />
                   </div>
                 </a>
@@ -87,8 +87,8 @@ export default function CabinetPage() {
               <div className="pr-0 lg:pr-12">
                 <h2 className="font-display text-2xl font-semibold text-navy">Certifié par</h2>
                 <a href="https://www.tegova.org" target="_blank" rel="noopener noreferrer" title="Recognised European Valuer (REV)" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
-                  <div className="relative h-20 w-20">
-                    <Image src="https://static.wixstatic.com/media/2c5f6e_bd6fe5d4751649b89f15650a0d7c9d72~mv2.png/v1/fill/w_91,h_91,al_c,q_85,enc_avif,quality_auto/rev.png" alt="REV" fill className="object-contain" />
+                <div className="relative h-20 w-20">
+                    <Image src="/images/rev.png" alt="REV" fill className="object-contain" />
                   </div>
                 </a>
                 <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
@@ -102,8 +102,8 @@ export default function CabinetPage() {
               <div className="mt-12 lg:mt-0 lg:pl-12">
                 <h2 className="font-display text-2xl font-semibold text-navy">Formateur</h2>
                 <a href="https://www.cfei.fr" target="_blank" rel="noopener noreferrer" title="Centre de Formation à l'Expertise Immobilière" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
-                  <div className="relative h-20 w-20">
-                    <Image src="https://static.wixstatic.com/media/a80145_8b30c24bb61e4240b38010c6f48fb73f~mv2.jpeg/v1/fill/w_101,h_78,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Unknown.jpeg" alt="CFEI" fill className="object-contain" />
+                <div className="relative h-20 w-20">
+                    <Image src="/images/cfei.jpeg" alt="CFEI" fill className="object-contain" />
                   </div>
                 </a>
                 <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">

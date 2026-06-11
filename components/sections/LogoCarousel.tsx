@@ -6,18 +6,18 @@ import { useMotionValue, useAnimationFrame, animate, motion } from "framer-motio
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const clients = [
-  { name: "Ville de Marseille", src: "https://static.wixstatic.com/media/a80145_db1c80335393464abc084b20e036160f~mv2.png/v1/fill/w_800,h_800,al_c,q_90,enc_auto/a80145_db1c80335393464abc084b20e036160f~mv2.png", href: "https://www.marseille.fr" },
-  { name: "L'Occitane en Provence", src: "https://static.wixstatic.com/media/a80145_47d60a0e088d4a3f8d5d49aa5f13c19b~mv2.png/v1/fill/w_560,h_560,al_c,lg_1,q_85,enc_auto/a80145_47d60a0e088d4a3f8d5d49aa5f13c19b~mv2.png", href: "https://www.loccitane.com" },
-  { name: "Caritas France", src: "https://static.wixstatic.com/media/a80145_d588f8bad6b043039c3e7d9383ad8d72~mv2.png/v1/fill/w_496,h_496,al_c,lg_1,q_85,enc_auto/a80145_d588f8bad6b043039c3e7d9383ad8d72~mv2.png", href: "https://www.secours-catholique.org" },
-  { name: "Caisse d'Épargne", src: "https://static.wixstatic.com/media/a80145_1c7ed7bae98f409e898841f9a6ac80ed~mv2.jpg/v1/fill/w_1299,h_827,al_c,q_85,enc_auto/a80145_1c7ed7bae98f409e898841f9a6ac80ed~mv2.jpg", href: "https://www.caisse-epargne.fr" },
-  { name: "Marseille Fos", src: "https://static.wixstatic.com/media/a80145_21cac12cfbc64c26b5a1d1e9cdff22a0~mv2.jpg/v1/fill/w_2008,h_580,al_c,q_85,enc_auto/a80145_21cac12cfbc64c26b5a1d1e9cdff22a0~mv2.jpg", href: "https://www.marseille-port.fr" },
-  { name: "Thiriet", src: "https://static.wixstatic.com/media/a80145_334cbc72d0f747be8f4ba69f52f5c315~mv2.png/v1/fill/w_284,h_193,al_c,lg_1,q_85,enc_auto/a80145_334cbc72d0f747be8f4ba69f52f5c315~mv2.png", href: "https://www.thiriet.com" },
-  { name: "Renault", src: "https://static.wixstatic.com/media/a80145_b723a017698249029bb49842ace49177~mv2.jpg/v1/fill/w_398,h_398,al_c,lg_1,q_80,enc_auto/a80145_b723a017698249029bb49842ace49177~mv2.jpg", href: "https://www.renault.fr" },
-  { name: "La Garde", src: "https://static.wixstatic.com/media/a80145_a1cefa5eae7a445882df82e71c9e70ce~mv2.png/v1/fill/w_462,h_462,al_c,lg_1,q_85,enc_auto/a80145_a1cefa5eae7a445882df82e71c9e70ce~mv2.png", href: "https://www.ville-lagarde.fr" },
-  { name: "Vinci", src: "https://static.wixstatic.com/media/a80145_a445b4e7bf9341d683f9719613f84d92~mv2.png/v1/fill/w_315,h_315,al_c,lg_1,q_85,enc_auto/a80145_a445b4e7bf9341d683f9719613f84d92~mv2.png", href: "https://www.vinci.com" },
-  { name: "Urbanis", src: "https://static.wixstatic.com/media/a80145_2ac73d27877142e0b4ad4be3fca4f058~mv2.png/v1/fill/w_581,h_169,al_c,lg_1,q_85,enc_auto/a80145_2ac73d27877142e0b4ad4be3fca4f058~mv2.png", href: "https://www.urbanis.fr" },
-  { name: "Quartus", src: "https://static.wixstatic.com/media/a80145_184c38cf8a754f87842c0f5f658c2a2b~mv2.png/v1/fill/w_900,h_298,al_c,lg_1,q_85,enc_auto/a80145_184c38cf8a754f87842c0f5f658c2a2b~mv2.png", href: "https://groupe-quartus.com" },
-  { name: "Maussanne", src: "https://static.wixstatic.com/media/a80145_34877fa67d754bf29dcce2ca54368e87~mv2.png/v1/fill/w_1251,h_1376,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a80145_34877fa67d754bf29dcce2ca54368e87~mv2.png", href: "https://www.maussanelesalpilles.fr" },
+  { name: "Ville de Marseille", src: "/images/marseille.png", href: "https://www.marseille.fr" },
+  { name: "L'Occitane en Provence", src: "/images/occitane.png", href: "https://www.loccitane.com" },
+  { name: "Caritas France", src: "/images/caritas.avif", href: "https://www.secours-catholique.org" },
+  { name: "Caisse d'Épargne", src: "/images/caisse-epargne.avif", href: "https://www.caisse-epargne.fr" },
+  { name: "Marseille Fos", src: "/images/marseillefos.avif", href: "https://www.marseille-port.fr" },
+  { name: "Thiriet", src: "/images/thiriet.avif", href: "https://www.thiriet.com" },
+  { name: "Renault", src: "/images/renault.avif", href: "https://www.renault.fr" },
+  { name: "La Garde", src: "/images/la-garde.avif", href: "https://www.ville-lagarde.fr" },
+  { name: "Vinci", src: "/images/vinci.avif", href: "https://www.vinci.com" },
+  { name: "Urbanis", src: "/images/urbanis.avif", href: "https://www.urbanis.fr" },
+  { name: "Quartus", src: "/images/quartus.avif", href: "https://groupe-quartus.com" },
+  { name: "Maussanne", src: "/images/maussanne.avif", href: "https://www.maussanelesalpilles.fr" },
 ];
 
 const SPEED = 0.035; // px/ms
@@ -151,7 +151,7 @@ export function LogoCarousel() {
                   alt={client.name}
                   width={120}
                   height={60}
-                  className="h-10 w-auto object-contain"
+                  className="h-10 w-28 object-contain"
                   unoptimized
                 />
               </a>
