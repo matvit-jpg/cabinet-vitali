@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>http://localhost:3000/cabinet</loc><lastmod>2026-06-02T17:55:04.355Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertise-judiciaire</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/publications</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/mentions-legales</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/ingenierie</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises/evaluation-immobiliere</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises/expertises-judiciaires</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises/indemnites-expropriation</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises/ingenierie-immobiliere</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises/prejudices-immobiliers</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises/valeurs-locatives</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/expertises</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/politique-confidentialite</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/arbitrage</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>http://localhost:3000/contact</loc><lastmod>2026-06-02T17:55:04.356Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/cabinet</loc><lastmod>2026-10-08T13:29:57.425Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/arbitrage</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/contact</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertise-judiciaire</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/mentions-legales</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/politique-confidentialite</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/publications</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/ingenierie</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises/evaluation-immobiliere</loc><lastmod>2026-10-08T13:29:57.428Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises/expertises-judiciaires</loc><lastmod>2026-10-08T13:29:57.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises/indemnites-expropriation</loc><lastmod>2026-10-08T13:29:57.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises/ingenierie-immobiliere</loc><lastmod>2026-10-08T13:29:57.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises/prejudices-immobiliers</loc><lastmod>2026-10-08T13:29:57.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.cabinetvitali.fr/expertises/valeurs-locatives</loc><lastmod>2026-10-08T13:29:57.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
