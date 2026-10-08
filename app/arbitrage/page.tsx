@@ -40,7 +40,7 @@ export default function ArbitragePage() {
               </p>
               <div className="mt-8">
                 <a href="https://www.cmap.fr" target="_blank" rel="noopener noreferrer">
-                  <img src="https://static.wixstatic.com/media/a80145_e8cfc7c9dadb4be6b71f1a3dd064160d~mv2.png/v1/fill/w_82,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/CMAP-NEW-CCI_edited.png" alt="CMAP" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+                <img src="/images/cmap.png" alt="CMAP" className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
                 </a>
               </div>
             </div>

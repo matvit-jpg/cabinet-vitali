@@ -51,18 +51,25 @@ export async function POST(req: Request) {
     .filter(Boolean)
     .join("\n");
 
-  try {
-    await resend.emails.send({
-      from: process.env.RESEND_FROM || "Contact <onboarding@resend.dev>",
-      to: [to],
-      replyTo: data.email,
-      subject: `[${SITE.cabinetFull}] Contact — ${data.requestType}`,
-      text,
-    });
-  } catch (e) {
-    console.error(e);
-    return NextResponse.json({ error: "Send failed" }, { status: 502 });
-  }
+    try {
+      const { data: sent, error } = await resend.emails.send({
+        from: process.env.RESEND_FROM || "Contact <onboarding@resend.dev>",
+        to: [to],
+        replyTo: data.email,
+        subject: `[${SITE.cabinetFull}] Contact — ${data.requestType}`,
+        text,
+      });
+  
+      if (error) {
+        console.error("Resend error:", error);
+        return NextResponse.json({ error: "Send failed", detail: error }, { status: 502 });
+      }
+  
+      console.log("Resend OK:", sent);
+    } catch (e) {
+      console.error(e);
+      return NextResponse.json({ error: "Send failed" }, { status: 502 });
+    }
 
   return NextResponse.json({ ok: true });
 }
