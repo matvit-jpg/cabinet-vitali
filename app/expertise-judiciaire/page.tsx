@@ -3,6 +3,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ExpertiseChat } from "@/components/sections/ExpertiseChat";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Expertise judiciaire",
@@ -50,24 +51,17 @@ export default function ExpertiseJudiciairePage() {
   return (
     <>
       {/* Hero */}
-      <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <Breadcrumb
-            items={[
-              { label: "Accueil", href: "/" },
-              { label: "Expertise judiciaire" },
-            ]}
-          />
-          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
-            Expertise judiciaire
-          </h1>
-          <p className="mt-4 max-w-3xl font-sans text-sm font-light text-grey-mid md:text-lg">
-            Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et
-            la Cour administrative d&apos;appel de Marseille — une fonction au
-            service de la justice, fondée sur la rigueur et l&apos;indépendance.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[{ label: "Accueil", href: "/" }, { label: "Expertise judiciaire" }]}
+        eyebrow="Au service de la justice"
+        title="Expertise judiciaire"
+        intro="Expert inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille — une fonction au service de la justice, fondée sur la rigueur et l'indépendance."
+        facts={[
+          { k: "2017", v: "Inscrit sur la liste de la Cour d'appel d'Aix-en-Provence" },
+          { k: "CAA", v: "Expert près la Cour administrative d'appel de Marseille" },
+          { k: "C.18", v: "Valeurs vénales et locatives, droits sociaux, préjudices immobiliers" },
+        ]}
+      />
 
       {/* Serment */}
       <SectionWrapper className="bg-white">
@@ -128,19 +122,19 @@ export default function ExpertiseJudiciairePage() {
               </p>
               <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.1.</strong> Estimations immobilières matérielles&nbsp;: valeurs vénales de murs, terrains non agricoles, indemnité d&apos;expropriation, droits réels immobiliers.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.2.</strong> Estimations immobilières immatérielles&nbsp;: valeurs locatives, indemnités d&apos;éviction ou d&apos;expropriation, de fonds de commerce et d&apos;entreprises.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.3.</strong> Droits sociaux à prépondérance immobilière.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.4.</strong> Préjudices immobiliers.</span>
                 </li>
               </ul>
@@ -153,23 +147,23 @@ export default function ExpertiseJudiciairePage() {
               </p>
               <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.1.</strong> Estimations immobilières matérielles&nbsp;: valeurs vénales de murs, terrains non agricoles, indemnité d&apos;expropriation, droits réels immobiliers.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.2.</strong> Estimations immobilières immatérielles&nbsp;: valeurs locatives, indemnités d&apos;éviction ou d&apos;expropriation, de fonds de commerce et d&apos;entreprises.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.3.</strong> Droits sociaux à prépondérance immobilière.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.18.4.</strong> Préjudices immobiliers.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="mt-0.5 text-gold">•</span>
+                  <span className="mt-0.5 text-gold-dark">•</span>
                   <span><strong>C.19.1.</strong> Administration d&apos;immeuble et de copropriété, baux d&apos;habitation, commerciaux, professionnels.</span>
                 </li>
               </ul>

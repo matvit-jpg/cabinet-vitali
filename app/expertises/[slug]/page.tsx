@@ -8,6 +8,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { ExpertiseIcon } from "@/lib/icons-expertise";
 import { expertiseSections } from "@/lib/expertise-sections";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export function generateStaticParams() {
   return expertises.map((e) => ({ slug: e.slug }));
@@ -40,26 +41,16 @@ export default function ExpertiseDetailPage({
 
   return (
     <>
-      <section className="border-b border-grey-light bg-navy py-16 text-ivory lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <Breadcrumb
-            items={[
-              { label: "Accueil", href: "/" },
-              { label: "Expertises", href: "/expertises" },
-              { label: expertise.title },
-            ]}
-          />
-          <div className="mt-8 flex items-start gap-4">
-            <ExpertiseIcon name={expertise.icon} className="h-8 w-8 text-gold md:h-12 md:w-12" />
-            <h1 className="font-display text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-              {expertise.title}
-            </h1>
-          </div>
-          <p className="mt-6 max-w-3xl font-sans text-sm font-light leading-relaxed text-ivory/70 md:text-lg">
-            {expertise.shortDescription}
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[
+          { label: "Accueil", href: "/" },
+          { label: "Expertises", href: "/expertises" },
+          { label: expertise.title },
+        ]}
+        eyebrow="Domaine d'expertise"
+        title={expertise.title}
+        intro={expertise.shortDescription}
+      />
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-[1fr_280px] lg:px-8">
@@ -98,7 +89,7 @@ export default function ExpertiseDetailPage({
               <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                 {expertise.useCases.map((u) => (
                   <li key={u} className="flex items-start gap-3 font-sans text-sm">
-                    <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
+                    <Check className="mt-0.5 h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                     <span>{u}</span>
                   </li>
                 ))}

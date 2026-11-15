@@ -73,7 +73,7 @@ export function LogoCarousel() {
 
   return (
     <div>
-      <p className="mb-10 text-center font-sans text-xs font-semibold uppercase tracking-widest text-gold">
+      <p className="mb-10 text-center font-sans text-xs font-semibold uppercase tracking-widest text-gold-dark">
         Ils nous ont fait confiance
       </p>
 
@@ -82,7 +82,7 @@ export function LogoCarousel() {
         <button
           onClick={() => skip(-1)}
           aria-label="Logo précédent"
-          className="hidden md:flex shrink-0 h-8 w-8 items-center justify-center rounded-sm border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-navy"
+          className="hidden md:flex shrink-0 h-8 w-8 items-center justify-center rounded-sm border border-gold/40 text-gold-dark transition-colors hover:bg-gold hover:text-navy"
         >
           <ChevronLeft className="h-4 w-4" />
         </button>
@@ -151,7 +151,7 @@ export function LogoCarousel() {
                   alt={client.name}
                   width={120}
                   height={60}
-                  className="h-10 w-28 object-contain"
+                  className="h-10 w-28 object-contain opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
                   unoptimized
                 />
               </a>
@@ -162,7 +162,7 @@ export function LogoCarousel() {
         <button
           onClick={() => skip(1)}
           aria-label="Logo suivant"
-          className="hidden md:flex shrink-0 h-8 w-8 items-center justify-center rounded-sm border border-gold/40 text-gold transition-colors hover:bg-gold hover:text-navy"
+          className="hidden md:flex shrink-0 h-8 w-8 items-center justify-center rounded-sm border border-gold/40 text-gold-dark transition-colors hover:bg-gold hover:text-navy"
         >
           <ChevronRight className="h-4 w-4" />
         </button>

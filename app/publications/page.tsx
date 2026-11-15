@@ -1,6 +1,7 @@
 import { createMetadata } from "@/lib/metadata";
 import { PublicationsGrid } from "@/components/sections/PublicationsGrid";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Publications & interventions",
@@ -12,23 +13,17 @@ export const metadata = createMetadata({
 export default function PublicationsPage() {
   return (
     <>
-      <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <Breadcrumb
-            items={[
-              { label: "Accueil", href: "/" },
-              { label: "Publications & interventions" },
-            ]}
-          />
-          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
-            Publications & interventions
-          </h1>
-          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">
-            Presse, conférences et analyses — veille professionnelle et
-            transmission.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[{ label: "Accueil", href: "/" }, { label: "Publications & interventions" }]}
+        eyebrow="Doctrine · Conférences"
+        title="Publications & interventions"
+        intro="Articles, observatoires des loyers judiciaires et conférences consacrés à l'évaluation immobilière, aux baux commerciaux et à l'expertise de justice."
+        facts={[
+          { k: "AJDI", v: "Contributions à l'Actualité juridique Droit immobilier depuis 2018" },
+          { k: "Loyers", v: "Observatoire des loyers judiciaires Aix-en-Provence – Marseille" },
+          { k: "Colloques", v: "RNBC, barreau de Paris, CECAAM" },
+        ]}
+      />
       <PublicationsGrid />
     </>
   );

@@ -3,6 +3,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 import Image from "next/image";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Arbitrage",
@@ -13,13 +14,12 @@ export const metadata = createMetadata({
 export default function ArbitragePage() {
   return (
     <>
-      <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Arbitrage" }]} />
-          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">Arbitrage</h1>
-          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">Mode alternatif de résolution des différends — rapide, confidentiel, maîtrisé.</p>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[{ label: "Accueil", href: "/" }, { label: "Arbitrage" }]}
+        eyebrow="Modes amiables"
+        title="Arbitrage"
+        intro="Mode alternatif de résolution des différends — rapide, confidentiel, maîtrisé."
+      />
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

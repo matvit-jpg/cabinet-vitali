@@ -62,7 +62,7 @@ export function PublicationsGrid() {
                 />
               </div>
               <div className="flex flex-col justify-center">
-                <p className="font-sans text-sm font-medium uppercase tracking-wider text-gold">
+                <p className="font-sans text-sm font-medium uppercase tracking-wider text-gold-dark">
                   {featuredArticle.date}
                 </p>
                 <p className="mt-2 font-sans text-sm font-light italic text-grey-mid">
@@ -138,7 +138,7 @@ export function PublicationsGrid() {
                     </div>
                   )}
                   <div>
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-dark">
                       {item.date}
                     </p>
                     <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-navy md:text-2xl">

@@ -70,7 +70,7 @@ export default function CabinetPage() {
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <FadeInSection>
-            <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text text-justify md:text-base">
+            <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
               <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
               <p>Serge Vitali a été élu en octobre 2026 président de l&apos;EEFIC, Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux.</p>
               <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels, ainsi que tous types de biens immobiliers résidentiels.</p>
@@ -86,7 +86,7 @@ export default function CabinetPage() {
       <SectionWrapper className="border-t border-grey-light bg-ivory">
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
-            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Le cabinet Vitali est membre des compagnies suivantes :</p>
+            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark">Le cabinet Vitali est membre des compagnies suivantes :</p>
             <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {affiliations.map((a) => (
                 <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-6 opacity-70 transition-opacity hover:opacity-100">
@@ -137,7 +137,7 @@ export default function CabinetPage() {
           <FadeInSection>
             <div className="mt-12 border-t border-grey-light pt-10 text-center">
               <h2 className="font-display text-2xl font-semibold text-navy">Inscription sur les listes dans les rubriques suivantes :</h2>
-              <p className="mt-2 font-sans text-sm font-semibold uppercase tracking-widest text-gold text-center">
+              <p className="mt-2 font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark text-center">
                 Cour d&apos;appel d&apos;Aix-en-Provence &amp; Cour administrative d&apos;appel de Marseille
               </p>
               <ul className="mt-6 space-y-2 font-sans text-sm font-light text-text">

@@ -38,7 +38,7 @@ export function ExpertiseChat() {
       {/* Header */}
       <div className="mb-8 flex items-center gap-3">
         <div className="h-px flex-1 bg-grey-light" />
-        <span className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
+        <span className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-dark">
           Questions fréquentes
         </span>
         <div className="h-px flex-1 bg-grey-light" />

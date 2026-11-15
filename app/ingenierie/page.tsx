@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/metadata";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { FadeInSection } from "@/components/motion/FadeInSection";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Ingénierie immobilière",
@@ -12,13 +13,12 @@ export const metadata = createMetadata({
 export default function IngenieriePage() {
   return (
     <>
-      <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Ingénierie immobilière" }]} />
-          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">Ingénierie immobilière</h1>
-          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">Services stratégiques complets pour les bailleurs et preneurs en immobilier commercial.</p>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[{ label: "Accueil", href: "/" }, { label: "Ingénierie immobilière" }]}
+        eyebrow="Conseil · Stratégie"
+        title="Ingénierie immobilière"
+        intro="Services stratégiques complets pour les bailleurs et preneurs en immobilier commercial."
+      />
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">

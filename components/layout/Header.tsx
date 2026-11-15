@@ -54,11 +54,11 @@ export function Header() {
             </button>
             <Link href="/" aria-label={`${SITE.cabinetFull} — Accueil`} className="hidden lg:block">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo-navy.png"
                 alt={SITE.cabinetFull}
-                width={220}
-                height={110}
-                className="object-contain"
+                width={180}
+                height={81}
+                className="h-auto w-[180px] object-contain"
                 priority
               />
             </Link>

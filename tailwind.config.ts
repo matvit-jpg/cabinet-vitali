@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         navy: { DEFAULT: "#0D1B2A", light: "#1A2E42" },
-        gold: { DEFAULT: "#C9A84C", light: "#E2C97E" },
+        gold: { DEFAULT: "#C9A84C", light: "#E2C97E", dark: "#8A6D1F" },
         ivory: "#F8F6F1",
         "grey-light": "#E8E6E1",
         "grey-mid": "#9A9590",

@@ -1,39 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import type { Expertise } from "@/lib/expertises";
 import { ExpertiseIcon } from "@/lib/icons-expertise";
 
 export function ExpertiseListCard(e: Expertise) {
   return (
-    <motion.li
-      whileHover={{ scale: 1.01 }}
-      transition={{ duration: 0.2 }}
-      className="expertise-card group relative aspect-[4/3] overflow-hidden rounded-sm border border-grey-light shadow-card"
-      style={{
-        backgroundImage: "url('/images/justice.jpg')",
-        backgroundSize: "var(--card-bg-size)",
-        backgroundPosition: "var(--card-bg-pos)",
-        transition: "background-size 0.5s ease",
-      }}
-    >
-      <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-navy/60 transition group-hover:from-navy/95 group-hover:via-navy/75 group-hover:to-navy/50" />
+    <li className="group h-full">
       <Link
         href={`/expertises/${e.slug}`}
-        className="relative z-10 flex h-full flex-col justify-end p-4 md:p-8 text-ivory"
+        className="flex h-full flex-col rounded-sm border border-grey-light bg-white p-6 shadow-card transition duration-300 hover:-translate-y-0.5 hover:border-gold-dark/50 hover:shadow-elevated md:p-8"
       >
-        <ExpertiseIcon name={e.icon} className="mb-2 h-5 w-5 md:mb-3 md:h-8 md:w-8 text-gold" />
-        <h2 className="font-display text-[11px] md:text-xl font-semibold tracking-tight">
+        <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-ivory text-gold-dark transition-colors group-hover:bg-navy group-hover:text-gold-light">
+          <ExpertiseIcon name={e.icon} className="h-6 w-6" />
+        </span>
+        <h2 className="mt-5 font-display text-2xl font-semibold leading-snug tracking-tight text-navy">
           {e.title}
         </h2>
-        <p className="mt-1 md:mt-2 font-sans text-[9px] md:text-sm font-light text-ivory/85 line-clamp-2">
+        <p className="mt-2 flex-1 font-sans text-sm font-light leading-relaxed text-navy/70 md:text-base">
           {e.shortDescription}
         </p>
-        <span className="mt-1 inline-flex md:mt-3 font-sans text-[9px] md:text-xs font-medium uppercase tracking-wider text-gold-light">
+        <span className="mt-6 inline-flex items-center gap-2 font-sans text-xs font-semibold uppercase tracking-widest text-gold-dark">
           Voir le détail
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
         </span>
       </Link>
-    </motion.li>
+    </li>
   );
 }

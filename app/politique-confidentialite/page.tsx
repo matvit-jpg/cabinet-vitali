@@ -2,6 +2,7 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Politique de confidentialité",
@@ -12,19 +13,11 @@ export const metadata = createMetadata({
 export default function PolitiqueConfidentialitePage() {
   return (
     <>
-      <section className="border-b border-grey-light bg-ivory py-16">
-        <div className="mx-auto max-w-3xl px-4 lg:px-8">
-          <Breadcrumb
-            items={[
-              { label: "Accueil", href: "/" },
-              { label: "Politique de confidentialité" },
-            ]}
-          />
-          <h1 className="mt-6 font-display text-4xl font-semibold text-navy">
-            Politique de confidentialité
-          </h1>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[{ label: "Accueil", href: "/" }, { label: "Politique de confidentialité" }]}
+        title="Politique de confidentialité"
+        compact
+      />
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-3xl space-y-4 px-4 font-sans text-sm font-light leading-relaxed text-text lg:px-8">
           <h2 className="font-display text-xl font-semibold text-navy">Responsable du traitement</h2>

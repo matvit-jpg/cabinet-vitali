@@ -19,7 +19,7 @@ export function DecideursLogo() {
           <h2 className="font-display text-xl font-semibold tracking-tight text-ivory md:text-4xl">
             Expertise et Stratégie Immobilière
           </h2>
-          <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-ivory/80 text-justify md:text-base">
+          <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-ivory/80 md:text-base">
             <p>
               Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence
               et la Cour administrative d&apos;appel de Marseille, Serge VITALI

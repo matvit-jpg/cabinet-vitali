@@ -4,6 +4,7 @@ import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Contact",
@@ -14,23 +15,17 @@ export const metadata = createMetadata({
 export default function ContactPage() {
   return (
     <>
-      <section className="border-b border-grey-light bg-ivory py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <Breadcrumb
-            items={[
-              { label: "Accueil", href: "/" },
-              { label: "Contact" },
-            ]}
-          />
-          <h1 className="mt-6 font-display text-2xl font-semibold tracking-tight text-navy md:text-4xl lg:text-5xl">
-            Contact
-          </h1>
-          <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">
-            Expliquez votre contexte : nous vous répondons sous 48 heures
-            ouvrées.
-          </p>
-        </div>
-      </section>
+      <PageHeader
+        crumbs={[{ label: "Accueil", href: "/" }, { label: "Contact" }]}
+        eyebrow="Prendre contact"
+        title="Contact"
+        intro="Expliquez votre contexte : nous vous répondons sous 48 heures ouvrées."
+        facts={[
+          { k: "48 h", v: "Délai de réponse, jours ouvrés" },
+          { k: "RDV", v: "Échanges et visites sur rendez-vous uniquement" },
+          { k: "13 · 83", v: "Bouches-du-Rhône et Var, interventions sur tout le territoire" },
+        ]}
+      />
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-[3fr_2fr] lg:gap-16 lg:px-8">
@@ -47,7 +42,7 @@ export default function ContactPage() {
               </h2>
               <ul className="mt-6 space-y-4 font-sans text-sm text-text">
                 <li className="flex gap-3">
-                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
+                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                   <span>
                     <span className="block font-medium text-navy">Bureau Marseille</span>
                     <span className="block">46b Boulevard Sicard</span>
@@ -58,7 +53,7 @@ export default function ContactPage() {
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 shrink-0 text-gold" aria-hidden />
+                  <Phone className="h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                   <a
                     href={`tel:${SITE.phone.replace(/\s/g, "")}`}
                     className="hover:text-gold"
@@ -67,13 +62,13 @@ export default function ContactPage() {
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 shrink-0 text-gold" aria-hidden />
+                  <Mail className="h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                   <a href={`mailto:${SITE.email}`} className="hover:text-gold">
                     {SITE.email}
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Clock className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
+                  <Clock className="mt-0.5 h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                   <span>Uniquement sur RDV.</span>
                 </li>
               </ul>

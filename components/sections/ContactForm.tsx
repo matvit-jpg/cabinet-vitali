@@ -70,7 +70,7 @@ export function ContactForm() {
     >
       <div>
         <label htmlFor="name" className="font-sans text-sm font-medium text-navy">
-          Nom complet <span className="text-gold">*</span>
+          Nom complet <span className="text-gold-dark">*</span>
         </label>
         <input
           id="name"
@@ -104,7 +104,7 @@ export function ContactForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div>
           <label htmlFor="email" className="font-sans text-sm font-medium text-navy">
-            Email <span className="text-gold">*</span>
+            Email <span className="text-gold-dark">*</span>
           </label>
           <input
             id="email"
@@ -138,7 +138,7 @@ export function ContactForm() {
           htmlFor="requestType"
           className="font-sans text-sm font-medium text-navy"
         >
-          Type de demande <span className="text-gold">*</span>
+          Type de demande <span className="text-gold-dark">*</span>
         </label>
         <select
           id="requestType"
@@ -155,7 +155,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="message" className="font-sans text-sm font-medium text-navy">
-          Message <span className="text-gold">*</span>
+          Message <span className="text-gold-dark">*</span>
         </label>
         <textarea
           id="message"
@@ -174,13 +174,13 @@ export function ContactForm() {
         <input
           id="rgpd"
           type="checkbox"
-          className="mt-1 h-4 w-4 rounded border-grey-light text-gold focus:ring-gold"
+          className="mt-1 h-4 w-4 rounded border-grey-light text-gold-dark focus:ring-gold"
           {...register("rgpd")}
         />
         <label htmlFor="rgpd" className="font-sans text-sm text-grey-mid">
           J&apos;accepte que mes données soient utilisées pour répondre à ma
           demande, conformément à la politique de confidentialité.{" "}
-          <span className="text-gold">*</span>
+          <span className="text-gold-dark">*</span>
         </label>
       </div>
       <p className="font-sans text-xs leading-relaxed text-grey-mid">
