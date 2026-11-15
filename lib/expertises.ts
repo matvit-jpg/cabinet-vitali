@@ -94,6 +94,8 @@ export const expertises: Expertise[] = [
       "Retrait ou exclusion d'associé",
       "Contestation de valeur (article 1843-4 du Code civil)",
       "Partage de communauté ou d'indivision",
+      "IFI, taxe de 3 %, pacte Dutreil",
+      "Contrôle fiscal et procédure de rectification",
     ],
   },
   {

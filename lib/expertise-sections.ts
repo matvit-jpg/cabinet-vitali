@@ -97,6 +97,12 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
           "La valeur obtenue peut enfin faire l'objet de décotes motivées, notamment pour défaut de liquidité des parts, clauses d'agrément ou position minoritaire, dont le taux est apprécié au regard des caractéristiques propres de la société et de la jurisprudence.",
         ],
       },
+      {
+        heading: "Enjeux fiscaux et patrimoniaux",
+        paragraphs: [
+          "La valeur des parts et celle des immeubles qu'elles représentent servent d'assiette à de nombreux dispositifs : impôt sur la fortune immobilière, droits de succession et de donation, droits d'enregistrement sur les cessions de parts, taxe de 3 % sur la valeur vénale des immeubles, régime du pacte Dutreil, taxation des plus-values. Le cabinet intervient dans ces différentes problématiques, en amont d'une opération de transmission, de cession ou de restructuration comme lors d'un contrôle ou d'une procédure de rectification, aux côtés des avocats fiscalistes, des notaires et des experts-comptables qui en assurent le conseil.",
+        ],
+      },
     ],
   },
 
