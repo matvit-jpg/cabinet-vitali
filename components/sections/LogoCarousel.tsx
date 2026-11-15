@@ -151,7 +151,7 @@ export function LogoCarousel() {
                   alt={client.name}
                   width={120}
                   height={60}
-                  className="h-10 w-28 object-contain opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  className="h-12 w-32 object-contain"
                   unoptimized
                 />
               </a>
