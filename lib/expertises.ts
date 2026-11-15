@@ -82,7 +82,7 @@ export const expertises: Expertise[] = [
   },
   {
     slug: "parts-de-societes",
-    title: "Parts de SCI et sociétés immobilières",
+    title: "Sociétés à prépondérance immobilière",
     icon: "Building2",
     shortDescription:
       "Évaluation des parts de sociétés civiles immobilières et de sociétés à prépondérance immobilière.",

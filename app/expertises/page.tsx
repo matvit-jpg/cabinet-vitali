@@ -24,7 +24,7 @@ export default function ExpertisesPage() {
           { label: "Valeur locative et baux commerciaux", href: "/expertises/valeurs-locatives" },
           { label: "Indemnité d'éviction", href: "/expertises/indemnite-eviction" },
           { label: "Évaluation immobilière", href: "/expertises/evaluation-immobiliere" },
-          { label: "Parts de SCI", href: "/expertises/parts-de-societes" },
+          { label: "Sociétés à prépondérance immobilière", href: "/expertises/parts-de-societes" },
           { label: "Successions, donations, partages", href: "/expertises/successions-donations-partages" },
           { label: "Expropriation", href: "/expertises/indemnites-expropriation" },
           { label: "Préjudices immobiliers", href: "/expertises/prejudices-immobiliers" },
