@@ -91,7 +91,7 @@ export function PublicationsGrid() {
 
       {/* Publications et interventions */}
       {[
-        { label: "Publications", items: publications, offset: 0, bg: "bg-[#F2F0EB]" },
+        { label: "Publications", items: publications, offset: 0, bg: "bg-ivory" },
         { label: "Conférences & interventions", items: interventions, offset: publications.length, bg: "bg-white" },
       ].map((group) => (
         <SectionWrapper key={group.label} className={group.bg}>
@@ -118,7 +118,7 @@ export function PublicationsGrid() {
                     <button
                       type="button"
                       onClick={() => setActiveIndex(galleryEntries.indexOf(item))}
-                      className="group relative h-40 w-full shrink-0 cursor-zoom-in overflow-hidden rounded-sm bg-[#F2F0EB] sm:h-36 sm:w-44"
+                      className="group relative h-40 w-full shrink-0 cursor-zoom-in overflow-hidden rounded-sm bg-ivory sm:h-36 sm:w-44"
                       aria-label={`Agrandir : ${item.title}`}
                     >
                       <Image

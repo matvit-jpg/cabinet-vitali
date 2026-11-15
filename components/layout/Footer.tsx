@@ -66,16 +66,16 @@ export function Footer() {
   </p>
   <div className="mt-4 flex flex-wrap items-center gap-4">
     <a href="https://www.cneji.fr" target="_blank" rel="noopener noreferrer">
-      <img src="/images/cneji.jpg" alt="CNEJI" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="/images/cneji-white.png" alt="CNEJI" className="h-9 w-auto opacity-75 transition-opacity hover:opacity-100" />
     </a>
     <a href="https://eefic.eu/accueil.html" target="_blank" rel="noopener noreferrer">
-      <img src="/images/eefic.png" alt="EEFIC" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="/images/eefic-white.png" alt="EEFIC" className="h-9 w-auto opacity-75 transition-opacity hover:opacity-100" />
     </a>
     <a href="https://www.tegova.org" target="_blank" rel="noopener noreferrer">
-      <img src="/images/rev.png" alt="REV" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="/images/rev-white.png" alt="REV" className="h-9 w-auto opacity-75 transition-opacity hover:opacity-100" />
     </a>
     <a href="https://www.cfei.fr" target="_blank" rel="noopener noreferrer">
-      <img src="/images/cfei.jpeg" alt="CFEI" className="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+      <img src="/images/cfei-white.png" alt="CFEI" className="h-9 w-auto opacity-75 transition-opacity hover:opacity-100" />
     </a>
   </div>
           <a

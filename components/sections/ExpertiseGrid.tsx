@@ -1,7 +1,7 @@
 import { expertises } from "@/lib/expertises";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Divider } from "@/components/ui/Divider";
-import { ExpertiseCard } from "@/components/ui/ExpertiseCard";
+import { ExpertiseListCard } from "@/components/sections/ExpertiseListCard";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 import { Button } from "@/components/ui/Button";
 
@@ -19,16 +19,12 @@ export function ExpertiseGrid() {
           </p>
         </FadeInSection>
         <Divider />
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {["valeurs-locatives", "evaluation-immobiliere", "prejudices-immobiliers"].map((slug) => {
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {["valeurs-locatives", "indemnite-eviction", "evaluation-immobiliere"].map((slug) => {
             const e = expertises.find((x) => x.slug === slug)!;
-            return (
-              <FadeInSection key={e.slug}>
-                <ExpertiseCard expertise={e} href={`/expertises/${e.slug}`} />
-              </FadeInSection>
-            );
+            return <ExpertiseListCard key={e.slug} {...e} />;
           })}
-        </div>
+        </ul>
         <div className="mt-14 flex justify-center">
           <Button href="/expertises" variant="secondary">
             Voir toutes nos expertises

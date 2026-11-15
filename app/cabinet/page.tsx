@@ -28,14 +28,14 @@ export default function CabinetPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-24 lg:px-8">
           <div>
             <Breadcrumb items={[{ label: "Accueil", href: "/" }, { label: "Le Cabinet" }]} />
-            <p className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-[#8A6D1F]">
+            <p className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-gold-dark">
               Expertise immobilière · Marseille · Aix-en-Provence
             </p>
             <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-navy md:text-6xl lg:text-7xl">Le Cabinet</h1>
             <p className="mt-6 max-w-2xl text-left font-sans text-base font-light leading-relaxed text-navy/75 md:text-xl">
               Serge Vitali, expert judiciaire près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille. Rigueur méthodologique et indépendance, en contentieux comme en amiable.
             </p>
-            <div className="mt-8 h-px max-w-3xl bg-[#8A6D1F]/40" />
+            <div className="mt-8 h-px max-w-3xl bg-gold-dark/40" />
             <dl className="mt-8 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-4">
               {[
                 { k: "2017", v: "Inscrit sur la liste de la Cour d'appel" },
@@ -45,7 +45,7 @@ export default function CabinetPage() {
               ].map((r) => (
                 <div key={r.k} className="flex flex-col-reverse gap-1.5">
                   <dd className="font-sans text-[13px] leading-snug text-navy/70">{r.v}</dd>
-                  <dt className="font-display text-4xl font-semibold leading-none text-[#8A6D1F]">{r.k}</dt>
+                  <dt className="font-display text-4xl font-semibold leading-none text-gold-dark">{r.k}</dt>
                 </div>
               ))}
             </dl>
@@ -57,7 +57,7 @@ export default function CabinetPage() {
                 <Image src={portrait} alt="Portrait de Serge Vitali" fill className="object-cover grayscale" sizes="(max-width: 1024px) 288px, 340px" priority />
               </div>
             </div>
-            <a href="https://www.linkedin.com/in/sergevitali/" target="_blank" rel="noopener noreferrer" className="mt-8 flex items-center gap-2 font-sans text-sm text-navy transition-colors hover:text-[#8A6D1F]">
+            <a href="https://www.linkedin.com/in/sergevitali/" target="_blank" rel="noopener noreferrer" className="mt-8 flex items-center gap-2 font-sans text-sm text-navy transition-colors hover:text-gold-dark">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
