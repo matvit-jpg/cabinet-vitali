@@ -71,13 +71,9 @@ export default function CabinetPage() {
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <FadeInSection>
             <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
-              <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
-              <p>Serge Vitali a été élu en octobre 2026 président de l&apos;EEFIC, Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux.</p>
-              <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels, ainsi que tous types de biens immobiliers résidentiels.</p>
-              <p>Notre cabinet est également spécialisé dans les problématiques liées aux baux commerciaux (déplafonnement, valeur locative, indemnité d&apos;éviction).</p>
-              <p>Nous réalisons également des études d&apos;urbanisme afin d&apos;évaluer les terrains à bâtir.</p>
-              <p>Nous pouvons intervenir sur le plan national.</p>
-              <p>Nous nous conformons à la charte de l&apos;expertise en évaluation immobilière, établie par les principales compagnies nationales d&apos;experts immobiliers et consacrée par la jurisprudence ainsi qu&apos;aux normes européennes d&apos;expertise.</p>
+              <p>Le cabinet Vitali exerce depuis Marseille et Aubagne l&apos;expertise immobilière dans ses deux cadres, judiciaire et amiable. Il intervient à la demande des juridictions, des avocats, des notaires, des établissements financiers et des particuliers, dans le ressort de la Cour d&apos;appel d&apos;Aix-en-Provence comme sur l&apos;ensemble du territoire national.</p>
+              <p>Ses missions portent sur la valeur vénale et la valeur locative des immeubles de toute nature, locaux commerciaux, professionnels et industriels comme biens résidentiels, ainsi que sur les terrains à bâtir, dont l&apos;évaluation s&apos;appuie sur l&apos;analyse des règles d&apos;urbanisme applicables. Le contentieux des baux commerciaux en constitue un domaine de prédilection : fixation du loyer renouvelé ou révisé, déplafonnement, indemnité d&apos;éviction et indemnité d&apos;occupation.</p>
+              <p>Chaque rapport est établi conformément à la Charte de l&apos;expertise en évaluation immobilière, consacrée par la jurisprudence, et aux normes européennes d&apos;évaluation. La méthode y est exposée, les références de marché identifiées et les correctifs justifiés, de sorte que la conclusion puisse être discutée contradictoirement.</p>
             </div>
           </FadeInSection>
         </div>
