@@ -26,8 +26,8 @@ export default function ContactPage() {
             Contact
           </h1>
           <p className="mt-4 max-w-2xl font-sans text-sm font-light text-grey-mid md:text-lg">
-            Expliquez votre contexte : nous vous répondons dans les meilleurs
-            délais.
+            Expliquez votre contexte : nous vous répondons sous 48 heures
+            ouvrées.
           </p>
         </div>
       </section>

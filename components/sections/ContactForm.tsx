@@ -183,6 +183,20 @@ export function ContactForm() {
           <span className="text-gold">*</span>
         </label>
       </div>
+      <p className="font-sans text-xs leading-relaxed text-grey-mid">
+        Les informations recueillies sont traitées par la Société d&apos;exploitation
+        du Cabinet Vitali, responsable du traitement, aux seules fins de répondre à
+        votre demande et, le cas échéant, d&apos;établir une proposition
+        d&apos;intervention. Elles sont conservées trois ans à compter du dernier
+        contact. Vous pouvez exercer vos droits d&apos;accès, de rectification,
+        d&apos;effacement, de limitation et d&apos;opposition en écrivant à
+        sergevitali@cabinetvitali.fr, et introduire une réclamation auprès de la
+        CNIL. Voir la{" "}
+        <a href="/politique-confidentialite" className="underline decoration-gold underline-offset-2">
+          politique de confidentialité
+        </a>
+        .
+      </p>
       {errors.rgpd && (
         <p className="font-sans text-xs text-red-700" role="alert">
           {errors.rgpd.message}

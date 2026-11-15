@@ -2,7 +2,6 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { CookieConsentBanner } from "@/components/CookieConsent";
 import { defaultLayoutMetadata, jsonLdProfessionalService } from "@/lib/metadata";
 import "./globals.css";
 
@@ -41,7 +40,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <CookieConsentBanner />
         <Analytics />
       </body>
     </html>

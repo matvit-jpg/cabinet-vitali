@@ -102,12 +102,6 @@ export function Footer() {
             <a href="/CGV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
               CGV
             </a>
-            <button
-              onClick={() => window.dispatchEvent(new Event("open-cookie-settings"))}
-              className="hover:text-gold"
-            >
-              Gérer les cookies
-            </button>
           </div>
           <p>
           © {new Date().getFullYear()} {SITE.cabinetFull}.
