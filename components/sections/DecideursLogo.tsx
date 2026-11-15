@@ -48,26 +48,70 @@ export function DecideursLogo() {
           </div>
 
           <a
-            href="https://www.decideurs-magazine.com"
+            href="https://www.leadersleague.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group block"
-            aria-label="Classement Décideurs Leaders League — Pratique réputée chaque année depuis 2021"
+            className="group block w-full max-w-xl"
+            aria-label="Classement Décideurs Leaders League — Immobilier, Expertise judiciaire – Commerce, classé chaque année depuis 2021"
           >
-            <div className="rounded-sm border border-gold/30 bg-white/95 p-1 shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]">
-              <Image
-                src="/images/decideurs.jpg"
-                alt="Décideurs Magazine — Pratique réputée 2025, Immobilier / Expertise judiciaire"
-                width={640}
-                height={320}
-                className="block object-contain"
-              />
+            <div className="relative flex flex-col items-center overflow-hidden rounded-sm border border-gold/40 bg-navy/80 px-6 py-10 text-center shadow-2xl backdrop-blur-sm transition-transform duration-300 group-hover:scale-[1.02] md:px-12">
+              {/* Filets d'angle dorés */}
+              <span className="pointer-events-none absolute left-3 top-3 h-6 w-6 border-l border-t border-gold/70" />
+              <span className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-gold/70" />
+              <span className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-gold/70" />
+              <span className="pointer-events-none absolute bottom-3 right-3 h-6 w-6 border-b border-r border-gold/70" />
+
+              <div className="rounded-sm bg-white px-4 py-2 shadow-md">
+                <Image
+                  src="/images/leaders-league-logo.png"
+                  alt="Décideurs Leaders League"
+                  width={304}
+                  height={106}
+                  className="h-auto w-48 md:w-56"
+                />
+              </div>
+              <p className="mt-5 font-display text-3xl font-semibold text-ivory md:text-4xl">
+                Immobilier
+              </p>
+              <p className="mt-1 font-sans text-sm font-light uppercase tracking-widest text-ivory/80">
+                Expertise judiciaire – Commerce
+              </p>
+
+              <div className="my-7 flex w-full max-w-xs items-center gap-3">
+                <span className="h-px flex-1 bg-gold/50" />
+                <span className="text-gold">✦</span>
+                <span className="h-px flex-1 bg-gold/50" />
+              </div>
+
+              <p className="font-display text-2xl italic text-gold-light md:text-3xl">
+                Pratique réputée
+              </p>
+              <p className="mt-2 font-sans text-xs font-light text-ivory/70">
+                Classé chaque année depuis 2021
+              </p>
+
+              <ul className="mt-6 flex flex-wrap justify-center gap-1.5">
+                {[2021, 2022, 2023, 2024, 2025, 2026].map((y) => (
+                  <li
+                    key={y}
+                    className={`rounded-sm border px-2.5 py-1 font-sans text-xs tracking-wider ${
+                      y === 2026
+                        ? "border-gold bg-gold font-semibold text-navy"
+                        : "border-gold/40 text-ivory/80"
+                    }`}
+                  >
+                    {y}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 flex w-full flex-col items-center justify-center gap-1 border-t border-ivory/10 pt-6 sm:flex-row sm:gap-6">
+                <span className="font-display text-lg tracking-wide text-ivory">CABINET VITALI</span>
+                <span className="hidden h-4 w-px bg-gold/50 sm:block" />
+                <span className="font-display text-lg italic text-ivory/90">Serge Vitali</span>
+              </div>
             </div>
           </a>
-
-          <p className="mt-8 font-sans text-sm font-light text-ivory/70">
-            Classement <span className="text-ivory/90">Décideurs Leaders League</span> · Pratique réputée chaque année depuis 2021 (édition 2026 incluse)
-          </p>
         </div>
       </div>
     </div>
