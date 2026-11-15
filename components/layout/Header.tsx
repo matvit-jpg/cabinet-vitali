@@ -65,13 +65,13 @@ export function Header() {
           </div>
 
           {/* Centre — Navigation desktop uniquement */}
-          <nav className="hidden items-center justify-center gap-10 lg:flex" aria-label="Navigation principale">
+          <nav className="hidden items-center justify-center gap-7 whitespace-nowrap lg:flex xl:gap-10" aria-label="Navigation principale">
             {links.map((l) => {
               if (l.dropdown) {
                 const isActive = l.dropdown.some(d => pathname.startsWith(d.href));
                 return (
                   <div key="expertises" className="relative" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
-                    <button className={`group relative flex items-center gap-1.5 font-sans text-xl font-medium transition hover:text-gold ${isActive ? "text-gold" : "text-navy"}`}>
+                    <button className={`group relative flex items-center gap-1.5 whitespace-nowrap font-sans text-lg font-medium xl:text-xl transition hover:text-gold ${isActive ? "text-gold" : "text-navy"}`}>
                       {l.label}
                       <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`} />
                       <span className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-gold transition-transform duration-300 ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} aria-hidden />
@@ -98,7 +98,7 @@ export function Header() {
               }
               const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
               return (
-                <Link key={l.href} href={l.href} className={`group relative font-sans text-xl font-medium transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
+                <Link key={l.href} href={l.href} className={`group relative whitespace-nowrap font-sans text-lg font-medium xl:text-xl transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
                   {l.label}
                   <span className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-gold transition-transform duration-300 ${active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} aria-hidden />
                 </Link>

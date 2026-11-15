@@ -23,7 +23,7 @@ export function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
 
   return (
-    <section ref={sectionRef} className="relative min-h-[90vh] overflow-hidden">
+    <section ref={sectionRef} className="relative min-h-[70vh] overflow-hidden">
       <motion.div
         className="absolute inset-0"
         style={{ scale, y }}
@@ -53,7 +53,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative z-10 flex min-h-[90vh] flex-col items-center justify-center px-4 pb-24 pt-52 text-center">
+      <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-4 pb-20 pt-40 text-center md:pt-36">
         <AnimatedText>
           <AnimatedLine>
             <h1 className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance">
@@ -61,7 +61,7 @@ export function Hero() {
             </h1>
           </AnimatedLine>
           <AnimatedLine>
-            <div className="mx-auto mt-6 text-center font-sans text-sm font-light text-ivory/90 md:text-xl">
+            <div className="mx-auto mt-6 text-center font-sans text-sm font-light text-ivory/90 md:text-xl [&>p]:!text-center">
               <p>Cabinet d&apos;expertise immobilière dirigé par Serge Vitali,</p>
               <p>expert judiciaire près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
             </div>
