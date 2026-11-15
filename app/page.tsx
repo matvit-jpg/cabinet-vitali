@@ -6,7 +6,7 @@ import { ExpertiseGrid } from "@/components/sections/ExpertiseGrid";
 export const metadata = createMetadata({
   title: "Accueil",
   description:
-    "Expert judiciaire agréé — évaluations immobilières opposables devant les tribunaux. Clarté, rigueur et autorité.",
+    "Expert judiciaire inscrit près la Cour d'appel d'Aix-en-Provence — évaluations immobilières opposables devant les tribunaux. Clarté, rigueur et autorité.",
   path: "/",
 });
 

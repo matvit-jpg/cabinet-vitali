@@ -149,7 +149,7 @@ export default function ExpertiseJudiciairePage() {
             {/* Cour Administrative d'Appel de Marseille */}
             <div>
               <p className="font-sans text-base text-text">
-                <strong>Serge VITALI est inscrit sur la liste des Experts prés la Cour Administrative d&apos;Appel de Marseille</strong> dans les rubriques suivantes&nbsp;:
+                <strong>Serge Vitali est inscrit sur la liste des experts près la Cour administrative d&apos;appel de Marseille</strong> dans les rubriques suivantes&nbsp;:
               </p>
               <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
                 <li className="flex items-start gap-2">

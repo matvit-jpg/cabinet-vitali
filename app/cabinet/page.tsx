@@ -8,13 +8,13 @@ import { LogoCarousel } from "@/components/sections/LogoCarousel";
 
 export const metadata = createMetadata({
   title: "Le Cabinet",
-  description: `Présentation du cabinet ${SITE.cabinetFull} — expert judiciaire agréé, parcours, agréments et engagements.`,
+  description: `Présentation du cabinet ${SITE.cabinetFull} — expert judiciaire inscrit, parcours, agréments et engagements.`,
   path: "/cabinet",
 });
 
 const affiliations = [
   { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
-  { name: "Fédération Nationale des Experts Évaluateurs Fonciers", url: "https://eefic.eu/accueil.html", logo: "/images/eefic.png", maxH: "h-24" },
+  { name: "Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux (EEFIC)", url: "https://eefic.eu/accueil.html", logo: "/images/eefic.png", maxH: "h-24" },
   { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
   { name: "Compagnie des experts près la CAA de Marseille", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
 ];
@@ -51,7 +51,8 @@ export default function CabinetPage() {
           </FadeInSection>
           <FadeInSection>
             <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text text-justify md:text-base">
-              <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;Appel d&apos;Aix-en-Provence et la Cour Administrative d&apos;Appel de Marseille.</p>
+              <p>Notre cabinet d&apos;expertises et d&apos;ingénierie immobilière, établi à Marseille et Aubagne, est dirigé par Serge Vitali, expert près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
+              <p>Serge Vitali a été élu en octobre 2026 président de l&apos;EEFIC, Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux.</p>
               <p>Nous sommes spécialisés dans l&apos;expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels, ainsi que tous types de biens immobiliers résidentiels.</p>
               <p>Notre cabinet est également spécialisé dans les problématiques liées aux baux commerciaux (déplafonnement, valeur locative, indemnité d&apos;éviction).</p>
               <p>Nous réalisons également des études d&apos;urbanisme afin d&apos;évaluer les terrains à bâtir.</p>
@@ -65,7 +66,7 @@ export default function CabinetPage() {
       <SectionWrapper className="border-t border-grey-light bg-ivory">
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
-            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Le cabinet Vitali est membre des compagnies suivantes</p>
+            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">Le cabinet Vitali est membre des compagnies suivantes :</p>
             <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {affiliations.map((a) => (
                 <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-6 opacity-70 transition-opacity hover:opacity-100">
@@ -93,21 +94,21 @@ export default function CabinetPage() {
                 </a>
                 <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
                   <p>Le cabinet Vitali est certifié <strong>REV</strong> par TEGOVA.</p>
-                  <p>Le statut <strong>REV</strong> est symbole d&apos;excellence en matière d&apos;évaluation immobilière.</p>
-                  <p>L&apos;évaluateur est qualifié conformément aux standards Européens d&apos;évaluation immobilière les plus stricts.</p>
+                  <p>Le statut <strong>REV</strong> est un symbole d&apos;excellence en matière d&apos;évaluation immobilière.</p>
+                  <p>L&apos;évaluateur est qualifié conformément aux standards européens d&apos;évaluation immobilière les plus stricts.</p>
                   <p>Depuis sa création, le statut REV a été décerné par les principales associations d&apos;experts en évaluation immobilière à travers l&apos;Europe.</p>
                 </div>
               </div>
               {/* Colonne droite — CFEI */}
               <div className="mt-12 lg:mt-0 lg:pl-12">
                 <h2 className="font-display text-2xl font-semibold text-navy">Formateur</h2>
-                <a href="https://www.cfei.fr" target="_blank" rel="noopener noreferrer" title="Centre de Formation à l'Expertise Immobilière" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
+                <a href="https://www.cfei.fr" target="_blank" rel="noopener noreferrer" title="Centre de formation et de perfectionnement à l'expertise immobilière (CFEI)" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
                 <div className="relative h-20 w-20">
                     <Image src="/images/cfei.jpeg" alt="CFEI" fill className="object-contain" />
                   </div>
                 </a>
                 <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
-                  <p>Serge Vitali est formateur au Centre de Formation et de perfectionnement à l&apos;Expertise Immobilière (CFEI).</p>
+                  <p>Serge Vitali est formateur au Centre de formation et de perfectionnement à l&apos;expertise immobilière (CFEI).</p>
                   <p>Leader de la formation aux méthodes d&apos;évaluation immobilière, foncière et commerciale.</p>
                 </div>
               </div>

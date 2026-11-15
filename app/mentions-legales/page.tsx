@@ -29,7 +29,11 @@ export default function MentionsLegalesPage() {
         <div className="mx-auto max-w-3xl px-4 font-sans text-sm font-light leading-relaxed text-text lg:px-8">
           <p>
             <strong className="font-medium text-navy">Éditeur :</strong>{" "}
-            {SITE.cabinetFull}, {SITE.addressLines.join(", ")}.
+            SARL Cabinet VITALI — siège social : 22 avenue de Verdun, 13400 Aubagne ; adresse postale : 46b boulevard Sicard, 13008 Marseille.
+          </p>
+          <p className="mt-4">
+            <strong className="font-medium text-navy">Directeur de la publication :</strong>{" "}
+            Serge Vitali, gérant.
           </p>
           <p className="mt-4">
             <strong className="font-medium text-navy">Contact :</strong>{" "}
@@ -37,7 +41,7 @@ export default function MentionsLegalesPage() {
           </p>
           <p className="mt-4">
             <strong className="font-medium text-navy">Hébergement :</strong>{" "}
-            Vercel Inc. (selon déploiement effectif).
+            Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, États-Unis.
           </p>
           <p className="mt-4 text-grey-mid">
             Les informations présentes sont fournies à titre indicatif et ne

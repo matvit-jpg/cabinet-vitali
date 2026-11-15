@@ -51,7 +51,7 @@ export function defaultLayoutMetadata(): Metadata {
       default: `Accueil | ${titleSuffix}`,
       template: `%s | ${titleSuffix}`,
     },
-    description: `${SITE.cabinetFull} — expert judiciaire agréé à ${SITE.city}. Évaluations immobilières et rapports opposables devant les tribunaux.`,
+    description: `${SITE.cabinetFull} — expert judiciaire inscrit, à ${SITE.city}. Évaluations immobilières et rapports opposables devant les tribunaux.`,
   };
 }
 
@@ -67,7 +67,7 @@ export function jsonLdProfessionalService() {
         "@id": `${url}/#organization`,
         name: SITE.cabinetFull,
         description:
-          "Expert judiciaire agréé — évaluations immobilières et rapports opposables devant les tribunaux.",
+          "Expert judiciaire inscrit près la Cour d'appel d'Aix-en-Provence — évaluations immobilières et rapports opposables devant les tribunaux.",
         url,
         telephone: SITE.phone,
         email: SITE.email,
@@ -75,7 +75,7 @@ export function jsonLdProfessionalService() {
           "@type": "PostalAddress",
           streetAddress: SITE.addressLines[0],
           addressLocality: SITE.city,
-          postalCode: "75002",
+          postalCode: "13008",
           addressCountry: "FR",
         },
         areaServed: { "@type": "City", name: SITE.city },

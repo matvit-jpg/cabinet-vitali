@@ -15,7 +15,7 @@ const links = [
   {
     label: "Expertises",
     dropdown: [
-      { href: "/expertises", label: "Domaines d'expertises" },
+      { href: "/expertises", label: "Domaines d'expertise" },
       { href: "/expertise-judiciaire", label: "Expertise judiciaire" },
       { href: "/ingenierie", label: "Ingénierie immobilière" },
       { href: "/arbitrage", label: "Arbitrage" },

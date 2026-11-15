@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 
 const expertises = [
-  { href: "/expertises", label: "Domaines d'expertises" },
+  { href: "/expertises", label: "Domaines d'expertise" },
   { href: "/expertise-judiciaire", label: "Expertise judiciaire" },
   { href: "/ingenierie", label: "Ingénierie immobilière" },
   { href: "/arbitrage", label: "Arbitrage" },
