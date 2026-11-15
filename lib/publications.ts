@@ -79,8 +79,9 @@ export const interventions: PublicationEntry[] = [
   {
     kind: "intervention",
     date: "30 octobre 2026",
-    source: "Colloque « Les usages de l'IA pour les experts de justice » — visioconférence ouverte aux experts de toute la France",
+    source: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM) — colloque « Les usages de l'IA pour les experts de justice », en visioconférence",
     title: "Les risques de l'IA dans l'évaluation immobilière",
+    image: "/images/cecaam.png",
   },
   {
     kind: "intervention",
