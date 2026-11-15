@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 export const metadata = createMetadata({
   title: "Publications & interventions",
   description:
-    "Articles, presse et interventions du cabinet Vitali.",
+    "Articles de Serge Vitali dans l'AJDI (Lefebvre Dalloz), observatoires des loyers judiciaires d'Aix-en-Provence et Marseille, conférences sur les baux commerciaux et l'expertise judiciaire.",
   path: "/publications",
 });
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { featuredArticle, galleryImages } from "@/lib/publications";
+import { featuredArticle, galleryImages, publications, interventions, type PublicationEntry } from "@/lib/publications";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 
@@ -89,52 +89,63 @@ export function PublicationsGrid() {
         </div>
       </SectionWrapper>
 
-      {/* Revue de presse */}
-      <SectionWrapper className="bg-[#F2F0EB]">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-
-          <div className="mb-10 flex items-center gap-4">
-            <div className="h-px flex-1 bg-navy/15" />
-            <span className="font-sans text-xs font-semibold uppercase tracking-widest text-navy/50">
-              Revue de presse &amp; publications
-            </span>
-            <div className="h-px flex-1 bg-navy/15" />
+      {/* Publications et interventions */}
+      {[
+        { label: "Publications", items: publications, offset: 0, bg: "bg-[#F2F0EB]" },
+        { label: "Conférences & interventions", items: interventions, offset: publications.length, bg: "bg-white" },
+      ].map((group) => (
+        <SectionWrapper key={group.label} className={group.bg}>
+          <div className="mx-auto max-w-5xl px-4 lg:px-8">
+            <div className="mb-10 flex items-center gap-4">
+              <div className="h-px flex-1 bg-navy/15" />
+              <h2 className="font-sans text-xs font-semibold uppercase tracking-widest text-navy/60">
+                {group.label}
+              </h2>
+              <div className="h-px flex-1 bg-navy/15" />
+            </div>
+            <ul className="space-y-6">
+              {group.items.map((item: PublicationEntry, i: number) => (
+                <motion.li
+                  key={item.image}
+                  custom={i * 0.05}
+                  variants={itemVariant}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, margin: "-50px" }}
+                  className="flex flex-col gap-5 rounded-sm border border-navy/10 bg-white p-5 shadow-[0_2px_12px_rgba(13,27,42,0.06)] sm:flex-row sm:items-center sm:gap-8"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setActiveIndex(group.offset + i)}
+                    className="group relative h-40 w-full shrink-0 cursor-zoom-in overflow-hidden rounded-sm bg-[#F2F0EB] sm:h-36 sm:w-44"
+                    aria-label={`Agrandir : ${item.title}`}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="176px"
+                      className="object-contain p-1 transition-transform duration-500 group-hover:scale-[1.04]"
+                    />
+                  </button>
+                  <div>
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
+                      {item.date}
+                    </p>
+                    <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-navy md:text-2xl">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 font-sans text-sm font-light text-grey-mid">
+                      {item.source}
+                      {item.reference ? ` — ${item.reference}` : ""}
+                    </p>
+                  </div>
+                </motion.li>
+              ))}
+            </ul>
           </div>
-
-          <div className="grid grid-cols-2 gap-6 lg:grid-cols-5">
-            {galleryImages.map((src, i) => (
-              <motion.div
-                key={src}
-                custom={i * 0.07}
-                variants={itemVariant}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, margin: "-50px" }}
-                onClick={() => setActiveIndex(i)}
-                className="group relative cursor-zoom-in bg-white shadow-[0_2px_12px_rgba(13,27,42,0.08)] transition-shadow duration-300 hover:shadow-[0_6px_24px_rgba(13,27,42,0.14)]"
-              >
-                <div className="h-1 w-full bg-gold/60" />
-                <span className="pointer-events-none absolute left-2 top-3 h-4 w-4 border-l border-t border-gold/40" />
-                <span className="pointer-events-none absolute right-2 top-3 h-4 w-4 border-r border-t border-gold/40" />
-                <span className="pointer-events-none absolute bottom-2 left-2 h-4 w-4 border-b border-l border-gold/40" />
-                <span className="pointer-events-none absolute bottom-2 right-2 h-4 w-4 border-b border-r border-gold/40" />
-                <div className="relative h-64 w-full overflow-hidden p-2">
-                  <Image
-                    src={src}
-                    alt={`Publication ${i + 1}`}
-                    fill
-                    className="object-contain transition-transform duration-500 ease-out group-hover:scale-[1.015]"
-                  />
-                </div>
-                <div className="absolute bottom-3 right-3 flex h-6 w-6 items-center justify-center rounded-full bg-navy/8 font-sans text-[10px] font-medium text-navy/40">
-                  {i + 1}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-        </div>
-      </SectionWrapper>
+        </SectionWrapper>
+      ))}
 
       {/* Lightbox */}
       <AnimatePresence>
@@ -178,7 +189,7 @@ export function PublicationsGrid() {
             >
               <Image
                 src={galleryImages[activeIndex]}
-                alt={`Publication ${activeIndex + 1}`}
+                alt={[...publications, ...interventions][activeIndex]?.title ?? "Publication"}
                 width={900}
                 height={1200}
                 className="max-h-[85vh] w-auto rounded-sm object-contain shadow-elevated"
