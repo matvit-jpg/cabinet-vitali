@@ -52,7 +52,7 @@ export function DecideursLogo() {
             target="_blank"
             rel="noopener noreferrer"
             className="group block"
-            aria-label="Classement Décideurs Magazine 2025"
+            aria-label="Classement Décideurs Leaders League — Pratique réputée chaque année depuis 2021"
           >
             <div className="rounded-sm border border-gold/30 bg-white/95 p-1 shadow-2xl transition-transform duration-300 group-hover:scale-[1.02]">
               <Image
@@ -66,7 +66,7 @@ export function DecideursLogo() {
           </a>
 
           <p className="mt-8 font-sans text-sm font-light text-ivory/70">
-            Classement <span className="text-ivory/90">Décideurs Leaders League</span> · Édition 2025
+            Classement <span className="text-ivory/90">Décideurs Leaders League</span> · Pratique réputée chaque année depuis 2021 (édition 2026 incluse)
           </p>
         </div>
       </div>
