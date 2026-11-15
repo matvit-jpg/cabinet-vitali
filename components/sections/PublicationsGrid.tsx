@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { featuredArticle, galleryImages, publications, interventions, type PublicationEntry } from "@/lib/publications";
+import { featuredArticle, galleryImages, galleryEntries, publications, interventions, type PublicationEntry } from "@/lib/publications";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 
@@ -106,7 +106,7 @@ export function PublicationsGrid() {
             <ul className="space-y-6">
               {group.items.map((item: PublicationEntry, i: number) => (
                 <motion.li
-                  key={item.image}
+                  key={item.title}
                   custom={i * 0.05}
                   variants={itemVariant}
                   initial="hidden"
@@ -114,20 +114,29 @@ export function PublicationsGrid() {
                   viewport={{ once: true, margin: "-50px" }}
                   className="flex flex-col gap-5 rounded-sm border border-navy/10 bg-white p-5 shadow-[0_2px_12px_rgba(13,27,42,0.06)] sm:flex-row sm:items-center sm:gap-8"
                 >
-                  <button
-                    type="button"
-                    onClick={() => setActiveIndex(group.offset + i)}
-                    className="group relative h-40 w-full shrink-0 cursor-zoom-in overflow-hidden rounded-sm bg-[#F2F0EB] sm:h-36 sm:w-44"
-                    aria-label={`Agrandir : ${item.title}`}
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      sizes="176px"
-                      className="object-contain p-1 transition-transform duration-500 group-hover:scale-[1.04]"
-                    />
-                  </button>
+                  {item.image ? (
+                    <button
+                      type="button"
+                      onClick={() => setActiveIndex(galleryEntries.indexOf(item))}
+                      className="group relative h-40 w-full shrink-0 cursor-zoom-in overflow-hidden rounded-sm bg-[#F2F0EB] sm:h-36 sm:w-44"
+                      aria-label={`Agrandir : ${item.title}`}
+                    >
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        sizes="176px"
+                        className="object-contain p-1 transition-transform duration-500 group-hover:scale-[1.04]"
+                      />
+                    </button>
+                  ) : (
+                    <div className="flex h-40 w-full shrink-0 flex-col items-center justify-center rounded-sm bg-navy px-3 text-center sm:h-36 sm:w-44">
+                      <span className="font-sans text-[10px] font-semibold uppercase tracking-widest text-gold">
+                        {item.kind === "intervention" ? "Intervention" : "Publication"}
+                      </span>
+                      <span className="mt-2 font-display text-lg leading-tight text-ivory">{item.date}</span>
+                    </div>
+                  )}
                   <div>
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">
                       {item.date}
@@ -189,7 +198,7 @@ export function PublicationsGrid() {
             >
               <Image
                 src={galleryImages[activeIndex]}
-                alt={[...publications, ...interventions][activeIndex]?.title ?? "Publication"}
+                alt={galleryEntries[activeIndex]?.title ?? "Publication"}
                 width={900}
                 height={1200}
                 className="max-h-[85vh] w-auto rounded-sm object-contain shadow-elevated"

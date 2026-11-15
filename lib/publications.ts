@@ -25,7 +25,7 @@ export type PublicationEntry = {
   source: string;
   title: string;
   reference?: string;
-  image: string;
+  image?: string;
 };
 
 /** Publications (plus récentes d'abord) */
@@ -78,6 +78,12 @@ export const publications: PublicationEntry[] = [
 export const interventions: PublicationEntry[] = [
   {
     kind: "intervention",
+    date: "30 octobre 2026",
+    source: "Colloque « Les usages de l'IA pour les experts de justice » — visioconférence ouverte aux experts de toute la France",
+    title: "Les risques de l'IA dans l'évaluation immobilière",
+  },
+  {
+    kind: "intervention",
     date: "17 septembre 2025",
     source: "Barreau de Paris — sous-commission des baux commerciaux",
     title:
@@ -107,4 +113,5 @@ export const interventions: PublicationEntry[] = [
   },
 ];
 
-export const galleryImages: string[] = [...publications, ...interventions].map((p) => p.image);
+export const galleryEntries: PublicationEntry[] = [...publications, ...interventions].filter((p) => p.image);
+export const galleryImages: string[] = galleryEntries.map((p) => p.image as string);
