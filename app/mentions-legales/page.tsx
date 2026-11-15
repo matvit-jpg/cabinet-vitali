@@ -29,7 +29,7 @@ export default function MentionsLegalesPage() {
         <div className="mx-auto max-w-3xl px-4 font-sans text-sm font-light leading-relaxed text-text lg:px-8">
           <p>
             <strong className="font-medium text-navy">Éditeur :</strong>{" "}
-            Société d'exploitation du Cabinet Vitali (S.E.C.V.), exerçant sous le nom commercial « Cabinet Vitali », société à responsabilité limitée immatriculée au RCS de Marseille sous le numéro 800 115 974, TVA intracommunautaire FR96 800 115 974 — siège social : 22 avenue de Verdun, 13400 Aubagne ; adresse postale : 46b boulevard Sicard, 13008 Marseille.
+            Société d&apos;exploitation du Cabinet Vitali (S.E.C.V.), exerçant sous le nom commercial « Cabinet Vitali », société à responsabilité limitée immatriculée au RCS de Marseille sous le numéro 800 115 974, TVA intracommunautaire FR96 800 115 974 — siège social : 22 avenue de Verdun, 13400 Aubagne ; adresse postale : 46b boulevard Sicard, 13008 Marseille.
           </p>
           <p className="mt-4">
             <strong className="font-medium text-navy">Directeur de la publication :</strong>{" "}
