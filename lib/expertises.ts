@@ -65,6 +65,55 @@ export const expertises: Expertise[] = [
     ],
   },
   {
+    slug: "indemnite-eviction",
+    title: "Indemnité d'éviction",
+    icon: "Store",
+    shortDescription:
+      "Calcul de l'indemnité d'éviction et de l'indemnité d'occupation en cas de refus de renouvellement du bail commercial.",
+    fullDescription:
+      "Lorsque le bailleur refuse le renouvellement du bail commercial, le preneur évincé a droit à une indemnité réparant l'intégralité du préjudice subi. Le cabinet en détermine le montant, qu'il s'agisse d'une indemnité de remplacement ou de déplacement, ainsi que l'indemnité d'occupation due pendant le maintien dans les lieux.",
+    useCases: [
+      "Refus de renouvellement avec offre d'indemnité",
+      "Valeur du fonds de commerce et du droit au bail",
+      "Indemnités accessoires (remploi, trouble commercial, réinstallation)",
+      "Indemnité d'occupation",
+      "Exercice du droit de repentir",
+    ],
+  },
+  {
+    slug: "parts-de-societes",
+    title: "Parts de SCI et sociétés immobilières",
+    icon: "Building2",
+    shortDescription:
+      "Évaluation des parts de sociétés civiles immobilières et de sociétés à prépondérance immobilière.",
+    fullDescription:
+      "La valeur des parts d'une société à prépondérance immobilière ne se réduit pas à celle de ses immeubles. Le cabinet évalue les droits sociaux eux-mêmes, en partant de la valeur vénale du patrimoine et en tenant compte du passif, de la fiscalité latente et des décotes justifiées.",
+    useCases: [
+      "Cession de parts",
+      "Succession et donation de parts",
+      "Retrait ou exclusion d'associé",
+      "Contestation de valeur (article 1843-4 du Code civil)",
+      "Partage de communauté ou d'indivision",
+    ],
+  },
+  {
+    slug: "successions-donations-partages",
+    title: "Successions, donations et partages",
+    icon: "Scale",
+    shortDescription:
+      "Valeur vénale des biens transmis, rapport des libéralités, partage et licitation, démembrement de propriété.",
+    fullDescription:
+      "Les transmissions à titre gratuit et les partages exigent une valeur vénale motivée, établie à la bonne date et selon des méthodes opposables à l'administration fiscale comme aux autres héritiers ou indivisaires. Le cabinet intervient à la demande des familles, des notaires, des avocats et des juridictions.",
+    useCases: [
+      "Déclaration de succession",
+      "Donation et donation-partage",
+      "Rapport des libéralités",
+      "Partage amiable ou judiciaire, licitation",
+      "Indemnité d'occupation entre indivisaires",
+      "Usufruit et nue-propriété",
+    ],
+  },
+  {
     slug: "indemnites-expropriation",
     title: "Indemnités d'expropriation",
     icon: "Gavel",

@@ -7,6 +7,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { ExpertiseIcon } from "@/lib/icons-expertise";
+import { expertiseSections } from "@/lib/expertise-sections";
 
 export function generateStaticParams() {
   return expertises.map((e) => ({ slug: e.slug }));
@@ -15,11 +16,13 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const e = getExpertiseBySlug(params.slug);
   if (!e) return {};
-  return createMetadata({
+  const seo = expertiseSections[e.slug];
+  const meta = createMetadata({
     title: e.title,
-    description: e.shortDescription,
+    description: seo?.seoDescription ?? e.shortDescription,
     path: `/expertises/${e.slug}`,
   });
+  return seo ? { ...meta, title: { absolute: `${seo.seoTitle} | Cabinet Vitali` } } : meta;
 }
 
 export default function ExpertiseDetailPage({
@@ -33,6 +36,7 @@ export default function ExpertiseDetailPage({
   const parts = expertise.fullDescription.split("\n\n").filter(Boolean);
   const intro = parts[0] ?? expertise.fullDescription;
   const rest = parts.slice(1);
+  const sections = expertiseSections[expertise.slug]?.sections ?? [];
 
   return (
     <>
@@ -73,6 +77,19 @@ export default function ExpertiseDetailPage({
                 ))}
               </div>
             )}
+
+            {sections.map((sec) => (
+              <div key={sec.heading} className="mt-12">
+                <h2 className="font-display text-2xl font-semibold text-navy">
+                  {sec.heading}
+                </h2>
+                <div className="mt-4 space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
+                  {sec.paragraphs.map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
 
             <div className="mt-14 border-t border-grey-light pt-10">
               <h2 className="font-display text-2xl font-semibold text-navy">
