@@ -12,7 +12,7 @@ export function ExpertiseListCard(e: Expertise) {
       transition={{ duration: 0.2 }}
       className="expertise-card group relative aspect-[4/3] overflow-hidden rounded-sm border border-grey-light shadow-card"
       style={{
-        backgroundImage: "url('/images/justice.png')",
+        backgroundImage: "url('/images/justice.jpg')",
         backgroundSize: "var(--card-bg-size)",
         backgroundPosition: "var(--card-bg-pos)",
         transition: "background-size 0.5s ease",
