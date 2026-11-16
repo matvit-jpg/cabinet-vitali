@@ -104,8 +104,7 @@ export default function ExpertiseDetailPage({
                 Une mission à confier ?
               </p>
               <p className="mt-2 font-sans text-sm font-light text-grey-mid">
-                Décrivez votre contexte : nous revenons vers vous sous 48h
-                ouvrées.
+                Décrivez votre contexte : nous revenons vers vous dans les meilleurs délais.
               </p>
               <Button href="/contact" variant="primary" className="mt-6 w-full">
                 Nous contacter pour ce besoin

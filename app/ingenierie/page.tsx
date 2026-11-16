@@ -1,87 +1,75 @@
 import { createMetadata } from "@/lib/metadata";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
-import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
   title: "Ingénierie immobilière et conseil en baux commerciaux",
-  description: "Conseil aux bailleurs et preneurs en immobilier commercial : analyse de la valeur locative, négociation et renouvellement des baux commerciaux, stratégie d'acquisition, à Marseille et Aix-en-Provence.",
+  description: "Avis de valeur et conseil aux bailleurs et preneurs avant renouvellement, acquisition ou cession, à Marseille et Aix-en-Provence.",
   path: "/ingenierie",
 });
+
+const missions = [
+  {
+    title: "Baux commerciaux : avis préalable au renouvellement",
+    text: "Estimation du loyer de renouvellement ou de révision, analyse des clauses du bail et des chances de déplafonnement, avant l'envoi du congé ou de la demande de renouvellement, ou avant d'engager une procédure.",
+  },
+  {
+    title: "Acquisition, cession et arbitrage patrimonial",
+    text: "Valeur vénale et rendement d'un actif ou d'un portefeuille, par comparaison, capitalisation du revenu et actualisation des flux (DCF), pour éclairer une décision d'achat, de vente ou de restructuration.",
+  },
+  {
+    title: "Terrains à bâtir et droits à construire",
+    text: "Analyse des règles d'urbanisme applicables et bilan promoteur, pour déterminer la valeur d'une charge foncière ou d'un terrain à bâtir.",
+  },
+  {
+    title: "Prise à bail et implantation",
+    text: "Appréciation du loyer de marché d'un local au regard des références du secteur et de ses caractéristiques, avant la signature d'un bail.",
+  },
+];
 
 export default function IngenieriePage() {
   return (
     <>
       <PageHeader
         crumbs={[{ label: "Accueil", href: "/" }, { label: "Ingénierie immobilière" }]}
-        eyebrow="Conseil · Stratégie"
+        eyebrow="Conseil · Aide à la décision"
         title="Ingénierie immobilière"
-        intro="Services stratégiques complets pour les bailleurs et preneurs en immobilier commercial."
+        intro="Des avis de valeur rendus en amont d'une décision, pour les bailleurs comme pour les preneurs."
       />
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">
           <FadeInSection>
-            <p className="font-sans text-sm font-light leading-relaxed text-text md:text-base">Notre cabinet propose des services stratégiques complets pour les bailleurs et preneurs en immobilier commercial. Notre expertise se concentre sur l&apos;analyse juridique et technique afin de maximiser la valeur des biens immobiliers et d&apos;optimiser les décisions prises.</p>
-          </FadeInSection>
-
-          {/* Bailleurs */}
-          <FadeInSection>
-            <div className="mt-12 border-t border-grey-light pt-10">
-              <h2 className="font-display text-2xl font-semibold text-navy">Pour les Bailleurs (Propriétaires)</h2>
-              <div className="mt-6 grid gap-6 md:grid-cols-2">
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Analyse de la valeur locative et vénale</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Évaluation des biens par méthodes reconnues (CMA, DCF, capitalisation des revenus). Études de marché détaillées incluant tendances économiques, taux de vacance et transactions récentes.</p>
-                </div>
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Optimisation des revenus locatifs</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Stratégies basées sur l&apos;analyse de la demande locative, segmentation des locataires et optimisation des loyers en fonction des conditions du marché.</p>
-                </div>
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Négociation et renégociation de baux</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Assistance dans la négociation de termes favorables : loyer échelonné, options de renouvellement, responsabilités de maintenance et conditions de résiliation.</p>
-                </div>
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Conseils en investissement immobilier</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Évaluation de la rentabilité des investissements, analyse des flux de trésorerie, calcul des taux de rendement interne (TRI) et stratégie d&apos;acquisition/cession.</p>
-                </div>
-              </div>
+            <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
+              <p>
+                En dehors de tout contentieux, le cabinet met ses méthodes d&apos;expertise au service de la décision : renouveler ou
+                renégocier un bail, acquérir, céder ou restructurer un patrimoine, valoriser un terrain. L&apos;avis porte sur la valeur et
+                sur les éléments qui la déterminent ; il est motivé comme un rapport d&apos;expertise et peut servir de base à une négociation.
+              </p>
+              <p>
+                Ces missions sont conduites avec la même indépendance que les expertises. Le cabinet n&apos;intervient pas en conseil dans
+                une affaire dont il est saisi comme expert judiciaire.
+              </p>
             </div>
           </FadeInSection>
 
-          {/* Preneurs */}
           <FadeInSection>
-            <div className="mt-12 border-t border-grey-light pt-10">
-              <h2 className="font-display text-2xl font-semibold text-navy">Pour les Preneurs (Locataires)</h2>
-              <div className="mt-6 grid gap-6 md:grid-cols-2">
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Analyse des marchés locatifs</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Études de marché détaillées, comparaisons interrégionales et analyses sectorielles pour identifier les opportunités de négociation.</p>
+            <div className="mt-12 grid gap-6 border-t border-grey-light pt-10 md:grid-cols-2">
+              {missions.map((m) => (
+                <div key={m.title} className="rounded-sm border border-grey-light bg-ivory p-6">
+                  <h2 className="font-display text-xl font-semibold text-navy">{m.title}</h2>
+                  <p className="mt-2 font-sans text-sm font-light leading-relaxed text-text">{m.text}</p>
                 </div>
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Négociation des baux</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Assistance dans la négociation des termes de bail favorables et revue juridique minutieuse pour identifier et atténuer les risques.</p>
-                </div>
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Stratégie de relocalisation</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Développement de plans de transition détaillés pour minimiser les perturbations opérationnelles lors de la relocalisation.</p>
-                </div>
-                <div className="rounded-sm border border-grey-light bg-ivory p-6">
-                  <h3 className="font-display text-lg font-semibold text-navy">Gestion des relations avec les bailleurs</h3>
-                  <p className="mt-2 font-sans text-sm font-light text-text">Résolution proactive des litiges, médiation, négociation de règlements amiables et conseils sur la maintenance et les réparations.</p>
-                </div>
-              </div>
+              ))}
             </div>
           </FadeInSection>
 
-          {/* CTA */}
           <FadeInSection>
             <div className="mt-12 border-t border-grey-light pt-10 text-center">
-              <h2 className="font-display text-2xl font-semibold text-navy">Travaillons ensemble</h2>
-              <p className="mt-4 font-sans text-base font-light text-grey-mid">Une question ? Contactez-nous pour discuter de votre projet.</p>
-              <a href="/contact" className="mt-6 inline-block rounded-sm bg-gold px-8 py-3 font-sans text-sm font-medium text-navy hover:bg-gold-light transition-colors">
+              <h2 className="font-display text-2xl font-semibold text-navy">Un projet à examiner ?</h2>
+              <p className="mt-4 font-sans text-base font-light text-grey-mid">Décrivez votre situation : nous vous indiquerons la mission adaptée.</p>
+              <a href="/contact" className="mt-6 inline-block rounded-sm bg-gold px-8 py-3 font-sans text-sm font-medium text-navy transition-colors hover:bg-gold-light">
                 Prendre contact
               </a>
             </div>

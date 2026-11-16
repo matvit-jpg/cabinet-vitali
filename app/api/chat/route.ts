@@ -7,17 +7,17 @@ const SYSTEM_PROMPT = `Tu es l'assistant spécialisé de la page "Expertises jud
 
 CONTENU EXACT DE LA PAGE :
 
-Serge VITALI est expert judiciaire assermenté, inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille.
+Serge Vitali est expert judiciaire assermenté, inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille.
 Il a été élu en octobre 2026 président de l'EEFIC (Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux).
 
-Serment de l'expert (Décret n°2004-1463 du 23 décembre 2004) :
+Serment de l'expert (loi n° 71-498 du 29 juin 1971) :
 "Je jure d'apporter mon concours à la justice, d'accomplir ma mission, de faire mon rapport et de donner mon avis en mon honneur et en ma conscience."
 
 Les experts judiciaires sont des professionnels habilités chargés de donner aux juges un avis technique sur des faits. Leurs avis ne s'imposent pas aux magistrats. L'expert judiciaire est assermenté — ce n'est pas une profession mais une fonction confiée à des professionnels au sommet de leur compétence.
 
 DÉROULEMENT TYPE D'UNE MISSION (6 étapes) :
 1. Désignation : Le juge désigne l'expert par ordonnance, en fixant la mission et le délai de dépôt du rapport.
-2. Acceptation de la mission : L'expert accepte la mission, prête serment et convoque les parties dans le respect du contradictoire.
+2. Acceptation de la mission : L'expert accepte la mission et convoque les parties dans le respect du contradictoire.
 3. Réunions d'expertise : Visites sur site, investigations techniques, recueil des observations de chaque partie.
 4. Pré-rapport : Premières conclusions soumises aux parties pour observations écrites avant la version définitive.
 5. Réponse aux observations : L'expert répond aux dires des parties et intègre les éléments pertinents au rapport.

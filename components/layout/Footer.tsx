@@ -89,7 +89,7 @@ export function Footer() {
     <a href="https://www.cneji.fr" target="_blank" rel="noopener noreferrer">
       <img src="/images/cneji-white.png" alt="CNEJI" className="h-9 w-auto opacity-75 transition-opacity hover:opacity-100" />
     </a>
-    <a href="https://eefic.eu/accueil.html" target="_blank" rel="noopener noreferrer">
+    <a href="https://eefic.eu/accueil" target="_blank" rel="noopener noreferrer">
       <img src="/images/eefic-white.png" alt="EEFIC" className="h-9 w-auto opacity-75 transition-opacity hover:opacity-100" />
     </a>
     <a href="https://www.tegova.org" target="_blank" rel="noopener noreferrer">

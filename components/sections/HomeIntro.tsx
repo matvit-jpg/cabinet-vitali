@@ -21,7 +21,7 @@ export function HomeIntro() {
             <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
               <p>
                 Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence
-                et la Cour administrative d&apos;appel de Marseille, Serge VITALI
+                et la Cour administrative d&apos;appel de Marseille, Serge Vitali
                 intervient dans tous les domaines de l&apos;expertise immobilière :
                 évaluation de biens, fixation de valeurs locatives, détermination
                 d&apos;indemnités, analyse de préjudices et accompagnement

@@ -37,7 +37,7 @@ const T = {
     send: "Envoyer",
     sendAria: "Envoyer le message",
     sending: "Envoi...",
-    ok: "Message envoyé. Nous vous répondrons sous 48h ouvrées.",
+    ok: "Message envoyé. Nous vous répondrons dans les meilleurs délais.",
     error: "Envoi impossible. Réessayez ou contactez-nous par téléphone.",
   },
   en: {
@@ -66,7 +66,7 @@ const T = {
     send: "Send",
     sendAria: "Send the message",
     sending: "Sending...",
-    ok: "Message sent. We will reply within two working days.",
+    ok: "Message sent. We will reply as soon as possible.",
     error: "The message could not be sent. Please try again or call us.",
   },
 } as const;

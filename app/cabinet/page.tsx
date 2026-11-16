@@ -9,14 +9,14 @@ import { LogoCarousel } from "@/components/sections/LogoCarousel";
 
 export const metadata = createMetadata({
   title: "Serge Vitali, expert judiciaire immobilier — le cabinet",
-  description: "Cabinet Vitali, Marseille et Aubagne : Serge Vitali, expert judiciaire près la Cour d'appel d'Aix-en-Provence, certifié REV, président de l'EEFIC. Expertise immobilière judiciaire et amiable.",
+  description: "Serge Vitali, expert judiciaire près la Cour d'appel d'Aix-en-Provence, certifié REV, président de l'EEFIC : expertise immobilière judiciaire et amiable.",
   path: "/cabinet",
   languages: languageAlternates("/cabinet", "/en/firm"),
 });
 
 const affiliations = [
   { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
-  { name: "Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux (EEFIC)", url: "https://eefic.eu/accueil.html", logo: "/images/eefic.png", maxH: "h-24" },
+  { name: "Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux (EEFIC)", url: "https://eefic.eu/accueil", logo: "/images/eefic.png", maxH: "h-24" },
   { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
   { name: "Compagnie des experts près la CAA de Marseille", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
 ];
@@ -41,7 +41,7 @@ export default function CabinetPage() {
             <dl className="mt-8 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-4">
               {[
                 { k: "2017", v: "Inscrit sur la liste de la Cour d'appel" },
-                { k: "REV", v: "Recognised European Valuer — TEGOVA" },
+                { k: "REV", v: "Recognised European Valuer — TEGoVA" },
                 { k: "EEFIC", v: "Président de la fédération depuis 2026" },
                 { k: "6 ans", v: "Pratique réputée Décideurs, 2021 – 2026" },
               ].map((r) => (
@@ -111,7 +111,7 @@ export default function CabinetPage() {
                   </div>
                 </a>
                 <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
-                  <p>Le cabinet Vitali est certifié <strong>REV</strong> par TEGOVA.</p>
+                  <p>Serge Vitali est certifié <strong>REV</strong> par TEGoVA.</p>
                   <p>Le statut <strong>REV</strong> est un symbole d&apos;excellence en matière d&apos;évaluation immobilière.</p>
                   <p>L&apos;évaluateur est qualifié conformément aux standards européens d&apos;évaluation immobilière les plus stricts.</p>
                   <p>Depuis sa création, le statut REV a été décerné par les principales associations d&apos;experts en évaluation immobilière à travers l&apos;Europe.</p>

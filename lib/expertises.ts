@@ -23,7 +23,7 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Expert inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille.",
     fullDescription:
-      "Les experts judiciaires sont des professionnels habilités chargés de donner aux juges un avis technique sur des faits, afin d'apporter des éclaircissements sur une affaire. Leurs avis ne s'imposent pas aux magistrats, qui ne sont pas liés par leurs appréciations.\n\nSerge VITALI est assermenté et inscrit sur les listes d'experts des deux cours. Compétence professionnelle de haut niveau, rigueur intellectuelle et morale sont indispensables à la fonction d'expert de justice.",
+      "Les experts judiciaires sont des professionnels habilités chargés de donner aux juges un avis technique sur des faits, afin d'apporter des éclaircissements sur une affaire. Leurs avis ne s'imposent pas aux magistrats, qui ne sont pas liés par leurs appréciations.\n\nSerge Vitali est assermenté et inscrit sur les listes d'experts des deux cours. Compétence professionnelle de haut niveau, rigueur intellectuelle et morale sont indispensables à la fonction d'expert de justice.",
     useCases: [
       "Estimations immobilières matérielles : valeurs vénales de murs, terrains non agricoles, indemnité d'expropriation, droits réels immobiliers",
       "Estimations immobilières immatérielles : valeurs locatives, indemnités d'éviction ou d'expropriation, de fonds de commerce et d'entreprises",
@@ -38,19 +38,19 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Estimation de la valeur vénale ou locative de tous types de biens immobiliers, selon les normes européennes d'expertise.",
     fullDescription:
-      "Le cabinet VITALI évalue l'ensemble des biens immobiliers résidentiels, commerciaux et industriels.\n\nL'immobilier urbain : terrains et droits à construire, logements, immeubles de rapport, ensembles immobiliers. Les immeubles industriels et commerciaux : terrains industriels, boutiques, centres commerciaux, locaux d'activité, ateliers, entrepôts ou usines.\n\nLe cabinet se conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise (label REV). Il intervient à Marseille, Aix-en-Provence, Aubagne, Toulon et dans l'ensemble de la région.",
+      "Le cabinet VITALI évalue l'ensemble des biens immobiliers résidentiels, commerciaux et industriels.\n\nL'immobilier urbain : terrains et droits à construire, logements, immeubles de rapport, ensembles immobiliers. Les immeubles industriels et commerciaux : terrains industriels, boutiques, centres commerciaux, locaux d'activité, ateliers, entrepôts ou usines.\n\nLe cabinet se conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'évaluation (certification REV). Il intervient à Marseille, Aix-en-Provence, Aubagne, Toulon et dans l'ensemble de la région.",
     useCases: [
       "Successions et donations",
       "Séparation et divorce",
       "Bilan promoteur / lotisseur pour évaluer les terrains à bâtir",
-      "Litige avec l'administration fiscale (taxe foncière, IFI)",
+      "Litige avec l'administration fiscale (IFI, droits de mutation)",
       "Valeur hypothécaire",
       "Expertise avant achat",
     ],
   },
   {
     slug: "valeurs-locatives",
-    title: "Valeurs locatives & baux commerciaux",
+    title: "Valeur locative et baux commerciaux",
     icon: "Store",
     shortDescription:
       "Spécialisation dans les problématiques liées aux baux commerciaux : déplafonnement, valeur locative, indemnité d'éviction.",
@@ -153,7 +153,7 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Services stratégiques pour bailleurs et preneurs, et résolution amiable des litiges immobiliers.",
     fullDescription:
-      "Le cabinet propose une expertise concentrée sur l'analyse juridique et technique afin de maximiser la valeur des biens immobiliers et d'optimiser les décisions prises.\n\nPour les bailleurs : analyse de la valeur locative et vénale (méthode CMA, DCF, capitalisation des revenus), optimisation des revenus locatifs, négociation et renégociation de baux, conseils en investissement.\n\nPour les preneurs : analyse des marchés locatifs, négociation des baux (termes, durées, options de renouvellement), stratégie de relocalisation.\n\nSerge VITALI est également inscrit sur la liste des arbitres du CMAP (leader en France en résolution des conflits pour les entreprises), offrant un mode alternatif de résolution des différends (MARD) — plus rapide, confidentiel et maîtrisé en coûts qu'un contentieux classique.",
+      "Le cabinet propose une expertise concentrée sur l'analyse juridique et technique afin de maximiser la valeur des biens immobiliers et d'optimiser les décisions prises.\n\nPour les bailleurs : analyse de la valeur locative et vénale (méthode CMA, DCF, capitalisation des revenus), optimisation des revenus locatifs, négociation et renégociation de baux, conseils en investissement.\n\nPour les preneurs : analyse des marchés locatifs, négociation des baux (termes, durées, options de renouvellement), stratégie de relocalisation.\n\nSerge Vitali est également inscrit sur la liste des arbitres du CMAP (leader en France en résolution des conflits pour les entreprises), offrant un mode alternatif de résolution des différends (MARD) — plus rapide, confidentiel et maîtrisé en coûts qu'un contentieux classique.",
     useCases: [
       "Analyse de rentabilité (TRI, DSCR)",
       "Négociation et renégociation de baux commerciaux",

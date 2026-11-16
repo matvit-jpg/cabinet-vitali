@@ -7,7 +7,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 const base = createMetadata({
   title: "Areas of expertise — market value, rental value, eviction compensation",
   description:
-    "Real estate valuation in Marseille and Provence: market value, rental value on lease renewal, eviction compensation, property-holding companies, inheritance and compulsory purchase.",
+    "Real estate valuation in Provence: market value, commercial lease rent, eviction compensation, property companies, inheritance, compulsory purchase.",
   path: "/en/expertise",
   languages: languageAlternates("/expertises", "/en/expertise"),
 });
@@ -44,6 +44,11 @@ const areas = [
     title: "Compulsory purchase",
     text: "Assessment of the compensation due to owners and occupiers in compulsory purchase proceedings.",
     fr: "/expertises/indemnites-expropriation",
+  },
+  {
+    title: "Property damage and loss of value",
+    text: "Assessment of losses caused by neighbourhood disturbance, loss of view or sunlight, public or private works, defects or non-conformity.",
+    fr: "/expertises/prejudices-immobiliers",
   },
 ];
 

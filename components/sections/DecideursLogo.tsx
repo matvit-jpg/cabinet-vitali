@@ -17,12 +17,12 @@ export function DecideursLogo() {
         {/* Colonne gauche — texte */}
         <div className="lg:pl-16 xl:pl-24">
           <h2 className="font-display text-xl font-semibold tracking-tight text-ivory md:text-4xl">
-            Expertise et Stratégie Immobilière
+            Expertise et stratégie immobilière
           </h2>
           <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-ivory/80 md:text-base">
             <p>
               Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence
-              et la Cour administrative d&apos;appel de Marseille, Serge VITALI
+              et la Cour administrative d&apos;appel de Marseille, Serge Vitali
               intervient dans tous les domaines de l&apos;expertise immobilière :
               évaluation de biens, fixation de valeurs locatives, détermination
               d&apos;indemnités, analyse de préjudices et accompagnement

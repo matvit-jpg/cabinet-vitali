@@ -12,6 +12,8 @@ const nextConfig = {
       { source: "/nos-missions", destination: "/expertises", permanent: true },
       { source: "/projects-7", destination: "/expertises", permanent: true },
       { source: "/projects-3", destination: "/publications", permanent: true },
+      { source: "/expertises/expertises-judiciaires", destination: "/expertise-judiciaire", permanent: true },
+      { source: "/expertises/ingenierie-immobiliere", destination: "/ingenierie", permanent: true },
       { source: "/expertises-judiciaires", destination: "/expertise-judiciaire", permanent: true },
       { source: "/ingenierie-immobiliere", destination: "/ingenierie", permanent: true },
       { source: "/cgv", destination: "/CGV.pdf", permanent: true },

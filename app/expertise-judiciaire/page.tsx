@@ -21,7 +21,7 @@ const processSteps = [
   {
     title: "Acceptation de la mission",
     description:
-      "L'expert accepte la mission, prête serment et convoque les parties dans le respect du contradictoire.",
+      "L'expert accepte la mission et convoque les parties dans le respect du contradictoire.",
   },
   {
     title: "Réunions d'expertise",
@@ -73,7 +73,7 @@ export default function ExpertiseJudiciairePage() {
               avis en mon honneur et en ma conscience.&rdquo;
             </p>
             <footer className="mt-4 font-sans text-sm text-grey-mid">
-              Serment de l&apos;expert — Décret n°2004-1463 du 23 décembre 2004
+              Serment de l&apos;expert — loi n° 71-498 du 29 juin 1971
             </footer>
           </blockquote>
           <div className="mt-10 space-y-4 font-sans text-base font-light leading-relaxed text-text">
@@ -118,7 +118,7 @@ export default function ExpertiseJudiciairePage() {
             {/* Cour d'appel d'Aix-en-Provence */}
             <div>
               <p className="font-sans text-base text-text">
-                <strong>Serge VITALI est inscrit sur la liste des Experts près la cour d&apos;appel d&apos;Aix-en-Provence</strong> dans les rubriques suivantes&nbsp;:
+                <strong>Serge Vitali est inscrit sur la liste des Experts près la cour d&apos;appel d&apos;Aix-en-Provence</strong> dans les rubriques suivantes&nbsp;:
               </p>
               <ul className="mt-4 space-y-2 font-sans text-sm font-light text-text">
                 <li className="flex items-start gap-2">

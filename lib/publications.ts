@@ -12,7 +12,7 @@ export const featuredArticle: FeaturedArticle = {
   title: "Article sur le nouveau rôle de l'expert",
   subtitle: "L'expert, nouvelle clé de voûte du procès civil",
   excerpt:
-    "Tribune libre parue dans l'Argus de l'enseigne. Serge VITALI y analyse l'évolution du rôle de l'expert judiciaire immobilier : d'auxiliaire technique, il devient un acteur central du règlement des litiges, dont les conclusions structurent de plus en plus la décision du juge.",
+    "Tribune libre parue dans l'Argus de l'enseigne. Serge Vitali y analyse l'évolution du rôle de l'expert judiciaire immobilier : d'auxiliaire technique, il devient un acteur central du règlement des litiges, dont les conclusions structurent de plus en plus la décision du juge.",
   source: "Argus de l'enseigne",
   date: "Novembre 2025",
   photo: "/images/article-photo.jpg",

@@ -7,8 +7,8 @@ const quotes = [
     author: "Expert judiciaire agréé",
   },
   {
-    text: "Conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise — titulaire du label REV (Recognised European Valuer).",
-    author: "Normes européennes d'expertise — label REV",
+    text: "Conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise — titulaire du certification REV (Recognised European Valuer).",
+    author: "Normes européennes d'expertise — certification REV",
   },
   {
     text: "Inscrit sur la liste des arbitres du CMAP, leader en France en résolution des conflits pour les entreprises, offrant un mode alternatif rapide, confidentiel et maîtrisé en coûts.",

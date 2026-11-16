@@ -130,7 +130,7 @@ export function jsonLdProfessionalService() {
         hasCredential: {
           "@type": "EducationalOccupationalCredential",
           name: "Recognised European Valuer (REV)",
-          recognizedBy: { "@type": "Organization", name: "TEGOVA", url: "https://www.tegova.org" },
+          recognizedBy: { "@type": "Organization", name: "TEGoVA", url: "https://www.tegova.org" },
         },
         memberOf: [
           {

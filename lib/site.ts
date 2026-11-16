@@ -2,7 +2,7 @@
 export const SITE = {
   cabinetName: "Vitali",
   cabinetFull: "Cabinet Vitali",
-  tagline: "Expertise et Stratégie Immobilière",
+  tagline: "Expertise et stratégie immobilière",
   city: "Marseille",
   email: "sergevitali@cabinetvitali.fr",
   phone: "+33 6 14 19 94 38",

@@ -8,7 +8,7 @@ export function FinalCta() {
           Prêt à sécuriser votre dossier ?
         </h2>
         <p className="mt-4 font-sans text-sm font-light text-ivory/85 md:text-lg">
-          Prendre contact — réponse sous 48h ouvrées.
+          Décrivez votre contexte : nous revenons vers vous dans les meilleurs délais.
         </p>
         <div className="mt-10">
           <Button href="/contact" variant="primary">

@@ -6,7 +6,7 @@ import { languageAlternates } from "@/lib/i18n";
 const base = createMetadata({
   title: "Real estate valuation in Marseille and Provence — court-registered expert",
   description:
-    "Cabinet Vitali, Marseille: independent real estate valuations by Serge Vitali, court-registered expert (Aix-en-Provence Court of Appeal) and REV-certified valuer (TEGoVA). Reports in English or French.",
+    "Independent real estate valuations in Provence by Serge Vitali, court-registered expert and REV-certified valuer. Reports in English or French.",
   path: "/en",
   languages: languageAlternates("/", "/en"),
 });

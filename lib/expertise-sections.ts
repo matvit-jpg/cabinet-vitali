@@ -18,20 +18,20 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
   "evaluation-immobiliere": {
     seoTitle: "Expert en évaluation immobilière et valeur vénale — Marseille, Aix-en-Provence",
     seoDescription:
-      "Valeur vénale de tous biens immobiliers, résidentiels, commerciaux et industriels, selon la Charte de l'expertise en évaluation immobilière : expertise amiable ou judiciaire à Marseille, Aix-en-Provence, Aubagne et Toulon.",
+      "Valeur vénale de tous biens immobiliers selon la Charte de l'expertise en évaluation immobilière, à Marseille, Aix-en-Provence, Aubagne et Toulon.",
     sections: [],
   },
   "prejudices-immobiliers": {
     seoTitle: "Expert en préjudices immobiliers et pertes de valeur — Marseille, Aix-en-Provence",
     seoDescription:
-      "Évaluation des préjudices immobiliers : troubles de voisinage, perte de vue ou d'ensoleillement, travaux publics, désordres, pertes de valeur. Expertise amiable ou judiciaire à Marseille et Aix-en-Provence.",
+      "Préjudices immobiliers : troubles de voisinage, perte de vue ou d'ensoleillement, travaux publics, désordres, pertes de valeur. Marseille, Aix-en-Provence.",
     sections: [],
   },
   "valeurs-locatives": {
     seoTitle:
       "Expert en valeur locative de renouvellement et baux commerciaux — Marseille, Aix-en-Provence",
     seoDescription:
-      "Valeur locative de renouvellement, déplafonnement, révision triennale, loyer des locaux monovalents et de bureaux : expertise amiable et judiciaire par un expert inscrit près la Cour d'appel d'Aix-en-Provence.",
+      "Valeur locative de renouvellement, déplafonnement, révision triennale : expertise amiable et judiciaire par un expert près la Cour d'appel d'Aix-en-Provence.",
     sections: [
       {
         heading: "La valeur locative au sens de l'article L. 145-33 du Code de commerce",
@@ -65,7 +65,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
   "indemnite-eviction": {
     seoTitle: "Expert en indemnité d'éviction commerciale — Marseille, Aix-en-Provence",
     seoDescription:
-      "Calcul de l'indemnité d'éviction (article L. 145-14 du Code de commerce) et de l'indemnité d'occupation : valeur du fonds, droit au bail, indemnités accessoires. Expert inscrit près la Cour d'appel d'Aix-en-Provence.",
+      "Indemnité d'éviction (art. L. 145-14 C. com.) et indemnité d'occupation : valeur du fonds, droit au bail, indemnités accessoires. Marseille, Aix-en-Provence.",
     sections: [
       {
         heading: "Le principe posé par l'article L. 145-14 du Code de commerce",
@@ -83,7 +83,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
       {
         heading: "Indemnité d'occupation",
         paragraphs: [
-          "Jusqu'au paiement de l'indemnité d'éviction, le locataire a droit au maintien dans les lieux aux conditions du bail expiré (article L. 145-28) et doit une indemnité d'occupation, fixée en principe par référence à la valeur locative, à laquelle un abattement de précarité est habituellement appliqué. L'expert la détermine dans la même mission, la date d'appréciation des deux indemnités étant fixée au plus près de la libération effective des lieux.",
+          "Jusqu'au paiement de l'indemnité d'éviction, le locataire a droit au maintien dans les lieux aux conditions du bail expiré (article L. 145-28) et doit une indemnité d'occupation, fixée en principe par référence à la valeur locative, à laquelle un abattement de précarité est habituellement appliqué. L'expert la détermine dans la même mission : l'indemnité d'éviction s'apprécie à la date la plus proche de l'éviction, tandis que l'indemnité d'occupation est fixée en principe d'après la valeur locative à la date d'expiration du bail.",
         ],
       },
     ],
@@ -93,7 +93,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
     seoTitle:
       "Évaluation de sociétés à prépondérance immobilière — expert judiciaire, Marseille, Aix-en-Provence",
     seoDescription:
-      "Évaluation de parts de SCI et de sociétés à prépondérance immobilière : actif net réévalué, fiscalité latente, décotes. Expert inscrit dans la rubrique « droits sociaux à prépondérance immobilière », à Marseille et Aix-en-Provence.",
+      "Évaluation de parts de SCI et de sociétés à prépondérance immobilière : actif net réévalué, fiscalité latente, décotes. Expert près la Cour d'appel d'Aix.",
     sections: [
       {
         heading: "Une compétence distincte de l'évaluation de l'immeuble",
@@ -122,7 +122,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
     seoTitle:
       "Expertise immobilière pour succession, donation et partage — Marseille, Aix-en-Provence",
     seoDescription:
-      "Valeur vénale des biens à déclarer en succession ou donation, rapport des libéralités, partage et licitation, démembrement de propriété : expertise amiable ou judiciaire à Marseille, Aix-en-Provence et dans les Bouches-du-Rhône.",
+      "Valeur vénale en succession ou donation, rapport des libéralités, partage et licitation, démembrement : expertise à Marseille et Aix-en-Provence.",
     sections: [
       {
         heading: "Valeur vénale à déclarer",
@@ -149,7 +149,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
   "indemnites-expropriation": {
     seoTitle: "Expert en indemnités d'expropriation — Marseille, Aix-en-Provence",
     seoDescription:
-      "Évaluation des indemnités d'expropriation (indemnité principale, remploi, indemnités accessoires) selon le Code de l'expropriation pour cause d'utilité publique, dans les Bouches-du-Rhône et les départements limitrophes (Var, Vaucluse, Gard, Alpes-de-Haute-Provence).",
+      "Indemnités d'expropriation (principale, remploi, accessoires) dans les Bouches-du-Rhône, le Var, le Vaucluse, le Gard et les Alpes-de-Haute-Provence.",
     sections: [
       {
         heading: "Le cadre fixé par le Code de l'expropriation",
