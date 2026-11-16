@@ -16,10 +16,10 @@ export const metadata = createMetadata({
 });
 
 const affiliations = [
-  { name: "Compagnie Nationale des Experts de Justice immobiliers", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
+  { name: "Compagnie nationale des experts de justice immobiliers (CNEJI)", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
   { name: "Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux (EEFIC)", url: "https://eefic.eu/accueil", logo: "/images/eefic.png", maxH: "h-24" },
   { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
-  { name: "Compagnie des experts près la CAA de Marseille", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
+  { name: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM)", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
 ];
 
 const portrait = "/images/serge.jpg";
@@ -88,10 +88,11 @@ export default function CabinetPage() {
             <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark">Serge Vitali est membre des compagnies suivantes :</p>
             <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {affiliations.map((a) => (
-                <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-6 opacity-70 transition-opacity hover:opacity-100">
-                  <div className={`relative ${a.maxH} w-full`}>
-                    <Image src={a.logo} alt={a.name} fill className="object-contain" />
+                <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="group flex flex-col items-center rounded-sm border border-grey-light bg-white p-6 transition hover:border-gold-dark/50">
+                  <div className={`relative ${a.maxH} w-full opacity-70 transition-opacity group-hover:opacity-100`}>
+                    <Image src={a.logo} alt="" fill className="object-contain" />
                   </div>
+                  <span className="mt-4 text-center font-sans text-xs leading-snug text-navy/75">{a.name}</span>
                 </a>
               ))}
             </div>
