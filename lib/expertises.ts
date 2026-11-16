@@ -38,7 +38,7 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Estimation de la valeur vénale ou locative de tous types de biens immobiliers, selon les normes européennes d'expertise.",
     fullDescription:
-      "Le cabinet VITALI évalue l'ensemble des biens immobiliers résidentiels, commerciaux et industriels.\n\nL'immobilier urbain : terrains et droits à construire, logements, immeubles de rapport, ensembles immobiliers. Les immeubles industriels et commerciaux : terrains industriels, boutiques, centres commerciaux, locaux d'activité, ateliers, entrepôts ou usines.\n\nLe cabinet se conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise (label REV).",
+      "Le cabinet VITALI évalue l'ensemble des biens immobiliers résidentiels, commerciaux et industriels.\n\nL'immobilier urbain : terrains et droits à construire, logements, immeubles de rapport, ensembles immobiliers. Les immeubles industriels et commerciaux : terrains industriels, boutiques, centres commerciaux, locaux d'activité, ateliers, entrepôts ou usines.\n\nLe cabinet se conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise (label REV). Il intervient à Marseille, Aix-en-Provence, Aubagne, Toulon et dans l'ensemble de la région.",
     useCases: [
       "Successions et donations",
       "Séparation et divorce",

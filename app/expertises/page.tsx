@@ -8,7 +8,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 export const metadata = createMetadata({
   title: "Expertise immobilière : valeur vénale, valeur locative, indemnité d'éviction",
   description:
-    "Domaines d'intervention : expertise judiciaire, évaluation immobilière, valeurs locatives, expropriation, préjudices et conseil.",
+    "Expertise immobilière amiable et judiciaire à Marseille et Aix-en-Provence : valeur vénale, valeur locative et baux commerciaux, indemnité d'éviction, sociétés à prépondérance immobilière, successions, expropriation, préjudices.",
   path: "/expertises",
 });
 
