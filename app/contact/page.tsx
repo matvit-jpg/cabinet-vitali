@@ -20,11 +20,6 @@ export default function ContactPage() {
         eyebrow="Prendre contact"
         title="Contact"
         intro="Expliquez votre contexte : nous vous répondons sous 48 heures ouvrées."
-        facts={[
-          { k: "48 h", v: "Délai de réponse, jours ouvrés" },
-          { k: "RDV", v: "Échanges et visites sur rendez-vous uniquement" },
-          { k: "13 · 83", v: "Bouches-du-Rhône et Var, interventions sur tout le territoire" },
-        ]}
       />
 
       <SectionWrapper className="bg-white">
