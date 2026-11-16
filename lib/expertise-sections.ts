@@ -149,7 +149,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
   "indemnites-expropriation": {
     seoTitle: "Expert en indemnités d'expropriation — Marseille, Aix-en-Provence",
     seoDescription:
-      "Évaluation des indemnités d'expropriation (indemnité principale, remploi, indemnités accessoires) selon le Code de l'expropriation pour cause d'utilité publique, dans les Bouches-du-Rhône et le Var.",
+      "Évaluation des indemnités d'expropriation (indemnité principale, remploi, indemnités accessoires) selon le Code de l'expropriation pour cause d'utilité publique, dans les Bouches-du-Rhône et les départements limitrophes (Var, Vaucluse, Gard, Alpes-de-Haute-Provence).",
     sections: [
       {
         heading: "Le cadre fixé par le Code de l'expropriation",
