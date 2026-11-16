@@ -7,8 +7,8 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Contact",
-  description: `Contacter ${SITE.cabinetFull} — formulaire sécurisé, réponse sous 48h ouvrées.`,
+  title: "Contact — expert immobilier à Marseille et Aix-en-Provence",
+  description: "Contacter le cabinet Vitali pour une expertise immobilière judiciaire ou amiable à Marseille, Aix-en-Provence, Aubagne, Toulon et dans toute la région : réponse sous 48 heures ouvrées.",
   path: "/contact",
 });
 

@@ -24,9 +24,24 @@ export function PageHeader({
   links?: { label: string; href: string }[];
   compact?: boolean;
 }) {
+  const base = "https://www.cabinetvitali.fr";
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: crumbs.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.label,
+      ...(c.href ? { item: `${base}${c.href === "/" ? "" : c.href}` } : {}),
+    })),
+  };
   return (
     <section className={`border-b border-grey-light bg-ivory ${compact ? "py-14" : "py-16 lg:py-24"}`}>
       <div className={`mx-auto px-4 lg:px-8 ${compact ? "max-w-3xl" : "max-w-7xl"}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        />
         <Breadcrumb items={crumbs} />
         {eyebrow && (
           <p className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-gold-dark">

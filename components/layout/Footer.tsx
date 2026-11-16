@@ -13,6 +13,15 @@ const nav = [
   { href: "/contact", label: "Contact" },
 ];
 
+const domaines = [
+  { href: "/expertises/valeurs-locatives", label: "Valeur locative et baux commerciaux" },
+  { href: "/expertises/indemnite-eviction", label: "Indemnité d'éviction" },
+  { href: "/expertises/evaluation-immobiliere", label: "Valeur vénale" },
+  { href: "/expertises/parts-de-societes", label: "Sociétés à prépondérance immobilière" },
+  { href: "/expertises/successions-donations-partages", label: "Successions, donations, partages" },
+  { href: "/expertises/indemnites-expropriation", label: "Expropriation" },
+];
+
 export function Footer() {
   return (
     <footer className="bg-navy text-ivory">
@@ -22,6 +31,18 @@ export function Footer() {
           <p className="mt-2 font-sans text-sm font-light text-ivory/80">
             Expert judiciaire — évaluation immobilière et stratégie immobilière.
           </p>
+          <p className="mt-8 font-sans text-xs font-semibold uppercase tracking-widest text-gold">
+            Domaines
+          </p>
+          <ul className="mt-4 space-y-2 font-sans text-sm">
+            {domaines.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="text-ivory/85 transition hover:text-gold">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
         <div>
           <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold">

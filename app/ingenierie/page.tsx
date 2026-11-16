@@ -5,8 +5,8 @@ import { FadeInSection } from "@/components/motion/FadeInSection";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Ingénierie immobilière",
-  description: "Services stratégiques pour bailleurs et preneurs en immobilier commercial — analyse, négociation et conseil.",
+  title: "Ingénierie immobilière et conseil en baux commerciaux",
+  description: "Conseil aux bailleurs et preneurs en immobilier commercial : analyse de la valeur locative, négociation et renouvellement des baux commerciaux, stratégie d'acquisition, à Marseille et Aix-en-Provence.",
   path: "/ingenierie",
 });
 

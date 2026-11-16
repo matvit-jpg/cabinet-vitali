@@ -52,9 +52,12 @@ export function Hero() {
       <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-4 pb-20 pt-40 text-center md:pt-36">
         <AnimatedText>
           <AnimatedLine>
-            <h1 className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance">
-              Comprendre, analyser, conclure… pour vous faire gagner en clarté.
+            <h1 className="mb-5 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-gold-light md:text-sm">
+              Expert judiciaire immobilier à Marseille et Aix-en-Provence
             </h1>
+            <p className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance !text-center">
+              Comprendre, analyser, conclure… pour vous faire gagner en clarté.
+            </p>
           </AnimatedLine>
           <AnimatedLine>
             <div className="mx-auto mt-6 text-center font-sans text-sm font-light text-ivory/90 md:text-xl [&>p]:!text-center">

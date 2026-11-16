@@ -6,7 +6,7 @@ import { ExpertiseChat } from "@/components/sections/ExpertiseChat";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Expertise judiciaire",
+  title: "Expert judiciaire immobilier près la Cour d'appel d'Aix-en-Provence",
   description:
     "Expert inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille — estimations immobilières, valeurs locatives, préjudices.",
   path: "/expertise-judiciaire",

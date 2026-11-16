@@ -6,7 +6,7 @@ import { ExpertiseListCard } from "@/components/sections/ExpertiseListCard";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Domaines d'expertise",
+  title: "Expertise immobilière : valeur vénale, valeur locative, indemnité d'éviction",
   description:
     "Domaines d'intervention : expertise judiciaire, évaluation immobilière, valeurs locatives, expropriation, préjudices et conseil.",
   path: "/expertises",

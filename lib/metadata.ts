@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SITE } from "./site";
 
-const titleSuffix = `${SITE.cabinetFull} — Expert Judiciaire Immobilier ${SITE.city}`;
+const titleSuffix = SITE.cabinetFull;
 
 export function createMetadata(opts: {
   title: string;

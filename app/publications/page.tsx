@@ -4,7 +4,7 @@ import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Publications & interventions",
+  title: "Publications et interventions de Serge Vitali (AJDI, colloques)",
   description:
     "Articles de Serge Vitali dans l'AJDI (Lefebvre Dalloz), observatoires des loyers judiciaires d'Aix-en-Provence et Marseille, conférences sur les baux commerciaux et l'expertise judiciaire.",
   path: "/publications",
