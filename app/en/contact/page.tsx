@@ -4,6 +4,7 @@ import { languageAlternates } from "@/lib/i18n";
 import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { ContactForm } from "@/components/sections/ContactForm";
 
 const base = createMetadata({
   title: "Contact — real estate expert in Marseille and Aix-en-Provence",
@@ -25,8 +26,14 @@ export default function ContactPageEn() {
       />
 
       <SectionWrapper className="bg-white">
-        <div className="mx-auto max-w-3xl px-4 lg:px-8">
-          <ul className="space-y-5 font-sans text-base text-text">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 lg:grid-cols-[3fr_2fr] lg:gap-16 lg:px-8">
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-navy">Form</h2>
+            <ContactForm lang="en" />
+          </div>
+          <div>
+          <h2 className="font-display text-2xl font-semibold text-navy">Details</h2>
+          <ul className="mt-6 space-y-5 font-sans text-sm text-text">
             <li className="flex items-center gap-3">
               <Phone className="h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
               <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="hover:text-gold-dark">{SITE.phone}</a>
@@ -45,6 +52,7 @@ export default function ContactPageEn() {
             <UserPlus className="h-4 w-4" aria-hidden />
             Add to my contacts
           </a>
+          </div>
         </div>
       </SectionWrapper>
     </div>
