@@ -3,6 +3,7 @@ export const LANG_PAIRS: [fr: string, en: string][] = [
   ["/", "/en"],
   ["/cabinet", "/en/firm"],
   ["/expertises", "/en/expertise"],
+  ["/publications", "/en/publications"],
   ["/contact", "/en/contact"],
 ];
 

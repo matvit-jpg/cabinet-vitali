@@ -1,4 +1,5 @@
 import { createMetadata } from "@/lib/metadata";
+import { languageAlternates } from "@/lib/i18n";
 import { PublicationsGrid } from "@/components/sections/PublicationsGrid";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { PageHeader } from "@/components/layout/PageHeader";
@@ -8,6 +9,7 @@ export const metadata = createMetadata({
   description:
     "Articles de Serge Vitali dans l'AJDI (Dalloz), observatoires des loyers judiciaires et conférences sur les baux commerciaux et l'expertise judiciaire.",
   path: "/publications",
+  languages: languageAlternates("/publications", "/en/publications"),
 });
 
 export default function PublicationsPage() {

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { featuredArticle, galleryImages, galleryEntries, publications, interventions, type PublicationEntry } from "@/lib/publications";
+import { galleryImages, galleryEntries, publications, interventions, type PublicationEntry } from "@/lib/publications";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { FadeInSection } from "@/components/motion/FadeInSection";
 
@@ -17,7 +17,8 @@ const itemVariant = {
   }),
 };
 
-export function PublicationsGrid() {
+export function PublicationsGrid({ lang = "fr" }: { lang?: "fr" | "en" }) {
+  const en = lang === "en";
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const close = useCallback(() => setActiveIndex(null), []);
@@ -47,52 +48,10 @@ export function PublicationsGrid() {
 
   return (
     <>
-      {/* Article vedette */}
-      <SectionWrapper className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <FadeInSection>
-            <div className="flex flex-col gap-10 md:flex-row md:items-center md:gap-16">
-              <div className="relative w-full shrink-0 md:w-64">
-                <Image
-                  src={featuredArticle.photo}
-                  alt={featuredArticle.title}
-                  width={256}
-                  height={342}
-                  className="w-full rounded-sm object-cover shadow-card"
-                />
-              </div>
-              <div className="flex flex-col justify-center">
-                <p className="font-sans text-sm font-medium uppercase tracking-wider text-gold-dark">
-                  {featuredArticle.date}
-                </p>
-                <p className="mt-2 font-sans text-sm font-light italic text-grey-mid">
-                  {featuredArticle.title}
-                </p>
-                <h2 className="mt-3 font-display text-3xl font-semibold leading-snug text-navy md:text-4xl">
-                  {featuredArticle.subtitle}
-                </h2>
-                <p className="mt-4 max-w-prose font-sans text-base font-light leading-relaxed text-grey-mid">
-                  {featuredArticle.excerpt}
-                </p>
-                <div className="mt-8">
-                  <Image
-                    src={featuredArticle.logo}
-                    alt={featuredArticle.source}
-                    width={245}
-                    height={102}
-                    className="h-20 w-auto object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </FadeInSection>
-        </div>
-      </SectionWrapper>
-
       {/* Publications et interventions */}
       {[
-        { label: "Publications", items: publications, offset: 0, bg: "bg-ivory" },
-        { label: "Conférences & interventions", items: interventions, offset: publications.length, bg: "bg-white" },
+        { label: "Publications", items: publications, offset: 0, bg: "bg-white" },
+        { label: en ? "Talks & conferences" : "Conférences & interventions", items: interventions, offset: publications.length, bg: "bg-ivory" },
       ].map((group) => (
         <SectionWrapper key={group.label} className={group.bg}>
           <div className="mx-auto max-w-5xl px-4 lg:px-8">
@@ -119,33 +78,31 @@ export function PublicationsGrid() {
                       type="button"
                       onClick={() => setActiveIndex(galleryEntries.indexOf(item))}
                       className="group relative h-40 w-full shrink-0 cursor-zoom-in overflow-hidden rounded-sm bg-ivory sm:h-36 sm:w-44"
-                      aria-label={`Agrandir : ${item.title}`}
+                      aria-label={`${en ? "Enlarge" : "Agrandir"} : ${en ? item.en.title : item.title}`}
                     >
                       <Image
                         src={item.image}
-                        alt={item.title}
+                        alt={en ? item.en.title : item.title}
                         fill
                         sizes="176px"
                         className="object-contain p-1 transition-transform duration-500 group-hover:scale-[1.04]"
                       />
                     </button>
                   ) : (
-                    <div className="flex h-40 w-full shrink-0 flex-col items-center justify-center rounded-sm bg-navy px-3 text-center sm:h-36 sm:w-44">
-                      <span className="font-sans text-[10px] font-semibold uppercase tracking-widest text-gold">
-                        {item.kind === "intervention" ? "Intervention" : "Publication"}
-                      </span>
-                      <span className="mt-2 font-display text-lg leading-tight text-ivory">{item.date}</span>
+                    <div className="flex h-24 w-full shrink-0 flex-col items-center justify-center rounded-sm bg-navy px-3 text-center sm:h-28 sm:w-44" aria-hidden>
+                      <span className="font-display text-3xl font-semibold tracking-wide text-gold">{item.badge ?? (item.kind === "intervention" ? "Intervention" : "Publication")}</span>
+                      <span className="mt-1 font-sans text-[11px] uppercase tracking-widest text-ivory/70">{(en ? item.en.date : item.date).replace(/^.*\s(\d{4})$/, "$1")}</span>
                     </div>
                   )}
                   <div>
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-gold-dark">
-                      {item.date}
+                      {en ? item.en.date : item.date}
                     </p>
                     <h3 className="mt-2 font-display text-xl font-semibold leading-snug text-navy md:text-2xl">
-                      {item.title}
+                      {en ? item.en.title : item.title}
                     </h3>
                     <p className="mt-2 font-sans text-sm font-light text-grey-mid">
-                      {item.source}
+                      {en ? item.en.source : item.source}
                       {item.reference ? ` — ${item.reference}` : ""}
                     </p>
                   </div>
@@ -172,7 +129,7 @@ export function PublicationsGrid() {
             <button
               onClick={close}
               className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-ivory transition hover:bg-white/20"
-              aria-label="Fermer"
+              aria-label={en ? "Close" : "Fermer"}
             >
               <X className="h-5 w-5" />
             </button>
@@ -181,7 +138,7 @@ export function PublicationsGrid() {
             <button
               onClick={(e) => { e.stopPropagation(); prev(); }}
               className="absolute left-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-ivory transition hover:bg-white/20"
-              aria-label="Précédent"
+              aria-label={en ? "Previous" : "Précédent"}
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
@@ -198,7 +155,7 @@ export function PublicationsGrid() {
             >
               <Image
                 src={galleryImages[activeIndex]}
-                alt={galleryEntries[activeIndex]?.title ?? "Publication"}
+                alt={(en ? galleryEntries[activeIndex]?.en.title : galleryEntries[activeIndex]?.title) ?? "Publication"}
                 width={900}
                 height={1200}
                 className="max-h-[85vh] w-auto rounded-sm object-contain shadow-elevated"
@@ -213,7 +170,7 @@ export function PublicationsGrid() {
             <button
               onClick={(e) => { e.stopPropagation(); next(); }}
               className="absolute right-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-ivory transition hover:bg-white/20"
-              aria-label="Suivant"
+              aria-label={en ? "Next" : "Suivant"}
             >
               <ChevronRight className="h-6 w-6" />
             </button>

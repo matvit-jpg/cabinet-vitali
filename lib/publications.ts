@@ -1,32 +1,18 @@
-export type FeaturedArticle = {
-  title: string;
-  subtitle: string;
-  excerpt: string;
-  source: string;
-  date: string;
-  photo: string;
-  logo: string;
-};
-
-export const featuredArticle: FeaturedArticle = {
-  title: "Article sur le nouveau rôle de l'expert",
-  subtitle: "L'expert, nouvelle clé de voûte du procès civil",
-  excerpt:
-    "Tribune libre parue dans l'Argus de l'enseigne. Serge Vitali y analyse l'évolution du rôle de l'expert judiciaire immobilier : d'auxiliaire technique, il devient un acteur central du règlement des litiges, dont les conclusions structurent de plus en plus la décision du juge.",
-  source: "Argus de l'enseigne",
-  date: "Novembre 2025",
-  photo: "/images/article-photo.jpg",
-  logo: "/images/article-logo.png",
-};
-
 export type PublicationEntry = {
   kind: "publication" | "intervention";
   date: string;
   source: string;
   title: string;
   reference?: string;
+  /** Visuel cliquable (photo, affiche). */
   image?: string;
+  /** Pastille sobre à la place d'un visuel (ex. couverture de revue). */
+  badge?: string;
+  /** Version anglaise. */
+  en: { date: string; source: string; title: string };
 };
+
+const AJDI_EN = "Actualité juridique Droit immobilier (Dalloz), French property law review";
 
 /** Publications (plus récentes d'abord) */
 export const publications: PublicationEntry[] = [
@@ -37,7 +23,24 @@ export const publications: PublicationEntry[] = [
     title:
       "Dossier « Les nouveaux visages de l'expert judiciaire après le décret du 18 juillet 2025 » — contribution",
     reference: "AJDI 2025, n° 11, p. 745",
-    image: "/images/pub-1.png",
+    badge: "AJDI",
+    en: {
+      date: "November 2025",
+      source: AJDI_EN,
+      title: "Contribution to the special report “The new faces of the court expert after the decree of 18 July 2025”",
+    },
+  },
+  {
+    kind: "publication",
+    date: "Novembre 2025",
+    source: "L'Argus de l'enseigne — tribune libre",
+    title: "L'expert, nouvelle clé de voûte du procès civil",
+    image: "/images/article-photo.jpg",
+    en: {
+      date: "November 2025",
+      source: "L'Argus de l'enseigne, retail property magazine — opinion piece",
+      title: "The expert, new cornerstone of civil proceedings",
+    },
   },
   {
     kind: "publication",
@@ -46,7 +49,12 @@ export const publications: PublicationEntry[] = [
     title:
       "Accès à la fonction d'expert judiciaire : pour une exigence d'expérience au service de la qualité de la justice",
     reference: "AJDI 2025, n° 7-8, p. 497",
-    image: "/images/pub-3.jpg",
+    badge: "AJDI",
+    en: {
+      date: "July-August 2025",
+      source: AJDI_EN,
+      title: "Becoming a court expert: requiring experience in the interest of the quality of justice",
+    },
   },
   {
     kind: "publication",
@@ -54,7 +62,12 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier (Dalloz)",
     title: "L'évaluation de l'indemnité d'occupation due à l'indivision postcommunautaire",
     reference: "AJDI 2021, n° 9, p. 581",
-    image: "/images/pub-8.jpg",
+    badge: "AJDI",
+    en: {
+      date: "September 2021",
+      source: AJDI_EN,
+      title: "Valuing the occupancy compensation owed to the joint ownership (indivision) following a divorce",
+    },
   },
   {
     kind: "publication",
@@ -62,7 +75,12 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 2e édition",
     reference: "AJDI 2019, n° 12, cahier 2, p. 952",
-    image: "/images/pub-9.png",
+    badge: "AJDI",
+    en: {
+      date: "December 2019",
+      source: `${AJDI_EN}, commercial leases issue`,
+      title: "Observatory of court-set commercial rents — Aix-en-Provence – Marseille, 2nd edition",
+    },
   },
   {
     kind: "publication",
@@ -70,7 +88,12 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 1re édition",
     reference: "AJDI 2018, n° 12, cahier 2, p. 922",
-    image: "/images/pub-2.jpg",
+    badge: "AJDI",
+    en: {
+      date: "December 2018",
+      source: `${AJDI_EN}, commercial leases issue`,
+      title: "Observatory of court-set commercial rents — Aix-en-Provence – Marseille, 1st edition",
+    },
   },
 ];
 
@@ -82,6 +105,11 @@ export const interventions: PublicationEntry[] = [
     source: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM) — colloque « Les usages de l'IA pour les experts de justice », en visioconférence",
     title: "Les risques de l'IA dans l'évaluation immobilière",
     image: "/images/cecaam.png",
+    en: {
+      date: "30 October 2026",
+      source: "Association of experts at the Marseille administrative court of appeal (CECAAM) — conference “Uses of AI for court experts”, online",
+      title: "The risks of AI in real estate valuation",
+    },
   },
   {
     kind: "intervention",
@@ -90,6 +118,12 @@ export const interventions: PublicationEntry[] = [
     title:
       "Le rôle renforcé de l'expert selon le décret n° 2025-660 du 18 juillet 2025 relatif à l'instruction conventionnelle et aux modes amiables de résolution des différends",
     image: "/images/pub-5.jpg",
+    en: {
+      date: "17 September 2025",
+      source: "Paris Bar — commercial leases sub-committee",
+      title:
+        "The expert's enhanced role under decree no. 2025-660 of 18 July 2025 on party-led case preparation (instruction conventionnelle) and amicable dispute resolution",
+    },
   },
   {
     kind: "intervention",
@@ -97,6 +131,11 @@ export const interventions: PublicationEntry[] = [
     source: "Rencontres nationales des baux commerciaux (RNBC), 2e édition — Aix-en-Provence",
     title: "Le contentieux Covid, la révision et les valeurs locatives",
     image: "/images/rnbc-2022.jpeg",
+    en: {
+      date: "2 June 2022",
+      source: "French national commercial leases conference (RNBC), 2nd edition — Aix-en-Provence",
+      title: "Covid-related litigation, rent revision and rental values",
+    },
   },
   {
     kind: "intervention",
@@ -104,6 +143,11 @@ export const interventions: PublicationEntry[] = [
     source: "RNEI, 7e édition (Edilaix)",
     title: "Atelier « Les commerces »",
     image: "/images/pub-6.jpg",
+    en: {
+      date: "3 December 2021",
+      source: "RNEI, 7th edition (Edilaix)",
+      title: "Workshop on retail premises",
+    },
   },
   {
     kind: "intervention",
@@ -111,6 +155,11 @@ export const interventions: PublicationEntry[] = [
     source: "Rencontres nationales des baux commerciaux (RNBC), 1re édition — Aix-en-Provence",
     title: "Le loyer révisé : la révision du loyer en cours de bail après le Covid",
     image: "/images/pub-7.png",
+    en: {
+      date: "3 June 2021",
+      source: "French national commercial leases conference (RNBC), 1st edition — Aix-en-Provence",
+      title: "Rent revision during the lease after Covid",
+    },
   },
 ];
 

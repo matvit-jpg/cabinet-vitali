@@ -30,6 +30,7 @@ const linksEn: { href: string; label: string; dropdown?: undefined }[] = [
   { href: "/en", label: "Home" },
   { href: "/en/firm", label: "The Firm" },
   { href: "/en/expertise", label: "Expertise" },
+  { href: "/en/publications", label: "Publications" },
 ];
 
 export function Header() {
