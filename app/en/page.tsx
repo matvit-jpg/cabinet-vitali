@@ -1,3 +1,5 @@
+import { GoldRule } from "@/components/motion/GoldRule";
+import { StaggerItem, StaggerList } from "@/components/motion/Stagger";
 import Link from "next/link";
 import { ArrowRight, Award, FileText, Gift, Home, MapPin, Scale, Store, Users } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
@@ -15,7 +17,7 @@ export const metadata = { ...base, openGraph: { ...base.openGraph, locale: "en_G
 
 const eyebrow = "font-sans text-[11px] font-semibold uppercase tracking-[0.24em] text-gold-dark";
 const h2 = "mt-3 font-display text-3xl font-semibold tracking-tight text-navy md:text-4xl";
-const rule = <div className="mt-5 h-px w-12 bg-gold" aria-hidden />;
+const rule = <GoldRule />;
 
 const credentials = [
   { icon: Scale, title: "Court-appointed valuation expert", text: "Registered with the Aix-en-Provence Court of Appeal since 2017. Also acts before the Marseille Administrative Court of Appeal." },
@@ -82,9 +84,9 @@ export default function EnglishHomePage() {
               About the firm <ArrowRight className="h-4 w-4" aria-hidden />
             </Link>
           </div>
-          <ul className="space-y-4">
+          <StaggerList className="space-y-4">
             {credentials.map(({ icon: Icon, title, text }) => (
-              <li key={title} className="flex gap-4 rounded-sm border border-grey-light bg-ivory p-5">
+              <StaggerItem key={title} className="flex gap-4 rounded-sm border border-grey-light bg-ivory p-5 transition-[border-color,box-shadow] duration-300 hover:border-gold-dark/50 hover:shadow-elevated">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy text-ivory">
                   <Icon className="h-5 w-5" aria-hidden />
                 </span>
@@ -92,9 +94,9 @@ export default function EnglishHomePage() {
                   <h3 className="font-sans text-sm font-semibold text-navy md:text-base">{title}</h3>
                   <p className="mt-1 font-sans text-xs leading-relaxed text-text/80 md:text-sm">{text}</p>
                 </div>
-              </li>
+              </StaggerItem>
             ))}
-          </ul>
+          </StaggerList>
         </div>
       </section>
 
@@ -107,15 +109,15 @@ export default function EnglishHomePage() {
           <p className="mt-6 max-w-2xl font-sans text-sm font-light leading-relaxed text-text md:text-base">
             French property law and tax rules have their own valuation requirements, notably in four situations.
           </p>
-          <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <StaggerList className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {situations.map(({ icon: Icon, title, text }) => (
-              <li key={title} className="rounded-sm border border-grey-light bg-white p-6">
+              <StaggerItem key={title} className="rounded-sm border border-grey-light bg-white p-6 transition-[border-color,box-shadow] duration-300 hover:border-gold-dark/50 hover:shadow-elevated">
                 <Icon className="h-6 w-6 text-gold-dark" aria-hidden />
                 <h3 className="mt-4 font-display text-xl font-semibold text-navy">{title}</h3>
                 <p className="mt-2 font-sans text-xs leading-relaxed text-text/80 md:text-sm">{text}</p>
-              </li>
+              </StaggerItem>
             ))}
-          </ul>
+          </StaggerList>
           <div className="mt-8 flex flex-col gap-4 rounded-sm bg-navy px-6 py-5 md:flex-row md:items-center md:justify-between">
             <p className="font-sans text-sm text-ivory/90">
               A valuation prepared by a court-registered expert, following European valuation standards, carries weight with:
@@ -138,8 +140,8 @@ export default function EnglishHomePage() {
           <p className={eyebrow}>How we work</p>
           <h2 className={h2}>Working with us</h2>
           {rule}
-          <ul className="mt-10 grid gap-4 md:grid-cols-3">
-            <li className="rounded-sm border border-grey-light bg-ivory p-6">
+          <StaggerList className="mt-10 grid gap-4 md:grid-cols-3">
+            <StaggerItem className="rounded-sm border border-grey-light bg-ivory p-6 transition-[border-color,box-shadow] duration-300 hover:border-gold-dark/50 hover:shadow-elevated">
               <div className="flex gap-2">
                 {["EN", "FR"].map((l) => (
                   <span key={l} className="flex h-10 w-10 items-center justify-center rounded-full bg-navy font-sans text-xs font-semibold text-ivory">{l}</span>
@@ -149,15 +151,15 @@ export default function EnglishHomePage() {
               <p className="mt-2 font-sans text-sm font-light leading-relaxed text-text">
                 Serge Vitali works in both English and French: you can discuss your matter with him in English.
               </p>
-            </li>
-            <li className="rounded-sm border border-grey-light bg-ivory p-6">
+            </StaggerItem>
+            <StaggerItem className="rounded-sm border border-grey-light bg-ivory p-6 transition-[border-color,box-shadow] duration-300 hover:border-gold-dark/50 hover:shadow-elevated">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-navy text-ivory"><FileText className="h-5 w-5" aria-hidden /></span>
               <h3 className="mt-4 font-display text-xl font-semibold text-navy">Reports in either language</h3>
               <p className="mt-2 font-sans text-sm font-light leading-relaxed text-text">
                 Reports can be written in English or in French, as their intended use requires.
               </p>
-            </li>
-            <li className="rounded-sm border border-grey-light bg-ivory p-6">
+            </StaggerItem>
+            <StaggerItem className="rounded-sm border border-grey-light bg-ivory p-6 transition-[border-color,box-shadow] duration-300 hover:border-gold-dark/50 hover:shadow-elevated">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-navy text-ivory"><MapPin className="h-5 w-5" aria-hidden /></span>
               <h3 className="mt-4 font-display text-xl font-semibold text-navy">Where we work</h3>
               <ul className="mt-3 space-y-2 font-sans text-sm font-light text-text">
@@ -177,8 +179,8 @@ export default function EnglishHomePage() {
                   </li>
                 ))}
               </ul>
-            </li>
-          </ul>
+            </StaggerItem>
+          </StaggerList>
         </div>
       </section>
 

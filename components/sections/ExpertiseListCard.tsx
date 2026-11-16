@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { staggerItem } from "@/lib/motion-variants";
 import { ArrowRight } from "lucide-react";
 import type { Expertise } from "@/lib/expertises";
 import { ExpertiseIcon } from "@/lib/icons-expertise";
 
 export function ExpertiseListCard(e: Expertise) {
   return (
-    <li className="group h-full">
+    <motion.li variants={staggerItem} className="group h-full">
       <Link
         href={`/expertises/${e.slug}`}
         className="flex h-full flex-col rounded-sm border border-grey-light bg-white p-6 shadow-card transition duration-300 hover:-translate-y-0.5 hover:border-gold-dark/50 hover:shadow-elevated md:p-8"
@@ -26,6 +28,6 @@ export function ExpertiseListCard(e: Expertise) {
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden />
         </span>
       </Link>
-    </li>
+    </motion.li>
   );
 }

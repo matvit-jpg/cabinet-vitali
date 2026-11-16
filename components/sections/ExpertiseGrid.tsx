@@ -1,3 +1,4 @@
+import { StaggerList } from "@/components/motion/Stagger";
 import { expertises } from "@/lib/expertises";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Divider } from "@/components/ui/Divider";
@@ -19,12 +20,12 @@ export function ExpertiseGrid() {
           </p>
         </FadeInSection>
         <Divider />
-        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <StaggerList className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {["valeurs-locatives", "indemnite-eviction", "evaluation-immobiliere"].map((slug) => {
             const e = expertises.find((x) => x.slug === slug)!;
             return <ExpertiseListCard key={e.slug} {...e} />;
           })}
-        </ul>
+        </StaggerList>
         <div className="mt-14 flex justify-center">
           <Button href="/expertises" variant="secondary">
             Voir toutes nos expertises

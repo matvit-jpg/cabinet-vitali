@@ -1,3 +1,4 @@
+import { MotionProvider } from "@/components/motion/MotionProvider";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/layout/Header";
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body className="min-h-screen font-sans antialiased">
+        <MotionProvider>
         <script dangerouslySetInnerHTML={{ __html: "history.scrollRestoration='manual';window.scrollTo(0,0);" }} />
         <script
           type="application/ld+json"
@@ -41,6 +43,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <Analytics />
+        </MotionProvider>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+import { GoldRule } from "@/components/motion/GoldRule";
 import { languageAlternates } from "@/lib/i18n";
 import Image from "next/image";
 import { createMetadata } from "@/lib/metadata";
@@ -37,7 +38,7 @@ export default function CabinetPage() {
             <p className="mt-6 max-w-2xl text-left font-sans text-base font-light leading-relaxed text-navy/75 md:text-xl">
               Serge Vitali, expert judiciaire près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille. Rigueur méthodologique et indépendance, en contentieux comme en amiable.
             </p>
-            <div className="mt-8 h-px max-w-3xl bg-gold-dark/40" />
+            <GoldRule className="mt-8 h-px max-w-3xl bg-gold-dark/40" />
             <dl className="mt-8 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-4">
               {[
                 { k: "2017", v: "Inscrit sur la liste de la Cour d'appel" },

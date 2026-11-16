@@ -1,3 +1,4 @@
+import { StaggerList } from "@/components/motion/Stagger";
 import { languageAlternates } from "@/lib/i18n";
 import { createMetadata } from "@/lib/metadata";
 import { expertises } from "@/lib/expertises";
@@ -35,13 +36,13 @@ export default function ExpertisesPage() {
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <StaggerList className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {expertises
               .filter((e) => !["expertises-judiciaires", "ingenierie-immobiliere"].includes(e.slug))
               .map((e) => (
                 <ExpertiseListCard key={e.slug} {...e} />
               ))}
-          </ul>
+          </StaggerList>
         </div>
       </SectionWrapper>
     </>

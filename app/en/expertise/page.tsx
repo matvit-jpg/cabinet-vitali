@@ -1,3 +1,4 @@
+import { StaggerItem, StaggerList } from "@/components/motion/Stagger";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import { languageAlternates } from "@/lib/i18n";
@@ -64,17 +65,17 @@ export default function ExpertisePage() {
 
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
-          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <StaggerList className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {areas.map((a) => (
-              <li key={a.title} className="flex flex-col border border-grey-light bg-white p-6">
+              <StaggerItem key={a.title} className="flex flex-col border border-grey-light bg-white p-6 transition-[border-color,box-shadow] duration-300 hover:border-gold-dark/50 hover:shadow-elevated">
                 <h2 className="font-display text-xl font-semibold text-navy">{a.title}</h2>
                 <p className="mt-3 flex-1 font-sans text-sm font-light leading-relaxed text-text">{a.text}</p>
                 <Link href={a.fr} lang="fr" hrefLang="fr" className="mt-4 font-sans text-xs font-medium text-gold-dark hover:underline">
                   Detailed page (in French) →
                 </Link>
-              </li>
+              </StaggerItem>
             ))}
-          </ul>
+          </StaggerList>
 
           <div className="mx-auto mt-16 max-w-4xl space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
             <h2 className="font-display text-2xl font-semibold text-navy md:text-3xl">Court-appointed and private assignments</h2>

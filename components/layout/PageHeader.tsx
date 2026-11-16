@@ -1,3 +1,4 @@
+import { GoldRule } from "@/components/motion/GoldRule";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 
@@ -60,7 +61,7 @@ export function PageHeader({
             {intro}
           </p>
         )}
-        {(facts || links) && <div className="mt-8 h-px max-w-4xl bg-gold-dark/40" />}
+        {(facts || links) && <GoldRule className="mt-8 h-px max-w-4xl bg-gold-dark/40" />}
         {facts && (
           <dl className={`mt-8 grid max-w-4xl grid-cols-1 gap-x-10 gap-y-6 sm:grid-cols-2 ${facts.length >= 4 ? "md:grid-cols-4" : facts.length === 3 ? "md:grid-cols-3" : ""}`}>
             {facts.map((f) => (

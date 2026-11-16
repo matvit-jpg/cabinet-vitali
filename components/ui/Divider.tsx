@@ -1,3 +1,4 @@
+import { GoldRule } from "@/components/motion/GoldRule";
 export function Divider({ className = "" }: { className?: string }) {
   return (
     <div
@@ -5,7 +6,7 @@ export function Divider({ className = "" }: { className?: string }) {
       role="separator"
       aria-hidden
     >
-      <div className="h-px w-24 bg-gold/80" />
+      <GoldRule className="h-px w-24 bg-gold/80" />
     </div>
   );
 }
