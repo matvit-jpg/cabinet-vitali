@@ -2,7 +2,9 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { FlagGB } from "@/components/ui/FlagGB";
+import { usePathname } from "next/navigation";
+import { LangSwitch } from "./LangSwitch";
+import { isEnglishPath } from "@/lib/i18n";
 import { X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { SITE } from "@/lib/site";
@@ -17,6 +19,8 @@ const expertises = [
 
 export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [expertisesOpen, setExpertisesOpen] = useState(false);
+  const en = isEnglishPath(usePathname() || "/");
+  const item = "font-display text-3xl tracking-tight text-ivory hover:text-gold";
 
   return (
     <AnimatePresence>
@@ -38,6 +42,14 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             </button>
           </div>
 
+          {en ? (
+          <nav className="flex flex-1 flex-col justify-start gap-6 px-8 pt-12" aria-label="Main navigation" lang="en">
+            <Link href="/en" onClick={onClose} className={item}>Home</Link>
+            <Link href="/en/firm" onClick={onClose} className={item}>The Firm</Link>
+            <Link href="/en/expertise" onClick={onClose} className={item}>Expertise</Link>
+            <div onClick={onClose}><LangSwitch dark /></div>
+          </nav>
+          ) : (
           <nav className="flex flex-1 flex-col justify-start gap-6 px-8 pt-12" aria-label="Navigation principale">
             <Link href="/" onClick={onClose} className="font-display text-3xl tracking-tight text-ivory hover:text-gold">Accueil</Link>
             <Link href="/cabinet" onClick={onClose} className="font-display text-3xl tracking-tight text-ivory hover:text-gold">Le Cabinet</Link>
@@ -73,11 +85,12 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             </div>
 
             <Link href="/publications" onClick={onClose} className="font-display text-3xl tracking-tight text-ivory hover:text-gold">Publications</Link>
-            <Link href="/en" onClick={onClose} lang="en" hrefLang="en" className="inline-flex items-center gap-3 font-display text-3xl tracking-tight text-ivory hover:text-gold"><FlagGB className="h-5 w-auto" />English</Link>
+            <div onClick={onClose}><LangSwitch dark /></div>
           </nav>
+          )}
 
           <div className="border-t border-navy-light p-8">
-            <Button href="/contact" variant="primary" className="w-full">Contact</Button>
+            <Button href={en ? "/en/contact" : "/contact"} variant="primary" className="w-full">Contact</Button>
           </div>
         </motion.div>
       )}

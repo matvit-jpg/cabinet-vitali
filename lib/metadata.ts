@@ -7,6 +7,7 @@ export function createMetadata(opts: {
   title: string;
   description: string;
   path?: string;
+  languages?: Record<string, string>;
 }): Metadata {
   const urlBase =
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
@@ -37,7 +38,7 @@ export function createMetadata(opts: {
       title: `${opts.title} | ${titleSuffix}`,
       description: opts.description,
     },
-    alternates: { canonical: pageUrl },
+    alternates: { canonical: pageUrl, ...(opts.languages ? { languages: opts.languages } : {}) },
   };
 }
 

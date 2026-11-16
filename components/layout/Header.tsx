@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { FlagGB } from "@/components/ui/FlagGB";
+import { LangSwitch } from "./LangSwitch";
+import { isEnglishPath } from "@/lib/i18n";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, ChevronDown } from "lucide-react";
@@ -23,11 +24,20 @@ const links = [
     ],
   },
   { href: "/publications", label: "Publications" },
-  { href: "/en", label: "English" },
+];
+
+const linksEn: { href: string; label: string; dropdown?: undefined }[] = [
+  { href: "/en", label: "Home" },
+  { href: "/en/firm", label: "The Firm" },
+  { href: "/en/expertise", label: "Expertise" },
 ];
 
 export function Header() {
   const pathname = usePathname();
+  const en = isEnglishPath(pathname);
+  const navLinks = en ? linksEn : links;
+  const home = en ? "/en" : "/";
+  const contactHref = en ? "/en/contact" : "/contact";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -54,7 +64,7 @@ export function Header() {
             <button type="button" className="rounded-sm p-2 text-navy hover:bg-grey-light lg:hidden" onClick={() => setMenuOpen(true)} aria-label="Ouvrir le menu de navigation" aria-expanded={menuOpen}>
               <Menu className="h-6 w-6" />
             </button>
-            <Link href="/" aria-label={`${SITE.cabinetFull} — Accueil`} className="hidden lg:block">
+            <Link href={home} aria-label={`${SITE.cabinetFull} — ${en ? "Home" : "Accueil"}`} className="hidden lg:block">
               <Image
                 src="/images/logo-navy.png"
                 alt={SITE.cabinetFull}
@@ -68,7 +78,7 @@ export function Header() {
 
           {/* Centre — Navigation desktop uniquement */}
           <nav className="hidden items-center justify-center gap-7 whitespace-nowrap lg:flex xl:gap-10" aria-label="Navigation principale">
-            {links.map((l) => {
+            {navLinks.map((l) => {
               if (l.dropdown) {
                 const isActive = l.dropdown.some(d => pathname.startsWith(d.href));
                 return (
@@ -98,10 +108,9 @@ export function Header() {
                   </div>
                 );
               }
-              const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
+              const active = l.href === "/" || l.href === "/en" ? pathname === l.href : pathname.startsWith(l.href);
               return (
                 <Link key={l.href} href={l.href} className={`group relative inline-flex items-center gap-2 whitespace-nowrap font-sans text-lg font-medium xl:text-xl transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
-                  {l.href === "/en" && <FlagGB className="h-3.5 w-auto" />}
                   {l.label}
                   <span className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-gold transition-transform duration-300 ${active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} aria-hidden />
                 </Link>
@@ -111,10 +120,11 @@ export function Header() {
 
           {/* Droite — bouton Contact */}
           <div className="flex items-center justify-end gap-3 col-start-3">
-            <Button href="/contact" variant="primary" className="lg:hidden !text-[10px] !px-2.5 !py-1.5" aria-label="Aller à la page contact">
+            <LangSwitch />
+            <Button href={contactHref} variant="primary" className="lg:hidden !text-[10px] !px-2.5 !py-1.5" aria-label={en ? "Go to the contact page" : "Aller à la page contact"}>
               Contact
             </Button>
-            <Button href="/contact" variant="primary" className="hidden lg:inline-flex" aria-label="Aller à la page contact">
+            <Button href={contactHref} variant="primary" className="hidden lg:inline-flex" aria-label={en ? "Go to the contact page" : "Aller à la page contact"}>
               Contact
             </Button>
           </div>

@@ -1,3 +1,4 @@
+import { languageAlternates } from "@/lib/i18n";
 import Image from "next/image";
 import { createMetadata } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
@@ -10,6 +11,7 @@ export const metadata = createMetadata({
   title: "Serge Vitali, expert judiciaire immobilier — le cabinet",
   description: "Cabinet Vitali, Marseille et Aubagne : Serge Vitali, expert judiciaire près la Cour d'appel d'Aix-en-Provence, certifié REV, président de l'EEFIC. Expertise immobilière judiciaire et amiable.",
   path: "/cabinet",
+  languages: languageAlternates("/cabinet", "/en/firm"),
 });
 
 const affiliations = [

@@ -1,3 +1,4 @@
+import { languageAlternates } from "@/lib/i18n";
 import { createMetadata } from "@/lib/metadata";
 import { expertises } from "@/lib/expertises";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
@@ -10,6 +11,7 @@ export const metadata = createMetadata({
   description:
     "Expertise immobilière amiable et judiciaire à Marseille et Aix-en-Provence : valeur vénale, valeur locative et baux commerciaux, indemnité d'éviction, sociétés à prépondérance immobilière, successions, expropriation, préjudices.",
   path: "/expertises",
+  languages: languageAlternates("/expertises", "/en/expertise"),
 });
 
 export default function ExpertisesPage() {

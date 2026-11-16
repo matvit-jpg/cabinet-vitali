@@ -1,3 +1,4 @@
+import { languageAlternates } from "@/lib/i18n";
 import { createMetadata } from "@/lib/metadata";
 import { Hero } from "@/components/sections/Hero";
 import { DecideursLogo } from "@/components/sections/DecideursLogo";
@@ -12,6 +13,7 @@ export const metadata = {
     description:
       "Serge Vitali, expert judiciaire inscrit près la Cour d'appel d'Aix-en-Provence et la Cour administrative d'appel de Marseille : valeur vénale, valeur locative de renouvellement, indemnité d'éviction, préjudices immobiliers.",
     path: "/",
+    languages: languageAlternates("/", "/en"),
   }),
   title: { absolute: homeTitle },
 };
