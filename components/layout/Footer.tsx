@@ -123,6 +123,9 @@ export function Footer() {
             <a href="/CGV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
               CGV
             </a>
+            <Link href="/en" lang="en" hrefLang="en" className="hover:text-gold">
+              English
+            </Link>
           </div>
           <p>
           © {new Date().getFullYear()} {SITE.cabinetFull}.
