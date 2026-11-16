@@ -17,7 +17,8 @@ export const metadata = { ...base, openGraph: { ...base.openGraph, locale: "en_G
 const memberships = [
   "CNEJI — French national association of court-registered real estate experts",
   "EEFIC — French national federation of land, property and business valuers (chair since 2026)",
-  "CNEFAF — French confederation of land experts",
+  "CEF — Confédération des experts fonciers (French confederation of land experts)",
+  "CNEFAF — French national council of land, agricultural and forestry valuation, which confers the protected title of expert foncier et agricole",
   "CECAAM — Association of experts of the Marseille Administrative Court of Appeal",
   "TEGoVA — Recognised European Valuer (REV)",
 ];

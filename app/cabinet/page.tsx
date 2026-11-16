@@ -18,7 +18,8 @@ export const metadata = createMetadata({
 const affiliations = [
   { name: "Compagnie nationale des experts de justice immobiliers (CNEJI)", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
   { name: "Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux (EEFIC)", url: "https://eefic.eu/accueil", logo: "/images/eefic.png", maxH: "h-24" },
-  { name: "Confédération des Experts Fonciers (CNEFAF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
+  { name: "Confédération des experts fonciers (CEF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
+  { name: "Conseil national de l'expertise foncière, agricole et forestière (CNEFAF) — titre d'expert foncier et agricole", url: "", logo: "/images/cnefaf-logo.png", maxH: "h-24" },
   { name: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM)", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
 ];
 
@@ -86,9 +87,9 @@ export default function CabinetPage() {
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
             <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark">Serge Vitali est membre des compagnies suivantes :</p>
-            <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
               {affiliations.map((a) => (
-                <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="group flex flex-col items-center rounded-sm border border-grey-light bg-white p-6 transition hover:border-gold-dark/50">
+                <a key={a.name} href={a.url || undefined} target={a.url ? "_blank" : undefined} rel={a.url ? "noopener noreferrer" : undefined} title={a.name} className="group flex flex-col items-center rounded-sm border border-grey-light bg-white p-6 transition hover:border-gold-dark/50">
                   <div className={`relative ${a.maxH} w-full opacity-70 transition-opacity group-hover:opacity-100`}>
                     <Image src={a.logo} alt="" fill className="object-contain" />
                   </div>
