@@ -56,8 +56,8 @@ export function DecideursLogo() {
           >
             <div className="relative flex flex-col items-center overflow-hidden rounded-sm border border-gold/40 bg-navy/80 px-5 py-6 text-center md:px-6 md:py-10 shadow-2xl backdrop-blur-sm transition-transform duration-300 group-hover:scale-[1.02] md:px-12">
               {/* Filets d'angle dorés */}
-              <span className="pointer-events-none absolute left-3 top-3 h-6 w-6 border-l border-t border-gold/70" />
-              <span className="pointer-events-none absolute right-3 top-3 h-6 w-6 border-r border-t border-gold/70" />
+              <span className="pointer-events-none absolute hidden md:block left-3 top-3 h-6 w-6 border-l border-t border-gold/70" />
+              <span className="pointer-events-none absolute hidden md:block right-3 top-3 h-6 w-6 border-r border-t border-gold/70" />
               <span className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-gold/70" />
               <span className="pointer-events-none absolute bottom-3 right-3 h-6 w-6 border-b border-r border-gold/70" />
 
