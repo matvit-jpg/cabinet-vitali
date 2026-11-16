@@ -22,6 +22,7 @@ const links = [
     ],
   },
   { href: "/publications", label: "Publications" },
+  { href: "/en", label: "English" },
 ];
 
 export function Header() {

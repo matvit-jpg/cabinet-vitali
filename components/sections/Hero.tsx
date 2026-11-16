@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, UserPlus } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/Button";
@@ -74,6 +74,14 @@ export function Hero() {
                 Prendre contact
               </Button>
             </div>
+            <a
+              href="/serge-vitali.vcf"
+              download
+              className="mt-6 inline-flex items-center gap-2 font-sans text-sm text-ivory/85 underline-offset-4 transition hover:text-gold hover:underline"
+            >
+              <UserPlus className="h-4 w-4" aria-hidden />
+              Ajouter à mes contacts
+            </a>
           </AnimatedLine>
         </AnimatedText>
         <motion.a
