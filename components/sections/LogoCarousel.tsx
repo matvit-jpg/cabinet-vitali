@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const clients = [
   { name: "Ville de Marseille", src: "/images/marseille.png", href: "https://www.marseille.fr" },
+  { name: "SPLA-IN Aix-Marseille-Provence", src: "/images/spla-in-amp.svg", href: "https://www.splain-amp.fr" },
   { name: "L'Occitane en Provence", src: "/images/occitane.png", href: "https://www.loccitane.com" },
   { name: "Caritas France", src: "/images/caritas.avif", href: "https://www.secours-catholique.org" },
   { name: "Caisse d'Épargne", src: "/images/caisse-epargne.avif", href: "https://www.caisse-epargne.fr" },
@@ -134,7 +135,7 @@ export function LogoCarousel() {
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-ivory to-transparent" />
           <motion.div
             ref={trackRef}
-            className="flex items-center gap-14"
+            className="flex items-center gap-6 md:gap-8"
             style={{ x, width: "max-content" }}
           >
             {track.map((client, i) => (
@@ -144,14 +145,14 @@ export function LogoCarousel() {
                 target="_blank"
                 rel="noopener noreferrer"
                 title={client.name}
-                className="carousel-logo shrink-0"
+                className="carousel-logo flex h-24 w-44 shrink-0 items-center justify-center rounded-sm border border-grey-light bg-white px-5 py-4 shadow-card md:h-28 md:w-56"
               >
                 <Image
                   src={client.src}
                   alt={client.name}
-                  width={120}
-                  height={60}
-                  className="h-12 w-32 object-contain"
+                  width={200}
+                  height={100}
+                  className="h-full w-full object-contain"
                   unoptimized
                 />
               </a>

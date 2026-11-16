@@ -51,12 +51,11 @@ p, blockquote {
 
 /* Carousel logos */
 .carousel-logo {
-  opacity: 0.65;
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .carousel-logo:hover {
-  opacity: 1;
-  transform: scale(1.08);
+  border-color: rgb(138 109 31 / 0.5);
+  box-shadow: 0 12px 40px rgba(13, 27, 42, 0.12);
 }
 
