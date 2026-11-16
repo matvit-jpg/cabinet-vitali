@@ -21,7 +21,7 @@ const clients = [
   { name: "Maussanne", src: "/images/maussanne.avif", href: "https://www.maussanelesalpilles.fr" },
 ];
 
-const SPEED = 0.035; // px/ms
+const SPEED = 0.07; // px/ms
 
 export function LogoCarousel() {
   const track = [...clients, ...clients];
