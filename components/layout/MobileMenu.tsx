@@ -72,6 +72,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             </div>
 
             <Link href="/publications" onClick={onClose} className="font-display text-3xl tracking-tight text-ivory hover:text-gold">Publications</Link>
+            <Link href="/en" onClick={onClose} lang="en" hrefLang="en" className="font-display text-3xl tracking-tight text-ivory hover:text-gold">English</Link>
           </nav>
 
           <div className="border-t border-navy-light p-8">
