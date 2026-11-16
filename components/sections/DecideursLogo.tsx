@@ -73,7 +73,7 @@ export function DecideursLogo() {
               <p className="mt-3 font-display text-2xl font-semibold text-ivory md:mt-5 md:text-4xl">
                 Immobilier
               </p>
-              <p className="mt-1 font-sans text-sm font-light uppercase tracking-widest text-ivory/80">
+              <p className="mt-1 font-sans text-xs font-light uppercase tracking-widest text-ivory/80 md:text-sm">
                 Expertise judiciaire – Commerce
               </p>
 
@@ -94,7 +94,7 @@ export function DecideursLogo() {
                 {[2021, 2022, 2023, 2024, 2025, 2026].map((y) => (
                   <li
                     key={y}
-                    className={`rounded-sm border px-2 py-0.5 font-sans text-[11px] tracking-wider md:px-2.5 md:py-1 md:text-xs ${
+                    className={`rounded-sm border px-1.5 py-0.5 font-sans text-[11px] tracking-normal md:px-2.5 md:tracking-wider md:px-2.5 md:py-1 md:text-xs ${
                       y === 2026
                         ? "border-gold bg-gold font-semibold text-navy"
                         : "border-gold/40 text-ivory/80"
@@ -105,7 +105,7 @@ export function DecideursLogo() {
                 ))}
               </ul>
 
-              <div className="mt-5 flex w-full flex-col items-center justify-center gap-0.5 border-t border-ivory/10 pt-4 sm:flex-row sm:gap-6 md:mt-8 md:pt-6">
+              <div className="mt-8 hidden w-full items-center justify-center gap-6 border-t border-ivory/10 pt-6 md:flex">
                 <span className="font-display text-base tracking-wide text-ivory md:text-lg">CABINET VITALI</span>
                 <span className="hidden h-4 w-px bg-gold/50 sm:block" />
                 <span className="font-display text-base italic text-ivory/90 md:text-lg">Serge Vitali</span>
