@@ -23,7 +23,7 @@ export const publications: PublicationEntry[] = [
     title:
       "Dossier « Les nouveaux visages de l'expert judiciaire après le décret du 18 juillet 2025 » — contribution",
     reference: "AJDI 2025, n° 11, p. 745",
-    badge: "AJDI",
+    image: "/images/pub-1.png",
     en: {
       date: "November 2025",
       source: AJDI_EN,
@@ -49,7 +49,7 @@ export const publications: PublicationEntry[] = [
     title:
       "Accès à la fonction d'expert judiciaire : pour une exigence d'expérience au service de la qualité de la justice",
     reference: "AJDI 2025, n° 7-8, p. 497",
-    badge: "AJDI",
+    image: "/images/pub-3.jpg",
     en: {
       date: "July-August 2025",
       source: AJDI_EN,
@@ -62,7 +62,7 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier (Dalloz)",
     title: "L'évaluation de l'indemnité d'occupation due à l'indivision postcommunautaire",
     reference: "AJDI 2021, n° 9, p. 581",
-    badge: "AJDI",
+    image: "/images/pub-8.jpg",
     en: {
       date: "September 2021",
       source: AJDI_EN,
@@ -75,7 +75,7 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 2e édition",
     reference: "AJDI 2019, n° 12, cahier 2, p. 952",
-    badge: "AJDI",
+    image: "/images/pub-9.png",
     en: {
       date: "December 2019",
       source: `${AJDI_EN}, commercial leases issue`,
@@ -88,7 +88,7 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 1re édition",
     reference: "AJDI 2018, n° 12, cahier 2, p. 922",
-    badge: "AJDI",
+    image: "/images/pub-2.jpg",
     en: {
       date: "December 2018",
       source: `${AJDI_EN}, commercial leases issue`,
