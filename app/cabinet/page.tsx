@@ -84,7 +84,7 @@ export default function CabinetPage() {
       <SectionWrapper className="border-t border-grey-light bg-ivory">
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
-            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark">Le cabinet Vitali est membre des compagnies suivantes :</p>
+            <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark">Serge Vitali est membre des compagnies suivantes :</p>
             <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-4">
               {affiliations.map((a) => (
                 <a key={a.name} href={a.url} target="_blank" rel="noopener noreferrer" title={a.name} className="flex items-center justify-center rounded-sm border border-grey-light bg-white p-6 opacity-70 transition-opacity hover:opacity-100">

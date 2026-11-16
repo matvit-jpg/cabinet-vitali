@@ -7,7 +7,7 @@ const quotes = [
     author: "Expert judiciaire agréé",
   },
   {
-    text: "Conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'expertise — titulaire du certification REV (Recognised European Valuer).",
+    text: "Conforme à la charte de l'expertise en évaluation immobilière et aux normes européennes d'évaluation — titulaire du certification REV (Recognised European Valuer).",
     author: "Normes européennes d'expertise — certification REV",
   },
   {
