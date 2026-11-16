@@ -19,7 +19,6 @@ const affiliations = [
   { name: "Compagnie nationale des experts de justice immobiliers (CNEJI)", url: "https://www.cneji.fr", logo: "/images/cneji.jpg", maxH: "h-24" },
   { name: "Fédération nationale des experts et experts de justice évaluateurs fonciers, immobiliers et commerciaux (EEFIC)", url: "https://eefic.eu/accueil", logo: "/images/eefic.png", maxH: "h-24" },
   { name: "Confédération des experts fonciers (CEF)", url: "https://www.experts-fonciers.com", logo: "/images/cnefaf.jpg", maxH: "h-24" },
-  { name: "Conseil national de l'expertise foncière, agricole et forestière (CNEFAF) — titre d'expert foncier et agricole", url: "", logo: "/images/cnefaf-logo.png", maxH: "h-24" },
   { name: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM)", url: "https://www.cecaam.expert/page/181622-dernieres-nouvelles", logo: "/images/cecaam.png", maxH: "h-24" },
 ];
 
@@ -87,7 +86,7 @@ export default function CabinetPage() {
         <div className="mx-auto max-w-7xl px-4 text-center lg:px-8">
           <FadeInSection>
             <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold-dark">Serge Vitali est membre des compagnies suivantes :</p>
-            <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+            <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
               {affiliations.map((a) => (
                 <a key={a.name} href={a.url || undefined} target={a.url ? "_blank" : undefined} rel={a.url ? "noopener noreferrer" : undefined} title={a.name} className="group flex flex-col items-center rounded-sm border border-grey-light bg-white p-6 transition hover:border-gold-dark/50">
                   <div className={`relative ${a.maxH} w-full opacity-70 transition-opacity group-hover:opacity-100`}>
@@ -104,9 +103,9 @@ export default function CabinetPage() {
       <SectionWrapper className="bg-white">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <FadeInSection>
-            <div className="grid lg:grid-cols-2 lg:divide-x lg:divide-grey-light">
+            <div className="grid lg:grid-cols-3 lg:divide-x lg:divide-grey-light">
               {/* Colonne gauche — REV */}
-              <div className="pr-0 lg:pr-12">
+              <div className="pr-0 lg:pr-10">
                 <h2 className="font-display text-2xl font-semibold text-navy">Certifié par</h2>
                 <a href="https://www.tegova.org" target="_blank" rel="noopener noreferrer" title="Recognised European Valuer (REV)" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
                 <div className="relative h-20 w-20">
@@ -120,8 +119,21 @@ export default function CabinetPage() {
                   <p>Depuis sa création, le statut REV a été décerné par les principales associations d&apos;experts en évaluation immobilière à travers l&apos;Europe.</p>
                 </div>
               </div>
+              {/* Colonne centrale — CNEFAF */}
+              <div className="mt-12 lg:mt-0 lg:px-10">
+                <h2 className="font-display text-2xl font-semibold text-navy">Expert foncier et agricole</h2>
+                <div className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4">
+                  <div className="relative h-20 w-48">
+                    <Image src="/images/cnefaf-logo.png" alt="CNEFAF" fill className="object-contain" />
+                  </div>
+                </div>
+                <div className="mt-6 space-y-2 font-sans text-base font-light leading-relaxed text-text">
+                  <p>Serge Vitali est inscrit sur la liste nationale des experts fonciers et agricoles tenue par le Conseil national de l&apos;expertise foncière, agricole et forestière (<strong>CNEFAF</strong>).</p>
+                  <p>Le titre d&apos;expert foncier et agricole est protégé par la loi (article L. 171-1 du code rural et de la pêche maritime) : seuls peuvent le porter les experts inscrits sur cette liste, soumis à un code de déontologie.</p>
+                </div>
+              </div>
               {/* Colonne droite — CFEI */}
-              <div className="mt-12 lg:mt-0 lg:pl-12">
+              <div className="mt-12 lg:mt-0 lg:pl-10">
                 <h2 className="font-display text-2xl font-semibold text-navy">Formateur</h2>
                 <a href="https://www.cfei.fr" target="_blank" rel="noopener noreferrer" title="Centre de formation et de perfectionnement à l'expertise immobilière (CFEI)" className="mt-6 inline-flex items-center justify-center rounded-sm border border-grey-light bg-white p-4 opacity-70 transition-opacity hover:opacity-100">
                 <div className="relative h-20 w-20">
