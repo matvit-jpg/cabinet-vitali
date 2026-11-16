@@ -56,7 +56,7 @@ export default function EnglishHomePage() {
           <dl className="self-center border-t border-gold/60">
             {[
               { k: "2017", v: "Registered with the Aix-en-Provence Court of Appeal since" },
-              { k: "2", v: "Departments covered: Bouches-du-Rhône and Var" },
+              { k: "5", v: "Departments covered: Bouches-du-Rhône and its neighbours" },
               { k: "EN·FR", v: "Working languages" },
             ].map((f) => (
               <div key={f.k} className="flex items-center gap-4 border-b border-ivory/15 py-5">
@@ -165,10 +165,17 @@ export default function EnglishHomePage() {
                   <span className="rounded-sm border border-gold-dark/60 px-1.5 py-0.5 font-sans text-xs font-semibold text-gold-dark">13</span>
                   Bouches-du-Rhône · offices in Marseille and Aubagne
                 </li>
-                <li className="flex items-center gap-3">
-                  <span className="rounded-sm border border-gold-dark/60 px-1.5 py-0.5 font-sans text-xs font-semibold text-gold-dark">83</span>
-                  Var
-                </li>
+                {[
+                  ["83", "Var"],
+                  ["84", "Vaucluse"],
+                  ["30", "Gard"],
+                  ["04", "Alpes-de-Haute-Provence"],
+                ].map(([n, d]) => (
+                  <li key={n} className="flex items-center gap-3">
+                    <span className="rounded-sm border border-gold-dark/60 px-1.5 py-0.5 font-sans text-xs font-semibold text-gold-dark">{n}</span>
+                    {d}
+                  </li>
+                ))}
               </ul>
             </li>
           </ul>

@@ -100,6 +100,9 @@ export function jsonLdProfessionalService() {
           { "@type": "City", name: "Toulon" },
           { "@type": "AdministrativeArea", name: "Bouches-du-Rhône" },
           { "@type": "AdministrativeArea", name: "Var" },
+          { "@type": "AdministrativeArea", name: "Vaucluse" },
+          { "@type": "AdministrativeArea", name: "Gard" },
+          { "@type": "AdministrativeArea", name: "Alpes-de-Haute-Provence" },
         ],
         knowsAbout: [
           "Expertise judiciaire immobilière",
