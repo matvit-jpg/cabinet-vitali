@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { FlagGB } from "@/components/ui/FlagGB";
 import { X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { SITE } from "@/lib/site";
@@ -72,7 +73,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             </div>
 
             <Link href="/publications" onClick={onClose} className="font-display text-3xl tracking-tight text-ivory hover:text-gold">Publications</Link>
-            <Link href="/en" onClick={onClose} lang="en" hrefLang="en" className="font-display text-3xl tracking-tight text-ivory hover:text-gold">English</Link>
+            <Link href="/en" onClick={onClose} lang="en" hrefLang="en" className="inline-flex items-center gap-3 font-display text-3xl tracking-tight text-ivory hover:text-gold"><FlagGB className="h-5 w-auto" />English</Link>
           </nav>
 
           <div className="border-t border-navy-light p-8">

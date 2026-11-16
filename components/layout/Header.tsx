@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FlagGB } from "@/components/ui/FlagGB";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, ChevronDown } from "lucide-react";
@@ -99,7 +100,8 @@ export function Header() {
               }
               const active = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
               return (
-                <Link key={l.href} href={l.href} className={`group relative whitespace-nowrap font-sans text-lg font-medium xl:text-xl transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
+                <Link key={l.href} href={l.href} className={`group relative inline-flex items-center gap-2 whitespace-nowrap font-sans text-lg font-medium xl:text-xl transition hover:text-gold ${active ? "text-gold" : "text-navy"}`}>
+                  {l.href === "/en" && <FlagGB className="h-3.5 w-auto" />}
                   {l.label}
                   <span className={`absolute -bottom-1 left-0 h-0.5 w-full origin-left bg-gold transition-transform duration-300 ${active ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`} aria-hidden />
                 </Link>
