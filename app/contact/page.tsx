@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, UserPlus } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
@@ -67,6 +67,14 @@ export default function ContactPage() {
                   <span>Uniquement sur RDV.</span>
                 </li>
               </ul>
+              <a
+                href="/serge-vitali.vcf"
+                download
+                className="mt-8 inline-flex items-center gap-2 border border-gold-dark px-4 py-2 font-sans text-sm text-navy transition hover:bg-gold-dark hover:text-white"
+              >
+                <UserPlus className="h-4 w-4" aria-hidden />
+                Ajouter à mes contacts
+              </a>
             </div>
 
           </div>

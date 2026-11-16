@@ -81,8 +81,8 @@ export default function EnglishPage() {
           <div className="space-y-4 font-sans text-sm font-light leading-relaxed text-text md:text-base">
             <h2 className="font-display text-2xl font-semibold text-navy md:text-3xl">Working with us</h2>
             <p>
-              Reports are issued in French, the language required by French notaries, courts and tax authorities. We cover the
-              Bouches-du-Rhône and Var departments.
+              Serge Vitali works in both English and French: you can discuss your matter with him in English, and reports can be
+              written in English or in French, as their intended use requires. We cover the Bouches-du-Rhône and Var departments.
             </p>
           </div>
 
@@ -106,6 +106,9 @@ export default function EnglishPage() {
                 </a>
               </li>
             </ul>
+            <a href="/serge-vitali.vcf" download className="mt-6 inline-block border border-gold-dark px-4 py-2 font-sans text-sm text-navy transition hover:bg-gold-dark hover:text-white">
+              Add to my contacts (vCard)
+            </a>
             <p className="mt-8 font-sans text-sm">
               <Link href="/" lang="fr" className="text-gold-dark hover:underline">
                 Version française du site →
