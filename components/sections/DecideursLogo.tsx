@@ -58,8 +58,8 @@ export function DecideursLogo() {
               {/* Filets d'angle dorés */}
               <span className="pointer-events-none absolute hidden md:block left-3 top-3 h-6 w-6 border-l border-t border-gold/70" />
               <span className="pointer-events-none absolute hidden md:block right-3 top-3 h-6 w-6 border-r border-t border-gold/70" />
-              <span className="pointer-events-none absolute bottom-3 left-3 h-6 w-6 border-b border-l border-gold/70" />
-              <span className="pointer-events-none absolute bottom-3 right-3 h-6 w-6 border-b border-r border-gold/70" />
+              <span className="pointer-events-none absolute hidden md:block bottom-3 left-3 h-6 w-6 border-b border-l border-gold/70" />
+              <span className="pointer-events-none absolute hidden md:block bottom-3 right-3 h-6 w-6 border-b border-r border-gold/70" />
 
               <div className="rounded-sm bg-white px-3 py-1.5 shadow-md md:px-4 md:py-2">
                 <Image
