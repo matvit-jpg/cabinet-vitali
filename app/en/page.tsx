@@ -41,7 +41,7 @@ export default function EnglishHomePage() {
           <div>
             <p className="font-sans text-[11px] font-semibold uppercase tracking-[0.24em] text-gold">Real estate valuation · Marseille &amp; Aubagne</p>
             <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-ivory md:text-5xl lg:text-6xl">
-              Court-registered valuations for international owners of French property
+              Valuations by a court-registered expert for international owners of French property
             </h1>
             <p className="mt-6 max-w-xl text-left font-sans text-sm font-light leading-relaxed text-ivory/80 md:text-base">
               Led by Serge Vitali. Reports prepared to European valuation standards, in English or in French.
@@ -107,7 +107,7 @@ export default function EnglishHomePage() {
           <h2 className={h2}>Why it matters for international owners</h2>
           {rule}
           <p className="mt-6 max-w-2xl font-sans text-sm font-light leading-relaxed text-text md:text-base">
-            French property law and tax rules have their own valuation requirements, notably in four situations.
+            French tax and property law call for a reasoned market value in several situations, notably:
           </p>
           <StaggerList className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {situations.map(({ icon: Icon, title, text }) => (
@@ -120,10 +120,10 @@ export default function EnglishHomePage() {
           </StaggerList>
           <div className="mt-8 flex flex-col gap-4 rounded-sm bg-navy px-6 py-5 md:flex-row md:items-center md:justify-between">
             <p className="font-sans text-sm text-ivory/90">
-              A valuation prepared by a court-registered expert, following European valuation standards, carries weight with:
+              A valuation prepared by a court-registered expert, following European valuation standards, provides a reasoned, documented basis for discussions with:
             </p>
             <ul className="flex flex-wrap gap-2">
-              {["French notaries", "Tax authorities", "Courts"].map((t) => (
+              {["French notaries", "The tax authorities", "The courts, if need be"].map((t) => (
                 <li key={t} className="rounded-full border border-gold/60 px-3 py-1 font-sans text-xs text-gold-light">{t}</li>
               ))}
             </ul>
