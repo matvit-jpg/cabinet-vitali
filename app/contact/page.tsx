@@ -42,7 +42,7 @@ export default function ContactPage() {
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                   <span>
                     <span className="block font-medium text-navy">Bureau Marseille</span>
-                    <span className="block">46b Boulevard Sicard</span>
+                    <span className="block">46b boulevard Sicard</span>
                     <span className="block">13008 Marseille</span>
                     <span className="mt-3 block font-medium text-navy">Bureau Aubagne</span>
                     <span className="block">22 avenue de Verdun</span>

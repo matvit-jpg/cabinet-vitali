@@ -57,7 +57,7 @@ export function Header() {
 
   return (
     <>
-      <header className={`sticky top-0 z-40 border-b transition-colors duration-300 ${scrolled ? "border-grey-light/60 bg-ivory/85 backdrop-blur-md" : "border-transparent bg-ivory/70 backdrop-blur-sm"}`}>
+      <header lang={en ? "en" : undefined} className={`sticky top-0 z-40 border-b transition-colors duration-300 ${scrolled ? "border-grey-light/60 bg-ivory/85 backdrop-blur-md" : "border-transparent bg-ivory/70 backdrop-blur-sm"}`}>
         <div className="grid grid-cols-3 items-center px-4 py-4 lg:px-6">
 
           {/* Gauche — Hamburger sur mobile, logo sur desktop */}

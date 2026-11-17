@@ -69,7 +69,7 @@ export default function FirmPage() {
             <div className="relative">
               <div className="absolute left-5 top-5 h-full w-full border border-gold/70" aria-hidden />
               <div className="relative aspect-[4/5] overflow-hidden">
-                <Image src="/images/serge.jpg" alt="Portrait of Serge Vitali" fill className="object-cover grayscale" sizes="(max-width: 1024px) 288px, 300px" />
+                <Image src="/images/serge.jpg" alt="Portrait of Serge Vitali" fill className="object-cover grayscale" sizes="(max-width: 1024px) 208px, 230px" />
               </div>
             </div>
           </div>

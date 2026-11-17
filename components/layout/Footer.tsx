@@ -47,7 +47,7 @@ export function Footer() {
   const navItems = en ? navEn : nav;
   const domainItems = en ? domainesEn : domaines;
   return (
-    <footer className="bg-navy text-ivory">
+    <footer lang={en ? "en" : undefined} className="bg-navy text-ivory">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 lg:grid-cols-4 lg:px-8">
         <div>
           <p className="font-display text-2xl tracking-tight">{SITE.cabinetFull}</p>
@@ -92,7 +92,7 @@ export function Footer() {
           </p>
           <address className="mt-4 not-italic font-sans text-sm leading-relaxed text-ivory/85">
             <span className="block text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">{en ? "Postal address" : "Adresse postale"}</span>
-            <span className="block">46b Boulevard Sicard</span>
+            <span className="block">46b boulevard Sicard</span>
             <span className="block">13008 Marseille</span>
             <span className="block mt-3 text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">{en ? "Registered office" : "Siège"}</span>
             <span className="block">22 avenue de Verdun</span>
