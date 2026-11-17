@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { isEnglishPath } from "@/lib/i18n";
-import { Linkedin } from "lucide-react";
+import { Linkedin, UserPlus } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { GoogleRating } from "@/components/ui/GoogleRating";
 
@@ -103,6 +103,10 @@ export function Footer() {
             </a>
             <a href={`mailto:${SITE.email}`} className="mt-1 block hover:text-gold">
               {SITE.email}
+            </a>
+            <a href="/serge-vitali.vcf" download className="mt-3 inline-flex items-center gap-2 hover:text-gold">
+              <UserPlus className="h-4 w-4" aria-hidden />
+              {en ? "Add to my contacts" : "Ajouter à mes contacts"}
             </a>
           </address>
         </div>
