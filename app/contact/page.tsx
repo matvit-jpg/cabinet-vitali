@@ -1,5 +1,5 @@
 import { languageAlternates } from "@/lib/i18n";
-import { MapPin, Phone, Mail, Clock, UserPlus } from "lucide-react";
+import { MapPin, Map as MapIcon, Phone, Mail, Clock, UserPlus } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
@@ -67,6 +67,13 @@ export default function ContactPage() {
                 <li className="flex items-start gap-3">
                   <Clock className="mt-0.5 h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
                   <span>Uniquement sur RDV.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <MapIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold-dark" aria-hidden />
+                  <span>
+                    <span className="block font-medium text-navy">Zone d&apos;intervention</span>
+                    <span className="block">Bouches-du-Rhône, Var, Vaucluse, Gard, Alpes-de-Haute-Provence</span>
+                  </span>
                 </li>
               </ul>
               <a

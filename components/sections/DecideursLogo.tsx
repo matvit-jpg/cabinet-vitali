@@ -31,7 +31,10 @@ export function DecideursLogo() {
               intervient dans tous les domaines de l&apos;expertise immobilière :
               évaluation de biens, fixation de valeurs locatives, détermination
               d&apos;indemnités, analyse de préjudices et accompagnement
-              stratégique en contentieux ou en prévention des litiges.
+              stratégique en contentieux ou en prévention des litiges. Le cabinet
+              intervient dans les Bouches-du-Rhône — Marseille, Aix-en-Provence,
+              Aubagne, Salon-de-Provence, Arles — et dans les départements
+              limitrophes : Var, Vaucluse, Gard et Alpes-de-Haute-Provence.
             </p>
             <p>
               Rigueur juridique, connaissance approfondie du marché, rapports
