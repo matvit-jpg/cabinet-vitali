@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ChevronDown, UserPlus } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/Button";
@@ -66,10 +66,9 @@ export function Hero() {
             </p>
           </AnimatedLine>
           <AnimatedLine>
-            <div className="mx-auto mt-6 text-center font-sans text-sm font-light text-ivory/90 md:text-xl [&>p]:!text-center">
-              <p>Cabinet d&apos;expertise immobilière dirigé par Serge Vitali,</p>
-              <p>expert judiciaire près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille.</p>
-            </div>
+            <p className="mx-auto mt-6 max-w-5xl text-balance text-center font-sans text-sm font-light text-ivory/85 md:text-lg">
+              Serge Vitali, expert près la Cour d&apos;appel d&apos;Aix-en-Provence et la Cour administrative d&apos;appel de Marseille
+            </p>
           </AnimatedLine>
           <AnimatedLine>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -79,16 +78,6 @@ export function Hero() {
               <Button href="/contact" variant="primary" className="w-64 text-center border border-gold">
                 Prendre contact
               </Button>
-            </div>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-              <a
-                href="/serge-vitali.vcf"
-                download
-                className="inline-flex items-center gap-2 font-sans text-sm text-ivory/85 underline-offset-4 transition hover:text-gold hover:underline"
-              >
-                <UserPlus className="h-4 w-4" aria-hidden />
-                Ajouter à mes contacts
-              </a>
             </div>
           </AnimatedLine>
         </AnimatedText>
