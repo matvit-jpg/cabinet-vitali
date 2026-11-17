@@ -69,9 +69,9 @@ export function Header() {
               <Image
                 src="/images/logo-navy.png"
                 alt={SITE.cabinetFull}
-                width={180}
-                height={81}
-                className="h-auto w-[180px] object-contain"
+                width={260}
+                height={117}
+                className={`h-auto object-contain transition-[width] duration-300 ${scrolled ? "w-[180px]" : "w-[210px] xl:w-[250px]"}`}
                 priority
               />
             </Link>
