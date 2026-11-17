@@ -8,10 +8,15 @@ export function DecideursLogo() {
         src="/images/fond-decideurs.jpg"
         alt=""
         fill
-        className="object-cover"
+        className="object-cover grayscale contrast-110 brightness-110"
       />
       {/* Overlay sombre pour lisibilité */}
       <div className="absolute inset-0 bg-navy/70" />
+      <div
+        className="absolute inset-0 mix-blend-soft-light"
+        style={{ background: "linear-gradient(to top, rgba(201,168,76,0.55), rgba(226,201,126,0.35) 60%, rgba(226,201,126,0.25))" }}
+        aria-hidden
+      />
 
       <div className="relative z-10 grid grid-cols-1 gap-8 px-5 md:gap-16 md:px-6 lg:grid-cols-2 lg:px-0 lg:items-center">
         {/* Colonne gauche — texte */}
