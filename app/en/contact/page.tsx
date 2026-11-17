@@ -1,3 +1,4 @@
+import { GoogleRating } from "@/components/ui/GoogleRating";
 import { Mail, Phone, UserPlus } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
 import { languageAlternates } from "@/lib/i18n";
@@ -7,7 +8,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { ContactForm } from "@/components/sections/ContactForm";
 
 const base = createMetadata({
-  title: "Contact — real estate expert in Marseille and Aix-en-Provence",
+  title: "Contact — real estate expert in Marseille",
   description: "Contact Cabinet Vitali for a real estate valuation in Marseille, Aix-en-Provence and Provence. Serge Vitali works in English and French.",
   path: "/en/contact",
   languages: languageAlternates("/contact", "/en/contact"),
@@ -52,6 +53,7 @@ export default function ContactPageEn() {
             <UserPlus className="h-4 w-4" aria-hidden />
             Add to my contacts
           </a>
+              <div className="mt-5"><GoogleRating lang="en" /></div>
           </div>
         </div>
       </SectionWrapper>

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Arbitrage et résolution amiable des litiges immobiliers",
+  title: "Arbitrage et résolution amiable des litiges",
   description: "Serge Vitali, arbitre inscrit au CMAP — mode alternatif de résolution des litiges immobiliers, rapide, confidentiel et maîtrisé.",
   path: "/arbitrage",
 });

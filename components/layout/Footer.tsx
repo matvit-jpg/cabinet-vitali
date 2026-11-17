@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { isEnglishPath } from "@/lib/i18n";
 import { Linkedin } from "lucide-react";
 import { SITE } from "@/lib/site";
 
@@ -22,21 +24,43 @@ const domaines = [
   { href: "/expertises/indemnites-expropriation", label: "Expropriation" },
 ];
 
+const navEn = [
+  { href: "/en", label: "Home" },
+  { href: "/en/firm", label: "The Firm" },
+  { href: "/en/expertise", label: "Expertise" },
+  { href: "/en/publications", label: "Publications" },
+  { href: "/en/contact", label: "Contact" },
+];
+
+const domainesEn = [
+  { href: "/en/expertise", label: "Rental value and commercial leases" },
+  { href: "/en/expertise", label: "Eviction compensation" },
+  { href: "/en/expertise", label: "Market value" },
+  { href: "/en/expertise", label: "Property-holding companies" },
+  { href: "/en/expertise", label: "Inheritance, gifts and estate partition" },
+  { href: "/en/expertise", label: "Compulsory purchase" },
+];
+
 export function Footer() {
+  const en = isEnglishPath(usePathname() || "/");
+  const navItems = en ? navEn : nav;
+  const domainItems = en ? domainesEn : domaines;
   return (
     <footer className="bg-navy text-ivory">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 lg:grid-cols-4 lg:px-8">
         <div>
           <p className="font-display text-2xl tracking-tight">{SITE.cabinetFull}</p>
           <p className="mt-2 font-sans text-sm font-light text-ivory/80">
-            Expert judiciaire — évaluation immobilière et stratégie immobilière.
+            {en
+              ? "Court-registered expert — real estate valuation and strategy."
+              : "Expert judiciaire — évaluation immobilière et stratégie immobilière."}
           </p>
           <p className="mt-8 font-sans text-xs font-semibold uppercase tracking-widest text-gold">
-            Domaines
+            {en ? "Areas of expertise" : "Domaines"}
           </p>
           <ul className="mt-4 space-y-2 font-sans text-sm">
-            {domaines.map((l) => (
-              <li key={l.href}>
+            {domainItems.map((l) => (
+              <li key={l.label}>
                 <Link href={l.href} className="text-ivory/85 transition hover:text-gold">
                   {l.label}
                 </Link>
@@ -49,7 +73,7 @@ export function Footer() {
             Navigation
           </p>
           <ul className="mt-4 space-y-2 font-sans text-sm">
-            {nav.map((l) => (
+            {navItems.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
@@ -66,10 +90,10 @@ export function Footer() {
             Contact
           </p>
           <address className="mt-4 not-italic font-sans text-sm leading-relaxed text-ivory/85">
-            <span className="block text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">Adresse postale</span>
+            <span className="block text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">{en ? "Postal address" : "Adresse postale"}</span>
             <span className="block">46b Boulevard Sicard</span>
             <span className="block">13008 Marseille</span>
-            <span className="block mt-3 text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">Siège</span>
+            <span className="block mt-3 text-xs font-semibold uppercase tracking-widest text-gold/70 mb-0.5">{en ? "Registered office" : "Siège"}</span>
             <span className="block">22 avenue de Verdun</span>
             <span className="block">13400 Aubagne</span>
             <span className="block">France</span>
@@ -115,17 +139,23 @@ export function Footer() {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 font-sans text-xs text-ivory/60 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div className="flex flex-wrap gap-4">
             <Link href="/mentions-legales" className="hover:text-gold">
-              Mentions légales
+              {en ? "Legal notice (FR)" : "Mentions légales"}
             </Link>
             <Link href="/politique-confidentialite" className="hover:text-gold">
-              Politique de confidentialité
+              {en ? "Privacy policy (FR)" : "Politique de confidentialité"}
             </Link>
             <a href="/CGV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-gold">
-              CGV
+              {en ? "Terms of business (FR)" : "CGV"}
             </a>
-            <Link href="/en" lang="en" hrefLang="en" className="hover:text-gold">
-              English
-            </Link>
+            {en ? (
+              <Link href="/" lang="fr" hrefLang="fr" className="hover:text-gold">
+                Version française
+              </Link>
+            ) : (
+              <Link href="/en" lang="en" hrefLang="en" className="hover:text-gold">
+                English
+              </Link>
+            )}
           </div>
           <p>
           © {new Date().getFullYear()} {SITE.cabinetFull}.

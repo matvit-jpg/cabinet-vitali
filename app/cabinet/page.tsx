@@ -9,7 +9,7 @@ import { FadeInSection } from "@/components/motion/FadeInSection";
 import { LogoCarousel } from "@/components/sections/LogoCarousel";
 
 export const metadata = createMetadata({
-  title: "Serge Vitali, expert judiciaire immobilier — le cabinet",
+  title: "Le cabinet — Serge Vitali, expert judiciaire",
   description: "Serge Vitali, expert judiciaire près la Cour d'appel d'Aix-en-Provence, certifié REV, président de l'EEFIC : expertise immobilière judiciaire et amiable.",
   path: "/cabinet",
   languages: languageAlternates("/cabinet", "/en/firm"),

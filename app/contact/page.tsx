@@ -1,3 +1,4 @@
+import { GoogleRating } from "@/components/ui/GoogleRating";
 import { languageAlternates } from "@/lib/i18n";
 import { MapPin, Phone, Mail, Clock, UserPlus } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
@@ -8,7 +9,7 @@ import { ContactForm } from "@/components/sections/ContactForm";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Contact — expert immobilier à Marseille et Aix-en-Provence",
+  title: "Contact — expert immobilier à Marseille",
   description: "Contacter le cabinet Vitali pour une expertise immobilière judiciaire ou amiable à Marseille, Aix-en-Provence, Aubagne, Toulon et dans toute la région.",
   path: "/contact",
   languages: languageAlternates("/contact", "/en/contact"),
@@ -77,6 +78,7 @@ export default function ContactPage() {
                 <UserPlus className="h-4 w-4" aria-hidden />
                 Ajouter à mes contacts
               </a>
+              <div className="mt-5"><GoogleRating /></div>
             </div>
 
           </div>

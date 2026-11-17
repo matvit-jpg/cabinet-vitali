@@ -5,7 +5,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 const base = createMetadata({
-  title: "The firm — Serge Vitali, court-registered real estate expert",
+  title: "The firm — court-registered real estate expert",
   description:
     "Cabinet Vitali, Marseille and Aubagne: Serge Vitali, court-registered expert with the Aix-en-Provence Court of Appeal, REV-certified valuer, chair of EEFIC.",
   path: "/en/firm",

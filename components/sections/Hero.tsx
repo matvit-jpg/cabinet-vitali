@@ -1,5 +1,6 @@
 "use client";
 
+import { GoogleRating } from "@/components/ui/GoogleRating";
 import Image from "next/image";
 import { ChevronDown, UserPlus } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -74,14 +75,17 @@ export function Hero() {
                 Prendre contact
               </Button>
             </div>
-            <a
-              href="/serge-vitali.vcf"
-              download
-              className="mt-6 inline-flex items-center gap-2 font-sans text-sm text-ivory/85 underline-offset-4 transition hover:text-gold hover:underline"
-            >
-              <UserPlus className="h-4 w-4" aria-hidden />
-              Ajouter à mes contacts
-            </a>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+              <a
+                href="/serge-vitali.vcf"
+                download
+                className="inline-flex items-center gap-2 font-sans text-sm text-ivory/85 underline-offset-4 transition hover:text-gold hover:underline"
+              >
+                <UserPlus className="h-4 w-4" aria-hidden />
+                Ajouter à mes contacts
+              </a>
+              <GoogleRating dark />
+            </div>
           </AnimatedLine>
         </AnimatedText>
         <motion.a

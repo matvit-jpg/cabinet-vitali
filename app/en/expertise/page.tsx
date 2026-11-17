@@ -6,7 +6,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 const base = createMetadata({
-  title: "Areas of expertise — market value, rental value, eviction compensation",
+  title: "Areas of expertise — valuation and leases",
   description:
     "Real estate valuation in Provence: market value, commercial lease rent, eviction compensation, property companies, inheritance, compulsory purchase.",
   path: "/en/expertise",

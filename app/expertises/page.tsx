@@ -8,7 +8,7 @@ import { ExpertiseListCard } from "@/components/sections/ExpertiseListCard";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Expertise immobilière : valeur vénale, valeur locative, indemnité d'éviction",
+  title: "Expertises : valeur vénale, locative, éviction",
   description:
     "Expertise immobilière à Marseille et Aix-en-Provence : valeur vénale, baux commerciaux, indemnité d'éviction, sociétés immobilières, successions, expropriation.",
   path: "/expertises",

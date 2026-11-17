@@ -4,7 +4,7 @@ import { FadeInSection } from "@/components/motion/FadeInSection";
 import { PageHeader } from "@/components/layout/PageHeader";
 
 export const metadata = createMetadata({
-  title: "Ingénierie immobilière et conseil en baux commerciaux",
+  title: "Ingénierie immobilière et baux commerciaux",
   description: "Avis de valeur et conseil aux bailleurs et preneurs avant renouvellement, acquisition ou cession, à Marseille et Aix-en-Provence.",
   path: "/ingenierie",
 });

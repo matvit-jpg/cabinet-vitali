@@ -113,6 +113,11 @@ export function PublicationsGrid({ lang = "fr" }: { lang?: "fr" | "en" }) {
                     <h3 className="mt-4 font-display text-xl font-semibold leading-snug text-navy">
                       {en ? item.en.title : item.title}
                     </h3>
+                    {(en ? item.en.summary : item.summary) && (
+                      <p className="mt-3 font-sans text-sm font-light leading-relaxed text-text/85">
+                        {en ? item.en.summary : item.summary}
+                      </p>
+                    )}
                     <p className="mt-auto pt-5 font-sans text-xs font-light leading-relaxed text-grey-mid">
                       {en ? item.en.source : item.source}
                       {item.reference ? (

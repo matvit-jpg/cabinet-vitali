@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/metadata";
 import { languageAlternates } from "@/lib/i18n";
 
 const base = createMetadata({
-  title: "Real estate valuation in Marseille and Provence — court-registered expert",
+  title: "Real estate valuation in Marseille and Provence",
   description:
     "Independent real estate valuations in Provence by Serge Vitali, court-registered expert and REV-certified valuer. Reports in English or French.",
   path: "/en",

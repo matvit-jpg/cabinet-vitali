@@ -10,8 +10,10 @@ export type PublicationEntry = {
   badge?: string;
   /** Date ISO pour le tri. */
   iso: string;
+  /** Résumé (deux lignes). */
+  summary?: string;
   /** Version anglaise. */
-  en: { date: string; source: string; title: string };
+  en: { date: string; source: string; title: string; summary?: string };
 };
 
 const AJDI_EN = "Actualité juridique Droit immobilier (Dalloz), French property law review";
@@ -39,11 +41,13 @@ export const publications: PublicationEntry[] = [
     date: "Novembre 2025",
     source: "L'Argus de l'enseigne — tribune libre",
     title: "L'expert, nouvelle clé de voûte du procès civil",
+    summary: "Tribune consacrée à l'évolution du rôle de l'expert judiciaire immobilier : d'auxiliaire technique, il devient un acteur central du règlement des litiges, dont les conclusions structurent de plus en plus la décision du juge.",
     image: "/images/article-photo.jpg",
     en: {
       date: "November 2025",
       source: "L'Argus de l'enseigne, retail property magazine — opinion piece",
       title: "The expert, new cornerstone of civil proceedings",
+      summary: "How the court-appointed property expert is moving from technical assistant to a central player in dispute resolution, whose findings increasingly shape the court's decision.",
     },
   },
   {
@@ -67,12 +71,14 @@ export const publications: PublicationEntry[] = [
     date: "Septembre 2021",
     source: "Actualité juridique Droit immobilier (Dalloz)",
     title: "L'évaluation de l'indemnité d'occupation due à l'indivision postcommunautaire",
+    summary: "À partir d'une centaine de décisions de tous degrés, l'article rappelle le régime de l'indemnité due par l'indivisaire qui jouit privativement du bien (C. civ., art. 815-9), puis en étudie la méthode d'évaluation : valeur locative de référence, point de départ et abattement pour précarité.",
     reference: "AJDI 2021, n° 9, p. 581",
     image: "/images/pub-8.jpg",
     en: {
       date: "September 2021",
       source: AJDI_EN,
       title: "Valuing the occupancy compensation owed to the joint ownership (indivision) following a divorce",
+      summary: "Drawing on some hundred court decisions, the article sets out the rules governing the compensation owed by a co-owner in sole occupation (Civil Code, art. 815-9), then its valuation method: reference rental value, starting date and discount for precarious occupation.",
     },
   },
   {
@@ -81,12 +87,14 @@ export const publications: PublicationEntry[] = [
     date: "Décembre 2019",
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 2e édition",
+    summary: "Deuxième édition, élargie à l'ensemble des valeurs locatives judiciaires, qu'elles procèdent ou non d'un déplafonnement. Elle relève une contraction probable du contentieux sur le secteur Aix-Marseille et en expose les causes propres à chaque ville.",
     reference: "AJDI 2019, n° 12, cahier 2, p. 952",
     image: "/images/pub-9.png",
     en: {
       date: "December 2019",
       source: `${AJDI_EN}, commercial leases issue`,
       title: "Observatory of court-set commercial rents — Aix-en-Provence – Marseille, 2nd edition",
+      summary: "Second edition, extended to all court-set rental values, whether or not the rent cap was lifted. It notes a likely decline in litigation in the Aix-Marseille area and sets out the causes specific to each city.",
     },
   },
   {
@@ -95,12 +103,14 @@ export const publications: PublicationEntry[] = [
     date: "Décembre 2018",
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 1re édition",
+    summary: "Première édition, consacrée aux loyers de renouvellement fixés à la valeur locative après modification notable des facteurs locaux de commercialité (C. com., art. R. 145-6). L'étude, fondée sur une centaine de décisions, analyse les effets des mutations urbaines de Marseille et d'Aix-en-Provence sur le déplafonnement.",
     reference: "AJDI 2018, n° 12, cahier 2, p. 922",
     image: "/images/pub-2.jpg",
     en: {
       date: "December 2018",
       source: `${AJDI_EN}, commercial leases issue`,
       title: "Observatory of court-set commercial rents — Aix-en-Provence – Marseille, 1st edition",
+      summary: "First edition, devoted to renewal rents set at rental value following a material change in local trading factors (Commercial Code, art. R. 145-6). Based on some hundred decisions, it analyses how urban change in Marseille and Aix-en-Provence has affected the lifting of the rent cap.",
     },
   },
 ];

@@ -16,20 +16,20 @@ export type ExpertiseSeo = {
 
 export const expertiseSections: Record<string, ExpertiseSeo> = {
   "evaluation-immobiliere": {
-    seoTitle: "Expert en évaluation immobilière et valeur vénale — Marseille, Aix-en-Provence",
+    seoTitle: "Valeur vénale immobilière — expert, Marseille, Aix",
     seoDescription:
       "Valeur vénale de tous biens immobiliers selon la Charte de l'expertise en évaluation immobilière, à Marseille, Aix-en-Provence, Aubagne et Toulon.",
     sections: [],
   },
   "prejudices-immobiliers": {
-    seoTitle: "Expert en préjudices immobiliers et pertes de valeur — Marseille, Aix-en-Provence",
+    seoTitle: "Préjudices immobiliers et perte de valeur — expert",
     seoDescription:
       "Préjudices immobiliers : troubles de voisinage, perte de vue ou d'ensoleillement, travaux publics, désordres, pertes de valeur. Marseille, Aix-en-Provence.",
     sections: [],
   },
   "valeurs-locatives": {
     seoTitle:
-      "Expert en valeur locative de renouvellement et baux commerciaux — Marseille, Aix-en-Provence",
+      "Valeur locative et baux commerciaux — Marseille",
     seoDescription:
       "Valeur locative de renouvellement, déplafonnement, révision triennale : expertise amiable et judiciaire par un expert près la Cour d'appel d'Aix-en-Provence.",
     sections: [
@@ -63,7 +63,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
   },
 
   "indemnite-eviction": {
-    seoTitle: "Expert en indemnité d'éviction commerciale — Marseille, Aix-en-Provence",
+    seoTitle: "Indemnité d'éviction commerciale — Marseille, Aix",
     seoDescription:
       "Indemnité d'éviction (art. L. 145-14 C. com.) et indemnité d'occupation : valeur du fonds, droit au bail, indemnités accessoires. Marseille, Aix-en-Provence.",
     sections: [
@@ -91,7 +91,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
 
   "parts-de-societes": {
     seoTitle:
-      "Évaluation de sociétés à prépondérance immobilière — expert judiciaire, Marseille, Aix-en-Provence",
+      "Évaluation de parts de SCI et sociétés immobilières",
     seoDescription:
       "Évaluation de parts de SCI et de sociétés à prépondérance immobilière : actif net réévalué, fiscalité latente, décotes. Expert près la Cour d'appel d'Aix.",
     sections: [
@@ -120,7 +120,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
 
   "successions-donations-partages": {
     seoTitle:
-      "Expertise immobilière pour succession, donation et partage — Marseille, Aix-en-Provence",
+      "Évaluation pour succession, donation et partage",
     seoDescription:
       "Valeur vénale en succession ou donation, rapport des libéralités, partage et licitation, démembrement : expertise à Marseille et Aix-en-Provence.",
     sections: [
@@ -147,7 +147,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
   },
 
   "indemnites-expropriation": {
-    seoTitle: "Expert en indemnités d'expropriation — Marseille, Aix-en-Provence",
+    seoTitle: "Indemnités d'expropriation — expert, Marseille, Aix",
     seoDescription:
       "Indemnités d'expropriation (principale, remploi, accessoires) dans les Bouches-du-Rhône, le Var, le Vaucluse, le Gard et les Alpes-de-Haute-Provence.",
     sections: [
