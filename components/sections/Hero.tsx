@@ -33,11 +33,17 @@ export function Hero() {
           alt=""
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center grayscale contrast-110 brightness-110"
           sizes="100vw"
         />
       </motion.div>
-      <div className="absolute inset-0 bg-navy/70" aria-hidden />
+      <div className="absolute inset-0 bg-navy/40 mix-blend-multiply" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/15 via-navy/10 to-navy/50" aria-hidden />
+      <div
+        className="absolute inset-0 mix-blend-soft-light"
+        style={{ background: "linear-gradient(to top, rgba(201,168,76,0.55), rgba(226,201,126,0.35) 60%, rgba(226,201,126,0.25))" }}
+        aria-hidden
+      />
       {/* Logo sur hero — mobile uniquement, hors du stacking context z-10 pour que le blend fonctionne */}
       <div className="md:hidden absolute top-16 left-1/2 -translate-x-1/2 z-20">
         <Image
@@ -70,7 +76,7 @@ export function Hero() {
               <Button href="/cabinet" variant="ghost" className="w-64 text-center border border-white/60 text-white hover:bg-white/10 hover:border-white">
                 Découvrir le cabinet
               </Button>
-              <Button href="/contact" variant="ghost" className="w-64 text-center border border-white/60 text-white hover:bg-white/10 hover:border-white">
+              <Button href="/contact" variant="primary" className="w-64 text-center border border-gold">
                 Prendre contact
               </Button>
             </div>
