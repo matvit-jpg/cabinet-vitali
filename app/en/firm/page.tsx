@@ -65,7 +65,7 @@ export default function FirmPage() {
               ))}
             </ul>
           </div>
-          <div className="mx-auto w-60 sm:w-72 lg:w-full">
+          <div className="mx-auto w-44 sm:w-52 lg:w-full lg:max-w-[230px]">
             <div className="relative">
               <div className="absolute left-5 top-5 h-full w-full border border-gold/70" aria-hidden />
               <div className="relative aspect-[4/5] overflow-hidden">
