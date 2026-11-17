@@ -1,6 +1,5 @@
 "use client";
 
-import { GoogleRating } from "@/components/ui/GoogleRating";
 import Image from "next/image";
 import { ChevronDown, UserPlus } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -84,7 +83,6 @@ export function Hero() {
                 <UserPlus className="h-4 w-4" aria-hidden />
                 Ajouter à mes contacts
               </a>
-              <GoogleRating dark />
             </div>
           </AnimatedLine>
         </AnimatedText>

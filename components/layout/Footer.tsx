@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { isEnglishPath } from "@/lib/i18n";
 import { Linkedin } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { GoogleRating } from "@/components/ui/GoogleRating";
 
 const nav = [
   { href: "/", label: "Accueil" },
@@ -133,6 +134,9 @@ export function Footer() {
             <Linkedin className="h-5 w-5" />
             LinkedIn
           </a>
+          <div className="mt-4">
+            <GoogleRating dark lang={en ? "en" : "fr"} />
+          </div>
         </div>
       </div>
       <div className="border-t border-navy-light">

@@ -1,4 +1,3 @@
-import { GoogleRating } from "@/components/ui/GoogleRating";
 import { languageAlternates } from "@/lib/i18n";
 import { MapPin, Phone, Mail, Clock, UserPlus } from "lucide-react";
 import { createMetadata } from "@/lib/metadata";
@@ -78,7 +77,6 @@ export default function ContactPage() {
                 <UserPlus className="h-4 w-4" aria-hidden />
                 Ajouter à mes contacts
               </a>
-              <div className="mt-5"><GoogleRating /></div>
             </div>
 
           </div>
