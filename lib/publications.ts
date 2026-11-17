@@ -8,6 +8,8 @@ export type PublicationEntry = {
   image?: string;
   /** Pastille sobre à la place d'un visuel (ex. couverture de revue). */
   badge?: string;
+  /** Date ISO pour le tri. */
+  iso: string;
   /** Version anglaise. */
   en: { date: string; source: string; title: string };
 };
@@ -18,6 +20,7 @@ const AJDI_EN = "Actualité juridique Droit immobilier (Dalloz), French property
 export const publications: PublicationEntry[] = [
   {
     kind: "publication",
+    iso: "2025-11-30",
     date: "Novembre 2025",
     source: "Actualité juridique Droit immobilier (Lefebvre Dalloz)",
     title:
@@ -32,6 +35,7 @@ export const publications: PublicationEntry[] = [
   },
   {
     kind: "publication",
+    iso: "2025-11-01",
     date: "Novembre 2025",
     source: "L'Argus de l'enseigne — tribune libre",
     title: "L'expert, nouvelle clé de voûte du procès civil",
@@ -44,6 +48,7 @@ export const publications: PublicationEntry[] = [
   },
   {
     kind: "publication",
+    iso: "2025-07-01",
     date: "Juillet-août 2025",
     source: "Actualité juridique Droit immobilier (Lefebvre Dalloz)",
     title:
@@ -58,6 +63,7 @@ export const publications: PublicationEntry[] = [
   },
   {
     kind: "publication",
+    iso: "2021-09-01",
     date: "Septembre 2021",
     source: "Actualité juridique Droit immobilier (Dalloz)",
     title: "L'évaluation de l'indemnité d'occupation due à l'indivision postcommunautaire",
@@ -71,6 +77,7 @@ export const publications: PublicationEntry[] = [
   },
   {
     kind: "publication",
+    iso: "2019-12-01",
     date: "Décembre 2019",
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 2e édition",
@@ -84,6 +91,7 @@ export const publications: PublicationEntry[] = [
   },
   {
     kind: "publication",
+    iso: "2018-12-01",
     date: "Décembre 2018",
     source: "Actualité juridique Droit immobilier, spécial baux commerciaux (Dalloz)",
     title: "Observatoire des loyers judiciaires — Aix-en-Provence – Marseille, 1re édition",
@@ -101,6 +109,7 @@ export const publications: PublicationEntry[] = [
 export const interventions: PublicationEntry[] = [
   {
     kind: "intervention",
+    iso: "2026-10-30",
     date: "30 octobre 2026",
     source: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM) — colloque « Les usages de l'IA pour les experts de justice », en visioconférence",
     title: "Les risques de l'IA dans l'évaluation immobilière",
@@ -113,6 +122,7 @@ export const interventions: PublicationEntry[] = [
   },
   {
     kind: "intervention",
+    iso: "2025-09-17",
     date: "17 septembre 2025",
     source: "Barreau de Paris — sous-commission des baux commerciaux",
     title:
@@ -127,6 +137,7 @@ export const interventions: PublicationEntry[] = [
   },
   {
     kind: "intervention",
+    iso: "2022-06-02",
     date: "2 juin 2022",
     source: "Rencontres nationales des baux commerciaux (RNBC), 2e édition — Aix-en-Provence",
     title: "Le contentieux Covid, la révision et les valeurs locatives",
@@ -139,6 +150,7 @@ export const interventions: PublicationEntry[] = [
   },
   {
     kind: "intervention",
+    iso: "2021-12-03",
     date: "3 décembre 2021",
     source: "RNEI, 7e édition (Edilaix)",
     title: "Atelier « Les commerces »",
@@ -151,6 +163,7 @@ export const interventions: PublicationEntry[] = [
   },
   {
     kind: "intervention",
+    iso: "2021-06-03",
     date: "3 juin 2021",
     source: "Rencontres nationales des baux commerciaux (RNBC), 1re édition — Aix-en-Provence",
     title: "Le loyer révisé : la révision du loyer en cours de bail après le Covid",
