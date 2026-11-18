@@ -52,22 +52,19 @@ export function Hero() {
       <div className="relative z-10 flex min-h-[70vh] flex-col items-center justify-center px-4 pb-20 pt-40 text-center md:pt-36">
         <AnimatedText>
           <AnimatedLine>
-            <h1 className="mb-5 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-gold-light md:text-sm">
+            <p className="mb-4 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-gold-light md:text-sm md:tracking-[0.22em]">
+              Serge Vitali · Cour d&apos;appel d&apos;Aix-en-Provence
+            </p>
+            <h1 className="mx-auto max-w-4xl font-display text-3xl font-semibold leading-tight tracking-tight text-ivory text-balance !text-center md:text-5xl">
               Expert judiciaire immobilier à Marseille et Aix-en-Provence
             </h1>
-            <p className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance !text-center">
-              Comprendre, analyser, conclure… pour vous faire gagner en clarté.
-            </p>
-            <p className="mt-5 text-center font-sans text-sm font-light tracking-wide text-ivory/80 md:text-base">
-              Serge Vitali · Expert près la Cour d&apos;appel d&apos;Aix-en-Provence
-            </p>
           </AnimatedLine>
           <AnimatedLine>
-            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button href="/cabinet" variant="ghost" className="w-64 text-center border border-white/60 text-white hover:bg-white/10 hover:border-white">
+            <div className="mt-8 flex flex-row items-center justify-center gap-3 sm:gap-4">
+              <Button href="/cabinet" variant="ghost" className="w-auto whitespace-nowrap px-4 text-center !text-[13px] sm:w-64 sm:!text-sm border border-white/60 text-white hover:bg-white/10 hover:border-white">
                 Découvrir le cabinet
               </Button>
-              <Button href="/contact" variant="primary" className="w-64 text-center border border-gold">
+              <Button href="/contact" variant="primary" className="w-auto whitespace-nowrap px-4 text-center !text-[13px] sm:w-64 sm:!text-sm border border-gold">
                 Prendre contact
               </Button>
             </div>
