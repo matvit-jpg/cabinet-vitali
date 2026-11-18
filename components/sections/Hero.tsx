@@ -33,17 +33,11 @@ export function Hero() {
           alt=""
           fill
           priority
-          className="object-cover object-center grayscale contrast-110 brightness-110"
+          className="object-cover object-center"
           sizes="100vw"
         />
       </motion.div>
-      <div className="absolute inset-0 bg-navy/40 mix-blend-multiply" aria-hidden />
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/15 via-navy/10 to-navy/50" aria-hidden />
-      <div
-        className="absolute inset-0 mix-blend-soft-light"
-        style={{ background: "linear-gradient(to top, rgba(201,168,76,0.55), rgba(226,201,126,0.35) 60%, rgba(226,201,126,0.25))" }}
-        aria-hidden
-      />
+      <div className="absolute inset-0 bg-navy/70" aria-hidden />
       {/* Logo sur hero — mobile uniquement, hors du stacking context z-10 pour que le blend fonctionne */}
       <div className="md:hidden absolute top-16 left-1/2 -translate-x-1/2 z-20">
         <Image
