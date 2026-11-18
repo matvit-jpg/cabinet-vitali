@@ -58,6 +58,9 @@ export function Hero() {
             <p className="font-display text-2xl font-semibold tracking-tight text-ivory md:text-4xl lg:text-5xl text-balance !text-center">
               Comprendre, analyser, conclure… pour vous faire gagner en clarté.
             </p>
+            <p className="mt-5 text-center font-sans text-sm font-light tracking-wide text-ivory/80 md:text-base">
+              Serge Vitali · Expert près la Cour d&apos;appel d&apos;Aix-en-Provence
+            </p>
           </AnimatedLine>
           <AnimatedLine>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
