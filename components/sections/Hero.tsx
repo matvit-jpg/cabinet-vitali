@@ -56,7 +56,7 @@ export function Hero() {
               Serge Vitali · Cour d&apos;appel d&apos;Aix-en-Provence
             </p>
             <h1 className="mx-auto max-w-4xl font-display text-3xl font-semibold leading-tight tracking-tight text-ivory text-balance !text-center md:text-5xl">
-              Expert judiciaire immobilier à Marseille et Aix-en-Provence
+              Expert de justice immobilier
             </h1>
           </AnimatedLine>
           <AnimatedLine>
