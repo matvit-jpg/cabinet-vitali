@@ -1,6 +1,7 @@
 import { languageAlternates } from "@/lib/i18n";
 import { createMetadata } from "@/lib/metadata";
 import { Hero } from "@/components/sections/Hero";
+import { CredentialsStrip } from "@/components/sections/CredentialsStrip";
 import { DecideursLogo } from "@/components/sections/DecideursLogo";
 import { ExpertiseGrid } from "@/components/sections/ExpertiseGrid";
 
@@ -24,6 +25,7 @@ export default function HomePage() {
       <Hero />
 
       <ExpertiseGrid />
+      <CredentialsStrip />
       <DecideursLogo />
     </>
   );

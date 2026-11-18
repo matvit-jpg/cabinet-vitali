@@ -1,4 +1,5 @@
 import {
+  DoorOpen,
   Scale,
   Building2,
   Store,
@@ -10,6 +11,7 @@ import {
 import type { ExpertiseIconName } from "./expertises";
 
 const map: Record<ExpertiseIconName, LucideIcon> = {
+  DoorOpen,
   Scale,
   Building2,
   Store,

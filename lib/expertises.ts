@@ -1,4 +1,5 @@
 export type ExpertiseIconName =
+  | "DoorOpen"
   | "Scale"
   | "Building2"
   | "Store"
@@ -53,7 +54,7 @@ export const expertises: Expertise[] = [
     title: "Valeur locative et baux commerciaux",
     icon: "Store",
     shortDescription:
-      "Spécialisation dans les problématiques liées aux baux commerciaux : déplafonnement, valeur locative, indemnité d'éviction.",
+      "Fixation du loyer du bail commercial renouvelé ou révisé, déplafonnement et valeur locative des locaux commerciaux, professionnels et industriels.",
     fullDescription:
       "Le cabinet est spécialisé dans l'expertise en valeur vénale ou locative des locaux commerciaux, professionnels et industriels.\n\nAnalyse des valeurs locatives, valeur vénale des fonds de commerce et d'industrie, droit au bail, valeurs locatives d'hôtels et de restaurants.\n\nPrise en compte des litiges liés aux baux commerciaux : renouvellement, indemnités d'éviction.",
     useCases: [
@@ -67,7 +68,7 @@ export const expertises: Expertise[] = [
   {
     slug: "indemnite-eviction",
     title: "Indemnité d'éviction",
-    icon: "Store",
+    icon: "DoorOpen",
     shortDescription:
       "Calcul de l'indemnité d'éviction et de l'indemnité d'occupation en cas de refus de renouvellement du bail commercial.",
     fullDescription:

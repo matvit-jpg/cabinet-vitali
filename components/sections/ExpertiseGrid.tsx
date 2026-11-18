@@ -20,8 +20,8 @@ export function ExpertiseGrid() {
           </p>
         </FadeInSection>
         <Divider />
-        <StaggerList className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {["valeurs-locatives", "indemnite-eviction", "evaluation-immobiliere"].map((slug) => {
+        <StaggerList className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {["expertises-judiciaires", "valeurs-locatives", "indemnite-eviction", "evaluation-immobiliere"].map((slug) => {
             const e = expertises.find((x) => x.slug === slug)!;
             return <ExpertiseListCard key={e.slug} {...e} />;
           })}

@@ -11,7 +11,7 @@ export function ExpertiseListCard(e: Expertise) {
   return (
     <motion.li variants={staggerItem} className="group h-full">
       <Link
-        href={`/expertises/${e.slug}`}
+        href={e.slug === "expertises-judiciaires" ? "/expertise-judiciaire" : `/expertises/${e.slug}`}
         className="flex h-full flex-col rounded-sm border border-grey-light bg-white p-6 shadow-card transition duration-300 hover:-translate-y-0.5 hover:border-gold-dark/50 hover:shadow-elevated md:p-8"
       >
         <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-ivory text-gold-dark transition-colors group-hover:bg-navy group-hover:text-gold-light">

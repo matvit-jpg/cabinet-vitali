@@ -26,20 +26,15 @@ export function DecideursLogo() {
           </h2>
           <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-ivory/80 md:text-base">
             <p>
-              Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence
-              et la Cour administrative d&apos;appel de Marseille, Serge Vitali
-              intervient dans tous les domaines de l&apos;expertise immobilière :
-              évaluation de biens, fixation de valeurs locatives, détermination
-              d&apos;indemnités, analyse de préjudices et accompagnement
-              stratégique en contentieux ou en prévention des litiges. Le cabinet
-              intervient dans les Bouches-du-Rhône — Marseille, Aix-en-Provence,
-              Aubagne, Salon-de-Provence, Arles — et dans les départements
-              limitrophes : Var, Vaucluse, Gard et Alpes-de-Haute-Provence.
+              Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et la
+              Cour administrative d&apos;appel de Marseille, Serge Vitali intervient
+              en matière d&apos;évaluation immobilière, de valeurs locatives,
+              d&apos;indemnités et de préjudices, sur désignation judiciaire comme
+              à titre amiable.
             </p>
             <p>
-              Rigueur juridique, connaissance approfondie du marché, rapports
-              motivés et exploitables : nous vous apportons des conclusions
-              fiables pour éclairer vos décisions.
+              Le cabinet intervient dans les Bouches-du-Rhône et les départements
+              limitrophes.
             </p>
           </div>
         </div>
