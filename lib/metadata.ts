@@ -127,11 +127,18 @@ export function jsonLdProfessionalService() {
         worksFor: { "@id": `${url}/#organization` },
         url: `${url}/cabinet`,
         sameAs: [SITE.linkedInUrl],
-        hasCredential: {
-          "@type": "EducationalOccupationalCredential",
-          name: "Recognised European Valuer (REV)",
-          recognizedBy: { "@type": "Organization", name: "TEGoVA", url: "https://www.tegova.org" },
-        },
+        hasCredential: [
+          {
+            "@type": "EducationalOccupationalCredential",
+            name: "Recognised European Valuer (REV)",
+            recognizedBy: { "@type": "Organization", name: "TEGoVA", url: "https://www.tegova.org" },
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            name: "Expert foncier et agricole",
+            recognizedBy: { "@type": "Organization", name: "Conseil national de l'expertise foncière, agricole et forestière (CNEFAF)" },
+          },
+        ],
         memberOf: [
           {
             "@type": "OrganizationRole",
@@ -144,7 +151,19 @@ export function jsonLdProfessionalService() {
             },
           },
           { "@type": "Organization", name: "Compagnie nationale des experts de justice immobiliers (CNEJI)", url: "https://www.cneji.fr" },
+          { "@type": "Organization", name: "Compagnie des experts près la cour administrative d'appel de Marseille (CECAAM)", url: "https://www.cecaam.expert" },
+          { "@type": "Organization", name: "Confédération des experts fonciers (CEF)", url: "https://www.experts-fonciers.com" },
+          { "@type": "Organization", name: "Conseil national de l'expertise foncière, agricole et forestière (CNEFAF)" },
         ],
+        knowsAbout: [
+          "Expertise judiciaire immobilière",
+          "Valeur vénale",
+          "Valeur locative de renouvellement",
+          "Baux commerciaux",
+          "Indemnité d'éviction",
+          "Évaluation de parts de sociétés à prépondérance immobilière",
+        ],
+        image: `${url}/images/serge.jpg`,
         award: "Décideurs Leaders League — Immobilier, Expertise judiciaire – Commerce : Pratique réputée (2021-2026)",
       },
     ],

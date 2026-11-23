@@ -33,6 +33,7 @@ export function Hero() {
           alt=""
           fill
           priority
+          quality={70}
           className="object-cover object-center saturate-[0.55]"
           sizes="100vw"
         />

@@ -25,14 +25,17 @@ export const publications: PublicationEntry[] = [
     iso: "2025-11-30",
     date: "Novembre 2025",
     source: "Actualité juridique Droit immobilier (Lefebvre Dalloz)",
-    title:
-      "Dossier « Les nouveaux visages de l'expert judiciaire après le décret du 18 juillet 2025 » — contribution",
+    title: "Réflexions d'experts",
+    summary:
+      "Contribution, coécrite avec Philippe Favre-Réguillon, au dossier « Les nouveaux visages de l'expert judiciaire après le décret du 18 juillet 2025 ». Elle analyse la place de l'expert dans l'instruction conventionnelle (C. pr. civ., art. 131 s.) : désignation par les parties, obligations déontologiques, intervention du juge en cas de blocage, et faculté nouvelle de concilier les parties ouverte par l'abrogation de l'article 240.",
     reference: "AJDI 2025, n° 11, p. 745",
     image: "/images/pub-1.png",
     en: {
       date: "November 2025",
       source: AJDI_EN,
-      title: "Contribution to the special report “The new faces of the court expert after the decree of 18 July 2025”",
+      title: "Experts' reflections",
+      summary:
+        "Contribution, co-written with Philippe Favre-Réguillon, to the special report “The new faces of the court expert after the decree of 18 July 2025”. It examines the expert's role in party-led case preparation (Code of Civil Procedure, art. 131 ff.): appointment by the parties, ethical duties, the court's role in case of deadlock, and the new power to conciliate the parties following the repeal of article 240.",
     },
   },
   {
@@ -57,12 +60,16 @@ export const publications: PublicationEntry[] = [
     source: "Actualité juridique Droit immobilier (Lefebvre Dalloz)",
     title:
       "Accès à la fonction d'expert judiciaire : pour une exigence d'expérience au service de la qualité de la justice",
+    summary:
+      "Point de vue sur l'inscription, par certaines cours d'appel, de candidats dépourvus de toute pratique préalable de l'expertise immobilière. L'article plaide pour une sélection fondée sur l'expérience effective (rapports réalisés, missions accomplies) et pour une association des compagnies d'experts à l'examen des candidatures, sans atteinte à l'autonomie de la commission.",
     reference: "AJDI 2025, n° 7-8, p. 497",
     image: "/images/pub-3.jpg",
     en: {
       date: "July-August 2025",
       source: AJDI_EN,
       title: "Becoming a court expert: requiring experience in the interest of the quality of justice",
+      summary:
+        "Opinion piece on the listing, by some courts of appeal, of candidates with no prior experience of property valuation. It argues for selection based on actual experience (reports written, missions completed) and for involving expert associations in the review of applications, without encroaching on the committee's independence.",
     },
   },
   {
