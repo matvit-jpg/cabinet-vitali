@@ -6,13 +6,13 @@ import { DecideursLogo } from "@/components/sections/DecideursLogo";
 import { ExpertiseGrid } from "@/components/sections/ExpertiseGrid";
 
 const homeTitle =
-  "Expert judiciaire immobilier à Marseille et Aix-en-Provence | Cabinet Vitali";
+  "Expert immobilier et expert judiciaire à Marseille | Cabinet Vitali";
 
 export const metadata = {
   ...createMetadata({
     title: "Accueil",
     description:
-      "Serge Vitali, expert judiciaire près la Cour d'appel d'Aix-en-Provence : valeur vénale, valeur locative de renouvellement, indemnité d'éviction, préjudices.",
+      "Expert immobilier à Marseille, Serge Vitali, expert de justice près la Cour d'appel d'Aix-en-Provence : valeur vénale, valeur locative, indemnité d'éviction.",
     path: "/",
     languages: languageAlternates("/", "/en"),
   }),

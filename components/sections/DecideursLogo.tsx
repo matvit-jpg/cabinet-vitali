@@ -26,7 +26,7 @@ export function DecideursLogo() {
           </h2>
           <div className="mt-6 space-y-4 font-sans text-sm font-light leading-relaxed text-ivory/80 md:text-base">
             <p>
-              Expert inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et la
+              Expert immobilier inscrit près la Cour d&apos;appel d&apos;Aix-en-Provence et la
               Cour administrative d&apos;appel de Marseille, Serge Vitali intervient
               en matière d&apos;évaluation immobilière, de valeurs locatives,
               d&apos;indemnités et de préjudices, sur désignation judiciaire comme
