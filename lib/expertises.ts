@@ -93,9 +93,9 @@ export const expertises: Expertise[] = [
       "Cession de parts",
       "Succession et donation de parts",
       "Retrait ou exclusion d'associé",
-      "Contestation de valeur (article 1843-4 du Code civil)",
+      "Prix fixé à dire d'expert (article 1843-4 du Code civil)",
       "Partage de communauté ou d'indivision",
-      "IFI, taxe de 3 %, pacte Dutreil",
+      "IFI, taxe de 3 %",
       "Contrôle fiscal et procédure de rectification",
     ],
   },
@@ -139,7 +139,7 @@ export const expertises: Expertise[] = [
     shortDescription:
       "Évaluation des indemnités dans un cadre contentieux ou amiable.",
     fullDescription:
-      "Évaluation des préjudices liés à des troubles de jouissance, vices cachés, désordres ou défauts de conformité.\n\nLe cabinet traite également les préjudices de travaux publics ou privés, les troubles de voisinage (perte de vue, ensoleillement).\n\nRapports adaptés aux échanges entre parties ou à la procédure devant le juge.",
+      "Évaluation des conséquences financières (perte de valeur, préjudice de jouissance) de troubles de jouissance, de vices cachés, de désordres ou de défauts de conformité.\n\nLe cabinet traite également les préjudices de travaux publics ou privés, les troubles de voisinage (perte de vue, ensoleillement).\n\nRapports adaptés aux échanges entre parties ou à la procédure devant le juge.",
     useCases: [
       "Perte de vue et/ou d'ensoleillement",
       "Troubles de voisinage",

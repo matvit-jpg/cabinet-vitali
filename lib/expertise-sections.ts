@@ -44,7 +44,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
         heading: "Plafonnement et déplafonnement du loyer renouvelé",
         paragraphs: [
           "Pour les baux d'une durée n'excédant pas neuf ans, l'article L. 145-34 limite la variation du loyer renouvelé à celle de l'indice trimestriel applicable, sauf modification notable des éléments mentionnés aux 1° à 4° de l'article L. 145-33 au cours du bail expiré. Le plafonnement est également écarté lorsque la durée du bail excède douze ans par l'effet d'une tacite prolongation.",
-          "Lorsque le déplafonnement est acquis, l'augmentation qui en résulte ne peut excéder, pour une année, 10 % du loyer acquitté au cours de l'année précédente. Échappent en outre au plafonnement les terrains (article R. 145-9), les locaux construits en vue d'une seule utilisation (article R. 145-10) et les locaux à usage exclusif de bureaux (article R. 145-11), dont le loyer est fixé selon les usages observés dans la branche d'activité ou par référence aux prix pratiqués pour des locaux équivalents.",
+          "Lorsque le déplafonnement résulte d'une modification notable de ces éléments ou de la durée du bail, l'augmentation du loyer qui en découle ne peut excéder, pour une année, 10 % du loyer acquitté au cours de l'année précédente (article L. 145-34, dernier alinéa). Les terrains (article R. 145-9), les locaux construits en vue d'une seule utilisation (article R. 145-10) et les locaux à usage exclusif de bureaux (article R. 145-11) relèvent d'un régime distinct : leur loyer est fixé selon les usages observés dans la branche d'activité ou par référence aux prix pratiqués pour des locaux équivalents, sans application de ce lissage.",
         ],
       },
       {
@@ -99,7 +99,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
         heading: "Une compétence distincte de l'évaluation de l'immeuble",
         paragraphs: [
           "La valeur des parts d'une société civile immobilière ou d'une société à prépondérance immobilière ne se confond pas avec celle des immeubles qu'elle détient. Serge Vitali est inscrit dans la rubrique de la nomenclature des experts de justice consacrée aux droits sociaux à prépondérance immobilière, ce qui l'habilite à évaluer les parts elles-mêmes, et non seulement le patrimoine sous-jacent.",
-          "Ces évaluations interviennent lors de cessions, de partages, de successions et de donations, de retraits ou d'exclusions d'associés, et dans le cadre de l'article 1843-4 du Code civil lorsque la valeur des droits sociaux est contestée.",
+          "Ces évaluations interviennent lors de cessions, de partages, de successions et de donations, de retraits ou d'exclusions d'associés, et, en cas de cession ou de rachat de droits sociaux prévus par la loi ou les statuts, lorsque le prix est fixé à dire d'expert (article 1843-4 du Code civil).",
         ],
       },
       {
@@ -112,7 +112,7 @@ export const expertiseSections: Record<string, ExpertiseSeo> = {
       {
         heading: "Enjeux fiscaux et patrimoniaux",
         paragraphs: [
-          "La valeur des parts et celle des immeubles qu'elles représentent servent d'assiette à de nombreux dispositifs : impôt sur la fortune immobilière, droits de succession et de donation, droits d'enregistrement sur les cessions de parts, taxe de 3 % sur la valeur vénale des immeubles, régime du pacte Dutreil, taxation des plus-values. Le cabinet intervient dans ces différentes problématiques, en amont d'une opération de transmission, de cession ou de restructuration comme lors d'un contrôle ou d'une procédure de rectification, aux côtés des avocats fiscalistes, des notaires et des experts-comptables qui en assurent le conseil.",
+          "La valeur des parts et celle des immeubles qu'elles représentent servent d'assiette à de nombreux dispositifs : impôt sur la fortune immobilière, droits de succession et de donation, droits d'enregistrement sur les cessions de parts, taxe de 3 % sur la valeur vénale des immeubles, taxation des plus-values. Le cabinet intervient dans ces différentes problématiques, en amont d'une opération de transmission, de cession ou de restructuration comme lors d'un contrôle ou d'une procédure de rectification, aux côtés des avocats fiscalistes, des notaires et des experts-comptables qui en assurent le conseil.",
         ],
       },
     ],
